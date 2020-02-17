@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from './../../assets/imgs/logo.jpg';
+import instagram from './../../assets/icons/instagram_white.png';
+import mail from './../../assets/icons/mail_white.png';
 
 class FixedNavbar extends React.Component {
     constructor(props) {
@@ -52,6 +54,10 @@ class FixedNavbar extends React.Component {
                             <a className="nav-collapse__link">Contacto</a>
                         </li>
                     </ul>
+                    <div className="nav-collapse__icons">
+                        <img src={instagram} />
+                        <img src={mail} />
+                    </div>
                 </div>
             </nav>
         );
