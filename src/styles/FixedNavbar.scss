@@ -1,5 +1,11 @@
 $hamburger-speed: 1s;
 
+/* Extra small devices (phones, 600px and down), are the default styles ;) */
+$s-devices: 600px;  /* Small devices (portrait tablets and large phones, 600px and up) */
+$m-devices: 768px;  /* Medium devices (landscape tablets, 768px and up) */
+$l-devices: 992px;  /* Large devices (laptops/desktops, 992px and up) */
+$xl-devices: 1200px;  /* Extra large devices (large laptops and desktops, 1200px and up) */
+
 .content-wrap {
   padding: 5%;
 }
@@ -10,6 +16,7 @@ $hamburger-speed: 1s;
   position: fixed;
   top:0;
   left: 0;
+  background: white;
 
   // ICON
   &__wrap-hamburger {
@@ -17,7 +24,6 @@ $hamburger-speed: 1s;
     height: 12vh;
     padding: 0.5em 1em 0 1em;
     box-sizing: border-box;
-    background: white;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 100%;
@@ -95,6 +101,7 @@ $hamburger-speed: 1s;
   }
 }
 
+
 //Styles for when Hamburger Menu is opened
 .showMenu { 
   .main-nav__hamburger {
@@ -118,5 +125,38 @@ $hamburger-speed: 1s;
 
   .nav-collapse {
     right: 0;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: $m-devices) {
+  .main-nav {
+    &__hamburger {
+      display: none;
+    }
+
+    .nav-collapse {
+      width: 85vw;
+      height: 12vh;
+      right: 0;
+      background: white;
+
+      &__list{
+        color: black;
+        grid-column: 1 / span 11;
+        grid-row: 1 / span 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      &__item{
+        margin-bottom: 1em;
+      }
+
+      &__icons {
+        display: none;
+      }
+    }
   }
 }
