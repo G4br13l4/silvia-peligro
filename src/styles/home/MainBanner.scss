@@ -2,27 +2,58 @@ $fontSize_title: 1.7em;
 
 .mainSlideBanner {
     width: 100vw;
-    height: 44vh;
-    background-color: lightcoral;
-    // &__boxImg {
-    //     display: grid;
-    //     grid-template-columns: repeat(12, 1fr);
-    //     grid-template-rows: repeat(2, 1fr);
-    // }
+    grid-row: 3/12;
+    height: 100%;
+    &__boxImg {
+        height: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 
-    // &__boxText {
-    //     background: yellow;
-    //     grid-column: 1 / span 12;
-    //     grid-row: 2 / span 1;
-    //     padding: 0 1em;
-    //     .title {
-    //         font-size: $fontSize_title;
-    //         line-height: 1em;
-    //     }
+    &__txtBox {
+        max-height: 40%;
+        overflow: hidden;
+        padding: .5em 1em;
+        box-sizing: border-box;
+        .title {
+            margin: 0;
+            font-size: $fontSize_title;
+            line-height: 1em;
+        }
 
-    //     .paragraph {
-    //         line-height: 1.1em;
-    //     }
-    // }
+        .paragraph {
+            line-height: 1.1em;
+            margin-bottom: .6em;
+        }
+
+        .see-more-btn {
+            padding: .3em 2.5em;
+            border: none;
+            border-radius: 3px;
+            span {
+                vertical-align: middle;
+            }
+        }
+        
+    }
+
+    &__icons {
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        .arrows {
+            display: none;
+        }
+        .rhombus {
+            width: 33.3%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img {
+                width: 15%;
+            }
+        }
+    }
 }
 

@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="content-wrap">
       <FixedNavbar/>
-      {/* <MainBanner/> */}
+      <MainBanner/>
     </div>
       
   );
