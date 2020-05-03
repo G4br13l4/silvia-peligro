@@ -1,4 +1,6 @@
 import React from 'react';
+import '../../styles/shared/FixedNavbar.scss';
+
 import logo from './../../assets/imgs/logo.jpg';
 import instagram from './../../assets/icons/instagram_white.png';
 import mail from './../../assets/icons/mail_white.png';
@@ -8,7 +10,7 @@ class FixedNavbar extends React.Component {
         super(props);
         this.state = {
             openHamburger: false,
-            isMobile: true,
+            isMobile: true
         };
     }
 
@@ -28,7 +30,7 @@ class FixedNavbar extends React.Component {
         const { openHamburger, isMobile } = this.state;
         return (
             <nav className={`main-nav ${openHamburger ? 'showMenu' : 'hideMenu'}`}>
-                <div className="main-nav__wrap-hamburger">
+                <div className="main-nav__menu_wrapper">
                     <div className="main-nav__logo">
                         <img src={logo} />
                     </div>
@@ -40,9 +42,11 @@ class FixedNavbar extends React.Component {
                 
                 <div className="nav-collapse">
                     <ul className="nav-collapse__list">
-                        <li className="nav-collapse__item">
-                            <a onClick={isMobile && this.toggleHamburger} className="nav-collapse__link">Inicio</a>
-                        </li>
+                        {isMobile &&
+                            <li className="nav-collapse__item">
+                                <a onClick={this.toggleHamburger} className="nav-collapse__link">Inicio</a>
+                            </li>
+                        }
                         <li className="nav-collapse__item">
                             <a onClick={isMobile && this.toggleHamburger} className="nav-collapse__link">Productos</a>
                         </li>

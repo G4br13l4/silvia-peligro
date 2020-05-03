@@ -6,10 +6,7 @@ $m-devices: 768px;  /* Medium devices (landscape tablets, 768px and up) */
 $l-devices: 992px;  /* Large devices (laptops/desktops, 992px and up) */
 $xl-devices: 1200px;  /* Extra large devices (large laptops and desktops, 1200px and up) */
 
-.content-wrap {
-  padding: 5%;
-}
-
+//MOBILE FIRST 
 .main-nav {
   width: 100vw;
   height: 12vh;
@@ -18,34 +15,31 @@ $xl-devices: 1200px;  /* Extra large devices (large laptops and desktops, 1200px
   left: 0;
   background: white;
 
-  // ICON
-  &__wrap-hamburger {
-    width: 100vw;
-    height: 12vh;
-    padding: 0.5em 1em 0 1em;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 100%;
-    justify-content: space-between;
+
+  &__menu_wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+    box-sizing: border-box;
   }
 
   //LOGO 
   &__logo {
-    height: 7vh;
+    height: 10vh;
     img {height: 100%;}
   }
 
-  //Hamburger
+  //HAMBURGER
   &__hamburger {
     display: block;
-    grid-column: 12;
     width: 26px;
     height: 16px;
     position: relative;
-    margin-right: 3%;
     z-index: 2;
+    //margin-right: 3%;
   
     i{
       transition: $hamburger-speed;
@@ -66,24 +60,23 @@ $xl-devices: 1200px;  /* Extra large devices (large laptops and desktops, 1200px
   .nav-collapse {
     background: #161616;
     position: fixed;
-    width: 80vw;
-    height: 100vh;
     top: 0;
     right: -80vw;
-    transition: $hamburger-speed;
+    width: 80vw;
+    height: 100vh;
+    transition: right $hamburger-speed;
     z-index: 1;
     display: grid;
-    grid-template-rows: 12vh repeat(11, 1fr);
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     
     &__list{
       list-style: none;
       padding: 0;
       margin: 0;
-      grid-row-start: 3;
       color: white;
-      grid-column: 3 / span 7;
-      grid-row: 3 / span 7;
+      grid-column: 3/8;
+      grid-row: 3/10;
     }
 
     &__item{
@@ -91,18 +84,19 @@ $xl-devices: 1200px;  /* Extra large devices (large laptops and desktops, 1200px
     }
 
     &__icons {
-      grid-column: 3 / span 4;
-      grid-row: 11 / auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      img { width: 2.3em}
+      grid-column: 3/6;
+      grid-row: 11/12;
+      align-self: center;
+      img {
+        width: 2.3em;
+        margin-right: 0.8em;
+      }
     }
   }
 }
 
 
-//Styles for when Hamburger Menu is opened
+//HAMBURGER MENU OPENED (MOBILE)
 .showMenu { 
   .main-nav__hamburger {
     i {
@@ -128,7 +122,7 @@ $xl-devices: 1200px;  /* Extra large devices (large laptops and desktops, 1200px
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* MEDIUM DEVICES (landscape tablets, 768px and up) */
 @media only screen and (min-width: $m-devices) {
   .main-nav {
     &__hamburger {
@@ -136,15 +130,18 @@ $xl-devices: 1200px;  /* Extra large devices (large laptops and desktops, 1200px
     }
 
     .nav-collapse {
-      width: 85vw;
+      max-width: 85vw;
       height: 12vh;
-      right: 0;
+      right: 2em;
       background: white;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: 1fr;
+      
 
       &__list{
         color: black;
-        grid-column: 1 / span 11;
-        grid-row: 1 / span 1;
+        grid-column: 1/13;
+        grid-row: 1/13;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -159,4 +156,8 @@ $xl-devices: 1200px;  /* Extra large devices (large laptops and desktops, 1200px
       }
     }
   }
+}
+
+.jumbotron {
+  height: 50vh;
 }

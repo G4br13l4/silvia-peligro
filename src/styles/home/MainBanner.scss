@@ -1,0 +1,28 @@
+$fontSize_title: 1.7em;
+
+.mainSlideBanner {
+    width: 100vw;
+    height: 44vh;
+    background-color: lightcoral;
+    // &__boxImg {
+    //     display: grid;
+    //     grid-template-columns: repeat(12, 1fr);
+    //     grid-template-rows: repeat(2, 1fr);
+    // }
+
+    // &__boxText {
+    //     background: yellow;
+    //     grid-column: 1 / span 12;
+    //     grid-row: 2 / span 1;
+    //     padding: 0 1em;
+    //     .title {
+    //         font-size: $fontSize_title;
+    //         line-height: 1em;
+    //     }
+
+    //     .paragraph {
+    //         line-height: 1.1em;
+    //     }
+    // }
+}
+
