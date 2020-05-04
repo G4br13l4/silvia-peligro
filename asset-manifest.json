@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/silvia-peligro/static/css/main.d396741f.chunk.css",
-    "main.js": "/silvia-peligro/static/js/main.e392b2e8.chunk.js",
-    "main.js.map": "/silvia-peligro/static/js/main.e392b2e8.chunk.js.map",
+    "main.css": "/silvia-peligro/static/css/main.eb155aab.chunk.css",
+    "main.js": "/silvia-peligro/static/js/main.2b57dfe3.chunk.js",
+    "main.js.map": "/silvia-peligro/static/js/main.2b57dfe3.chunk.js.map",
     "runtime-main.js": "/silvia-peligro/static/js/runtime-main.1ff5d4e9.js",
     "runtime-main.js.map": "/silvia-peligro/static/js/runtime-main.1ff5d4e9.js.map",
-    "static/js/2.bb851e7c.chunk.js": "/silvia-peligro/static/js/2.bb851e7c.chunk.js",
-    "static/js/2.bb851e7c.chunk.js.map": "/silvia-peligro/static/js/2.bb851e7c.chunk.js.map",
+    "static/js/2.018c66b3.chunk.js": "/silvia-peligro/static/js/2.018c66b3.chunk.js",
+    "static/js/2.018c66b3.chunk.js.map": "/silvia-peligro/static/js/2.018c66b3.chunk.js.map",
     "index.html": "/silvia-peligro/index.html",
-    "precache-manifest.1a7ecd2ec85ed218184597c033fb03dd.js": "/silvia-peligro/precache-manifest.1a7ecd2ec85ed218184597c033fb03dd.js",
+    "precache-manifest.fc61643cd2a287774e8fedca5312129f.js": "/silvia-peligro/precache-manifest.fc61643cd2a287774e8fedca5312129f.js",
     "service-worker.js": "/silvia-peligro/service-worker.js",
-    "static/css/main.d396741f.chunk.css.map": "/silvia-peligro/static/css/main.d396741f.chunk.css.map",
-    "static/js/2.bb851e7c.chunk.js.LICENSE": "/silvia-peligro/static/js/2.bb851e7c.chunk.js.LICENSE",
-    "static/media/logo.jpg": "/silvia-peligro/static/media/logo.d88e1ac5.jpg"
+    "static/css/main.eb155aab.chunk.css.map": "/silvia-peligro/static/css/main.eb155aab.chunk.css.map",
+    "static/js/2.018c66b3.chunk.js.LICENSE": "/silvia-peligro/static/js/2.018c66b3.chunk.js.LICENSE",
+    "static/media/logo.jpg": "/silvia-peligro/static/media/logo.d88e1ac5.jpg",
+    "static/media/mainSlideBanner_1.jpg": "/silvia-peligro/static/media/mainSlideBanner_1.caea975f.jpg",
+    "static/media/mainSlideBanner_2.jpg": "/silvia-peligro/static/media/mainSlideBanner_2.352a882e.jpg",
+    "static/media/mainSlideBanner_3.jpg": "/silvia-peligro/static/media/mainSlideBanner_3.f2d3509e.jpg",
+    "static/media/rhombus-icon.svg": "/silvia-peligro/static/media/rhombus-icon.c7907997.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.1ff5d4e9.js",
-    "static/js/2.bb851e7c.chunk.js",
-    "static/css/main.d396741f.chunk.css",
-    "static/js/main.e392b2e8.chunk.js"
+    "static/js/2.018c66b3.chunk.js",
+    "static/css/main.eb155aab.chunk.css",
+    "static/js/main.2b57dfe3.chunk.js"
   ]
 }
