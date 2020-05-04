@@ -16,7 +16,7 @@ class FixedNavbar extends React.Component {
 
     componentDidMount() {
         const deviceWidth = window.innerWidth;
-        if(deviceWidth > 992) {
+        if(deviceWidth > 768) {
             this.setState({ isMobile: false});
         }
     }

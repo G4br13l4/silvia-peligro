@@ -31,8 +31,8 @@ class MainBanner extends React.Component {
                         <img src={rhombusIcon}/>
                     </div>
                     <div className="arrows">
-                        <i class="material-icons">navigate_before</i>
-                        <i class="material-icons">navigate_next</i>
+                        <i class="arrow material-icons">navigate_before</i>
+                        <i class="arrow material-icons">navigate_next</i>
                     </div>
                 </div>
             </div>

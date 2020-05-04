@@ -1,4 +1,9 @@
 $fontSize_title: 1.7em;
+/* Extra small devices (phones, 600px and down), are the default styles ;) */
+$s-devices: 600px;  /* Small devices (portrait tablets and large phones, 600px and up) */
+$m-devices: 768px;  /* Medium devices (landscape tablets, 768px and up) */
+$l-devices: 992px;  /* Large devices (laptops/desktops, 992px and up) */
+$xl-devices: 1200px;  /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 .mainSlideBanner {
     width: 100vw;
@@ -16,15 +21,20 @@ $fontSize_title: 1.7em;
         overflow: hidden;
         padding: .5em 1em;
         box-sizing: border-box;
+        background: rgba(255, 255, 255, 0.5);
         .title {
             margin: 0;
             font-size: $fontSize_title;
             line-height: 1em;
+            max-height: 56px;
+            overflow: hidden;
         }
 
         .paragraph {
             line-height: 1.1em;
-            margin-bottom: .6em;
+            margin: .6em 0;
+            max-height: 52px;
+            overflow: hidden;
         }
 
         .see-more-btn {
@@ -46,14 +56,46 @@ $fontSize_title: 1.7em;
             display: none;
         }
         .rhombus {
-            width: 33.3%;
+            width: 140px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             img {
-                width: 15%;
+                width: 17px;
             }
         }
     }
 }
 
+/* MEDIUM DEVICES (landscape tablets, 768px and up) */
+@media only screen and (min-width: $m-devices) {
+    .mainSlideBanner {
+        position: relative;
+        grid-row: 3/10;
+
+        &__boxImg {
+            height: 88%;
+        }
+
+        &__txtBox {
+            position: absolute;
+            bottom: 12%;
+            width: 46%;
+            max-height: 42%;
+        }
+        
+        &__icons {
+            justify-content: flex-end;
+            height: 12%;
+            .arrows {
+                display: flex;
+                align-items: center; 
+                margin-left: 1.5em;
+                margin-right: 1em;
+                .arrow {
+                    font-size: 2.9em;
+                }   
+            }
+        }
+    }
+}
