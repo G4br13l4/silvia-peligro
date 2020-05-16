@@ -18,11 +18,9 @@ class MainBanner extends React.Component {
                 <div style={{backgroundImage: `url(${mainSlideBanner_1})` }} className="mainSlideBanner__boxImg"> 
                 </div>
                 <div className="mainSlideBanner__txtBox">
-                    <h1 className="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-                    <p className="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque finibus lacus sit amet auctor. Proin et purus nulla. </p>
-                    <div>
-                        <button className="see-more-btn"><span>Ver más</span></button>
-                    </div>
+                    <h1 className="title line-clamp">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                    <p className="paragraph line-clamp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In scelerisque finibus lacus sit amet auctor. Proin et purus nulla. </p>
+                    <button className="see-more-btn"><span>Ver más</span></button>
                 </div>
                 <div className="mainSlideBanner__icons">
                     <div className="rhombus">
