@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/silvia-peligro/static/css/main.34353678.chunk.css",
+    "main.css": "/silvia-peligro/static/css/main.74bc3879.chunk.css",
     "main.js": "/silvia-peligro/static/js/main.ad3e45fb.chunk.js",
     "main.js.map": "/silvia-peligro/static/js/main.ad3e45fb.chunk.js.map",
     "runtime-main.js": "/silvia-peligro/static/js/runtime-main.1ff5d4e9.js",
@@ -9,10 +9,10 @@
     "static/js/2.342fd118.chunk.js": "/silvia-peligro/static/js/2.342fd118.chunk.js",
     "static/js/2.342fd118.chunk.js.map": "/silvia-peligro/static/js/2.342fd118.chunk.js.map",
     "index.html": "/silvia-peligro/index.html",
-    "precache-manifest.11ee01cc26df7cf3ef0b17a44690fa64.js": "/silvia-peligro/precache-manifest.11ee01cc26df7cf3ef0b17a44690fa64.js",
+    "precache-manifest.87c430bd08164b58d017b388e7aef1b1.js": "/silvia-peligro/precache-manifest.87c430bd08164b58d017b388e7aef1b1.js",
     "service-worker.js": "/silvia-peligro/service-worker.js",
     "static/css/2.9ff99f11.chunk.css.map": "/silvia-peligro/static/css/2.9ff99f11.chunk.css.map",
-    "static/css/main.34353678.chunk.css.map": "/silvia-peligro/static/css/main.34353678.chunk.css.map",
+    "static/css/main.74bc3879.chunk.css.map": "/silvia-peligro/static/css/main.74bc3879.chunk.css.map",
     "static/js/2.342fd118.chunk.js.LICENSE": "/silvia-peligro/static/js/2.342fd118.chunk.js.LICENSE",
     "static/media/logo.jpg": "/silvia-peligro/static/media/logo.d88e1ac5.jpg",
     "static/media/mainSlideBanner_1.jpg": "/silvia-peligro/static/media/mainSlideBanner_1.caea975f.jpg",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.1ff5d4e9.js",
     "static/css/2.9ff99f11.chunk.css",
     "static/js/2.342fd118.chunk.js",
-    "static/css/main.34353678.chunk.css",
+    "static/css/main.74bc3879.chunk.css",
     "static/js/main.ad3e45fb.chunk.js"
   ]
 }
