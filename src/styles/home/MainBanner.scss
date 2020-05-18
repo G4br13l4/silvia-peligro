@@ -30,7 +30,7 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
         .paragraph {
             max-height: 38%;
             line-height: 1.1em;
-            margin: 0 0 .5em 0;
+            margin: .2em 0 .5em 0;
         }
 
         .line-clamp {
@@ -38,7 +38,7 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;  
             overflow: hidden;
-            padding-bottom: 0.2em;
+            padding-bottom: 0.1em;
         }
 
         .see-more-btn {
