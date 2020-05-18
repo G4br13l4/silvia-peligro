@@ -54,7 +54,6 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
 
 @media only screen and (min-width: $m-devices) {
     .mainSlideBanner {
-        position: relative;
         grid-row: 3/11;
 
         &__boxImg {

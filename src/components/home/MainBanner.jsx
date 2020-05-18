@@ -83,11 +83,12 @@ const MainBanner = (props) => {
                 width: 100vw;
                 grid-row: 3/12;
                 height: 100%;
+                position: relative;
+                z-index: 1;
             }
             .carousel {
                 width: 100%;
                 height: 100%;
-                z-index: -1;
             }
             .carousel-inner {
                 width: inherit;
