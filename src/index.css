@@ -1,1 +1,9 @@
+@font-face {
+    font-family: 'Embroidery';
+    src: local('Embroidery'), url(./fonts/Embroidery.ttf) format('truetype');
+}
 
+@font-face {
+    font-family: 'Spot-Matrix';
+    src: local('Spot-Matrix'), url(./fonts/Spot-Matrix.ttf) format('truetype');
+}

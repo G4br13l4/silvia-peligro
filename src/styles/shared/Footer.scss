@@ -1,0 +1,42 @@
+$light-purple: #AC90F1;
+$purple: #43026A;
+.footer {
+    grid-row: 15 / auto;
+    &__menu {
+        height: 50vh;
+    }
+    .border-box {
+        width: 100vw;
+        span {
+            display: inline-block;
+            width: 100%;
+            overflow: hidden;
+            font-family: Embroidery;
+            font-size: 2em;
+            line-height: 0.5;
+            color: $light-purple;
+        }
+    }
+    &__copyrights {
+        background: $purple;
+        height: 8vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        justify-items: center;
+        .languages {
+            display: flex;
+            justify-content: space-between;
+            width: 75%;
+            button {
+                border: none;
+                border-radius: 6px;
+            }
+        }
+        .date {
+            color: white;
+            font-size: 0.7em;
+            grid-column: 2/4;
+        }
+    }
+}

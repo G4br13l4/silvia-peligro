@@ -1,5 +1,6 @@
 $fontSize_title: 1.5em;
-$purple: #AC90F1;
+$light-purple: #AC90F1;
+
 /* Extra small devices (phones, 600px and down), are the default styles ;) */
 $s-devices: 37.5em;  /* Small devices (portrait tablets and large phones, 600px and up) */
 $m-devices: 48em;  /* Medium devices (landscape tablets, 768px and up) */
@@ -45,7 +46,7 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
             padding: .3em 2.5em;
             border: none;
             border-radius: 3px;
-            background: $purple;
+            background: $light-purple;
             color: white;
         }
         

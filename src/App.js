@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 import FixedNavbar from './components/shared/FixedNavbar';
 import MainBanner from './components/home/MainBanner';
+import { Footer } from './components/shared/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <button>Ver todo</button>
         </div>
       </div> */}
+      <Footer/>
     </div>
       
   );
