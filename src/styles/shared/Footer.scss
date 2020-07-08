@@ -1,5 +1,12 @@
 $light-purple: #AC90F1;
 $purple: #43026A;
+
+/* Extra small devices (phones, 600px and down), are the default styles ;) */
+$s-devices: 37.5em;  /* Small devices (portrait tablets and large phones, 600px and up) */
+$m-devices: 48em;  /* Medium devices (landscape tablets, 768px and up) */
+$l-devices: 62em;  /* Large devices (laptops/desktops, 992px and up) */
+$xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px and up) */
+
 .footer {
     grid-row: 15 / auto;
     &__menu {
@@ -26,17 +33,30 @@ $purple: #43026A;
         justify-items: center;
         .languages {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             width: 75%;
             button {
                 border: none;
                 border-radius: 6px;
+                margin-right: 0.5em;
             }
         }
         .date {
             color: white;
             font-size: 0.7em;
             grid-column: 2/4;
+        }
+    }
+}
+
+/* MEDIUM DEVICES (landscape tablets, 768px and up) */
+@media only screen and (min-width: $m-devices) {
+    .footer {
+        &__copyrights {
+            .languages {
+                justify-content: flex-start;
+                width: 80%;
+            }
         }
     }
 }
