@@ -23,6 +23,7 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
     }
     &__menu {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         width: 95%;
         margin: 0.5em auto;
@@ -68,6 +69,32 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
 /* MEDIUM DEVICES (landscape tablets, 768px and up) */
 @media only screen and (min-width: $m-devices) {
     .footer {
+        &__menu {
+            justify-content: center;
+            margin: 1.2em auto;
+            ul {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding: 0 5%;
+                li {
+                    display: flex;
+                    align-items: center;
+                }
+                li::after {
+                    content: '\25C6';
+                    color: $purple;
+                    margin: 0 1em;
+                }
+                li:last-child:after{
+                    content: '';
+                    margin: 0;
+                }
+            }
+            img {
+                margin: 0 0.3em;
+            }
+        }
         &__copyrights {
             .languages {
                 justify-content: flex-start;
