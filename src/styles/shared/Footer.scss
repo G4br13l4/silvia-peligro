@@ -9,10 +9,7 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
 
 .footer {
     grid-row: 15 / auto;
-    &__menu {
-        height: 50vh;
-    }
-    .border-box {
+    &__border {
         width: 100vw;
         span {
             display: inline-block;
@@ -22,6 +19,25 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
             font-size: 2em;
             line-height: 0.5;
             color: $light-purple;
+        }
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        margin: 0.5em auto;
+        ul {
+            list-style: none;
+            li {
+                margin-bottom: 0.3em;
+                color: $purple;
+                cursor: pointer;
+            }
+        }
+        img {
+            width: 2.3em;
+            margin-right: 0.8em;
+            cursor: pointer;
         }
     }
     &__copyrights {
