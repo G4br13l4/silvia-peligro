@@ -1,4 +1,10 @@
 import React from 'react';
+import {
+    InputGroup,
+    InputGroupAddon,
+    Input,
+    Button
+} from 'reactstrap';
 import '../../styles/shared/Footer.scss';
 import instagram from './../../assets/icons/instagram_purple.png';
 import mail from './../../assets/icons/mail_purple.png';
@@ -6,7 +12,14 @@ import mail from './../../assets/icons/mail_purple.png';
 export const Footer = () => {
     return (
         <footer className="footer">
-            <div className="footer__border"><span>***************************************************************************************************************************************************************************************************************************************</span></div>
+            <div className="footer__border top-border"><span>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span></div>
+            <div className="footer__input-wrapper">
+                <InputGroup>
+                    <Input />
+                    <InputGroupAddon addonType="prepend"><Button>Suscribirme</Button></InputGroupAddon>
+                </InputGroup>
+            </div>
+            <div className="footer__border middle-border"><span>***************************************************************************************************************************************************************************************************************************************</span></div>
             <div className="footer__menu">
                 <ul>
                     <li>Inicio</li>

@@ -9,18 +9,37 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
 
 .footer {
     grid-row: 15 / auto;
+
     &__border {
         width: 100vw;
         span {
             display: inline-block;
             width: 100%;
             overflow: hidden;
-            font-family: Embroidery;
-            font-size: 2em;
+            white-space: nowrap;
+            font-size: 2rem;
             line-height: 0.5;
             color: $light-purple;
         }
     }
+
+    .top-border {
+        font-family: Spot-Matrix;
+        span {
+            font-size: 4rem;
+        }
+    }
+
+    .middle-border {
+        font-family: Embroidery;
+    }
+
+    &__input-wrapper {
+        height: 20vh;
+        display: flex;
+        align-items: center;
+    }
+
     &__menu {
         display: flex;
         flex-wrap: wrap;

@@ -9,7 +9,7 @@ function App() {
     <div className="content-wrap">
       <FixedNavbar/>
       <MainBanner/>
-      <div style={{width: '100vw', height: '50vh', background: 'greenyellow', gridRow: '13/auto'}}>
+      <div style={{width: '100vw', height: '50vh', gridRow: '13/auto'}}>
           Prueba
       </div>
       {/* <div>
