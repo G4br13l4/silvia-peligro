@@ -11,7 +11,7 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
   width: 100vw;
   height: 12vh;
   position: fixed;
-  z-index: 2;
+  z-index: 101;
   top:0;
   left: 0;
   background: white;
@@ -39,7 +39,7 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
     width: 26px;
     height: 16px;
     position: relative;
-    z-index: 3;
+    z-index: 102;
   
     i{
       transition: $hamburger-speed;
@@ -65,7 +65,7 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
     width: 80vw;
     height: 100vh;
     transition: right $hamburger-speed;
-    z-index: 2;
+    z-index: 101;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(12, 1fr);
@@ -122,8 +122,17 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
   }
 }
 
-/* MEDIUM DEVICES (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: $m-devices) {
+  .main-nav {
+    .nav-collapse {
+      width: 75vw;
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: $l-devices) {
   .main-nav {
     &__hamburger {
       display: none;

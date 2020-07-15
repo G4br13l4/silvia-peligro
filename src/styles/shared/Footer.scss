@@ -36,8 +36,36 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
 
     &__input-wrapper {
         height: 20vh;
-        display: flex;
-        align-items: center;
+        width: 87%;
+        margin: 0 auto;
+        p {
+            text-align: center;
+            font-size: 0.8rem;
+        }
+        
+        .custom-input {
+            width: 100%;
+            border-radius: 5%;
+            margin: 0 auto;
+        }
+
+        .form-control {
+            border-radius: 35px 0 0 35px;
+            border-color: $light-purple;
+            border-right: none;
+            font-size: 0.8rem;
+        }
+
+        .btn {
+            color: black;
+            line-height: 1;
+            background: transparent;
+            border-color: $light-purple;
+            border-left: none;
+            border-radius: 0 35px 35px 0 !important;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
     }
 
     &__menu {
@@ -85,9 +113,26 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
     }
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: $s-devices) {
+    .footer {
+        &__input-wrapper {
+            .custom-input { 
+                width: 85%;
+            }
+        }
+    }
+}
+
 /* MEDIUM DEVICES (landscape tablets, 768px and up) */
 @media only screen and (min-width: $m-devices) {
     .footer {
+        &__input-wrapper {
+            .custom-input {
+                width: 55%;
+            }
+        }
+
         &__menu {
             justify-content: center;
             margin: 1.2em auto;
@@ -118,6 +163,17 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
             .languages {
                 justify-content: flex-start;
                 width: 80%;
+            }
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: $l-devices) {
+    .footer {
+        &__input-wrapper {
+            .custom-input {
+                width: 41%;
             }
         }
     }

@@ -14,8 +14,9 @@ export const Footer = () => {
         <footer className="footer">
             <div className="footer__border top-border"><span>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span></div>
             <div className="footer__input-wrapper">
-                <InputGroup>
-                    <Input />
+                <p>Recibe avisos sobre mis próximos talleres/eventos directamente en tu bandeja de entrada</p>
+                <InputGroup className="custom-input">
+                    <Input placeholder="Escribe tu correo electrónico"/>
                     <InputGroupAddon addonType="prepend"><Button>Suscribirme</Button></InputGroupAddon>
                 </InputGroup>
             </div>

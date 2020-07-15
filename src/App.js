@@ -10,7 +10,7 @@ function App() {
       <FixedNavbar/>
       <MainBanner/>
       <div style={{width: '100vw', height: '50vh', gridRow: '13/auto'}}>
-          Prueba
+         
       </div>
       {/* <div>
         <h3>Talleres</h3>
