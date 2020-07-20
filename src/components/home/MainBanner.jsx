@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import '../../styles/home/MainBanner.scss';
+import './MainBanner.scss';
 import mainSlideBanner_1 from './../../assets/imgs/mainSlideBanner_1.jpg';
 import mainSlideBanner_2 from './../../assets/imgs/mainSlideBanner_2.jpg';
 import mainSlideBanner_3 from './../../assets/imgs/mainSlideBanner_3.jpg';
-import rhombusIcon from './../../assets/icons/rhombus-icon.svg';
+
 import {
   Carousel,
   CarouselItem,
@@ -79,39 +79,47 @@ const MainBanner = (props) => {
           {
             `
             .carousel-wrapper {
-                width: 100vw;
-                grid-row: 3/12;
-                height: 100%;
-                position: relative;
-                z-index: 1;
+              width: 100vw;
+              height: fit-content;
+              margin-top: 14vh;
             }
+
             .carousel {
-                width: 100%;
-                height: 100%;
+              width: 100%;
+              height: 100%;
             }
+
             .carousel-inner {
                 width: inherit;
                 height: inherit;
             }
+
             .carousel-control-prev,
             .carousel-control-next {
-                height: 55%;
+                height: 42vh; //same as boxImg
             }
+
             .carousel-indicators li {
                 background-color: #161616;
                 opacity: .4;
             }
+
             /* MEDIUM DEVICES (landscape tablets, 768px and up) */
             @media only screen and (min-width: 48em) {
-                .carousel-control-prev,
-                .carousel-control-next {
-                    height: 88%;
-                }
+              .carousel-wrapper {
+                height: 72vh;
+              }
+
+              .carousel-control-prev,
+              .carousel-control-next {
+                height: 63vh; //same as boxImg
+              }
             }`
           }
         </style>
         <Carousel
-          activeIndex={activeIndex}
+          //activeIndex={activeIndex}
+          activeIndex={0}
           next={next}
           previous={previous}
         >

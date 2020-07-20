@@ -1,17 +1,16 @@
 import React from 'react';
 import './App.scss';
-import FixedNavbar from './components/shared/FixedNavbar';
+import FixedNavbar from './components/common/FixedNavbar';
 import MainBanner from './components/home/MainBanner';
-import { Footer } from './components/shared/Footer';
+import { Footer } from './components/common/Footer';
+import { InstagramFeed } from './components/common/InstagramFeed/InstagramFeed';
 
 function App() {
   return (
     <div className="content-wrap">
       <FixedNavbar/>
       <MainBanner/>
-      <div style={{width: '100vw', height: '50vh', gridRow: '13/auto'}}>
-         
-      </div>
+      <InstagramFeed/>
       {/* <div>
         <h3>Talleres</h3>
         <div className="workshops-cards">

@@ -32,8 +32,8 @@ export const Footer = () => {
                     <li>Contacto</li>
                 </ul>
                 <div>
-                    <img src={instagram} />
-                    <img src={mail} />
+                    <img alt="instagram-icon" src={instagram} />
+                    <img alt="mail-icon" src={mail} />
                 </div>
             </div>
             <div className="footer__copyrights">

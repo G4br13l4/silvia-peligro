@@ -32,7 +32,7 @@ class FixedNavbar extends React.Component {
             <nav className={`main-nav ${openHamburger ? 'showMenu' : 'hideMenu'}`}>
                 <div className="main-nav__menu_wrapper">
                     <div className="main-nav__logo">
-                        <img src={logo} />
+                        <img alt="silvia-peligro-icon" src={logo} />
                     </div>
                     <span className="main-nav__hamburger" onClick={this.toggleHamburger}>
                         <i></i>
@@ -44,31 +44,31 @@ class FixedNavbar extends React.Component {
                     <ul className="nav-collapse__list">
                         {isMobile &&
                             <li className="nav-collapse__item">
-                                <a onClick={this.toggleHamburger} className="nav-collapse__link">Inicio</a>
+                                <a href="#" onClick={this.toggleHamburger} className="nav-collapse__link">Inicio</a>
                             </li>
                         }
                         <li className="nav-collapse__item">
-                            <a onClick={isMobile && this.toggleHamburger} className="nav-collapse__link">Productos</a>
+                            <a href="#" onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">Productos</a>
                         </li>
                         <li className="nav-collapse__item">
-                            <a onClick={isMobile && this.toggleHamburger} className="nav-collapse__link">Clases en Línea</a>
+                            <a href="#" onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">Clases en Línea</a>
                         </li>
                         <li className="nav-collapse__item">
-                            <a onClick={isMobile && this.toggleHamburger} className="nav-collapse__link">Envíos</a>
+                            <a href="#" onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">Envíos</a>
                         </li>
                         <li className="nav-collapse__item">
-                            <a onClick={isMobile && this.toggleHamburger} className="nav-collapse__link">Club de Bordado</a>
+                            <a href="#" onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">Club de Bordado</a>
                         </li>
                         <li className="nav-collapse__item">
-                            <a onClick={isMobile && this.toggleHamburger} className="nav-collapse__link">Eventos</a>
+                            <a href="#" onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">Eventos</a>
                         </li>
                         <li className="nav-collapse__item">
-                            <a onClick={isMobile && this.toggleHamburger} className="nav-collapse__link">Contacto</a>
+                            <a href="#" onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">Contacto</a>
                         </li>
                     </ul>
                     <div className="nav-collapse__icons">
-                        <img src={instagram} />
-                        <img src={mail} />
+                        <img alt="instagram-icon" src={instagram} />
+                        <img alt="mail-icon" src={mail} />
                     </div>
                 </div>
             </nav>

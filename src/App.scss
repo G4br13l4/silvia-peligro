@@ -25,10 +25,8 @@ body {
 
 .content-wrap {
     width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(auto-fill, 8.3vh);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 

@@ -1,4 +1,4 @@
-$fontSize_title: 1.5em;
+$fontSize_title: 1.5rem;
 $light-purple: #AC90F1;
 
 /* Extra small devices (phones, 600px and down), are the default styles ;) */
@@ -8,72 +8,65 @@ $l-devices: 62em;  /* Large devices (laptops/desktops, 992px and up) */
 $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 .mainSlideBanner {
-    width: inherit;
-    height: inherit;
+    width:100%;
+    height: 100%;
     &__boxImg {
-        height: 55%;
+        height: 42vh;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }
 
     &__txtBox {
-        max-height: 35%;
-        padding: .8em;
-        box-sizing: border-box;
+        height: fit-content;
+        margin-bottom: 9vh;
+        padding: .8rem;
+        
         .title {
             margin: 0;
             font-size: $fontSize_title;
-            line-height: 1.1em;
-            max-height: 36%;
+            line-height: 1.5rem;
         }
 
         .paragraph {
-            max-height: 38%;
             font-size: 0.8rem;
-            line-height: 1.1em;
-            margin: .2em 0 .5em 0;
-        }
-
-        .line-clamp {
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;  
-            overflow: hidden;
-            padding-bottom: 0.1em;
+            line-height: 1.1rem;
+            margin: .2rem 0 .5rem 0;
         }
 
         .see-more-btn {
-            padding: .3em 2.5em;
+            padding: .3rem 2.5rem;
+            font-size: 0.8rem;
             border: none;
             border-radius: 3px;
             background: $light-purple;
             color: white;
-        }
-        
+        }        
     }
 }
 
 @media only screen and (min-width: $m-devices) {
     .mainSlideBanner {
-        grid-row: 3/11;
-
         &__boxImg {
-            height: 88%;
+            height: 63vh;
         }
 
         &__txtBox {
             position: absolute;
-            bottom: 12%;
-            width: 48%;
+            bottom: 9vh;
+            margin-bottom: 0;
+            max-height: 29vh;
+            min-width: 48vw;
+            max-width: 55vw;
             box-shadow: 0 0 0 200px rgba($color: white, $alpha: 0.5) inset;
-            max-height: none;
-        }
-    }
-}
 
-@media only screen and (min-width: $l-devices) {
-    &__txtBox {
-        padding-left: 1em;
+            .line-clamp {
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;  
+                overflow: hidden;
+                padding-bottom: 0.2rem;
+            }
+        }
     }
 }
