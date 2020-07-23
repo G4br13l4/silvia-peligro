@@ -1,0 +1,11 @@
+.instagramFeed {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2 , 50vw);
+    grid-template-rows: repeat(5, 25vh);
+
+    img,
+    video {
+        height: 100%;
+    }
+}

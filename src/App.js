@@ -10,7 +10,7 @@ function App() {
     <div className="content-wrap">
       <FixedNavbar/>
       <MainBanner/>
-      <InstagramFeed/>
+      <InstagramFeed postsToLoad={8}/>
       {/* <div>
         <h3>Talleres</h3>
         <div className="workshops-cards">
