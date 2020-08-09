@@ -1,11 +1,37 @@
-.instagramFeed {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(2 , 50vw);
-    grid-template-rows: repeat(5, 25vh);
+@import '../../../styles/constants.scss';
 
-    img,
-    video {
-        height: 100%;
+.follow-me {
+    width: 100%;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+.instagramFeed {
+    margin: .5rem 0 1rem 0;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .post {
+        width: 50%;
+        max-width: 160px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        &:after {
+            //to be a square img
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+        }
+    }
+}
+
+@media (min-width: $tablet) {
+    .instagramFeed {
+        .post {
+            width: 33%;
+        }
     }
 }
