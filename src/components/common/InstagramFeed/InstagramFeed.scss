@@ -6,32 +6,61 @@
     margin-bottom: 0;
     text-align: center;
 }
-.instagramFeed {
-    margin: .5rem 0 1rem 0;
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.instagram-feed {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
     .post {
-        width: 50%;
-        max-width: 160px;
+        min-width: 160px;
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
+
         &:after {
             //to be a square img
             content: "";
             display: block;
             padding-bottom: 100%;
         }
+
+        &:nth-last-child(-n+2){
+            display: none;
+        }
     }
 }
 
 @media (min-width: $tablet) {
-    .instagramFeed {
+    .instagram-feed {
+        grid-template-columns: repeat(3, 1fr);
         .post {
-            width: 33%;
+            &:nth-last-child(2){
+                display: block;
+            }
         }
     }
 }
+
+@media (min-width: $laptop) {
+    .instagram-feed {
+        grid-template-columns: repeat(4, 1fr);
+        .post {
+            min-width: 170px;
+            &:nth-last-child(3){
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .instagram-feed {
+        grid-template-columns: repeat(5, 1fr);
+        .post {
+            &:nth-last-child(-n+3){
+                display: block;
+            }
+        }
+    }
+}
+

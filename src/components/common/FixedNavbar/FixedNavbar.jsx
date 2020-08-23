@@ -1,9 +1,10 @@
 import React from 'react';
-import '../../styles/shared/FixedNavbar.scss';
+import './FixedNavbar.scss';
 
-import logo from './../../assets/imgs/logo.jpg';
-import instagram from './../../assets/icons/instagram_white.png';
-import mail from './../../assets/icons/mail_white.png';
+import logo from './../../../assets/imgs/logo.jpg';
+import instagram from './../../../assets/icons/instagram_white.png';
+import mail from './../../../assets/icons/mail_white.png';
+import { LanguageSelect } from '../LanguageSelect/LanguageSelect';
 
 class FixedNavbar extends React.Component {
     constructor(props) {
@@ -66,6 +67,9 @@ class FixedNavbar extends React.Component {
                             <a href="#" onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">Contacto</a>
                         </li>
                     </ul>
+
+                    <LanguageSelect/>
+
                     <div className="nav-collapse__icons">
                         <img alt="instagram-icon" src={instagram} />
                         <img alt="mail-icon" src={mail} />

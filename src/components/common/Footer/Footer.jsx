@@ -5,9 +5,9 @@ import {
     Input,
     Button
 } from 'reactstrap';
-import '../../styles/shared/Footer.scss';
-import instagram from './../../assets/icons/instagram_purple.png';
-import mail from './../../assets/icons/mail_purple.png';
+import './Footer.scss';
+import instagram from './../../../assets/icons/instagram_purple.png';
+import mail from './../../../assets/icons/mail_purple.png';
 
 export const Footer = () => {
     return (
@@ -37,10 +37,6 @@ export const Footer = () => {
                 </div>
             </div>
             <div className="footer__copyrights">
-                <div className="languages">
-                    <button>ES</button>
-                    <button>EN</button>
-                </div>
                 <div className="date">Copyrights © 2020 by Silvia  Peligro</div>
             </div>
         </footer>

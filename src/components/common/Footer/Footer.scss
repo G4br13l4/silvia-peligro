@@ -91,24 +91,12 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
     &__copyrights {
         background: $purple;
         height: 8vh;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        display: flex;
+        justify-content: center;
         align-items: center;
-        justify-items: center;
-        .languages {
-            display: flex;
-            justify-content: flex-start;
-            width: 75%;
-            button {
-                border: none;
-                border-radius: 6px;
-                margin-right: 0.5em;
-            }
-        }
         .date {
             color: white;
-            font-size: 0.7em;
-            grid-column: 2/4;
+            font-size: 0.7rem
         }
     }
 }
@@ -157,12 +145,6 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
             }
             img {
                 margin: 0 0.3em;
-            }
-        }
-        &__copyrights {
-            .languages {
-                justify-content: flex-start;
-                width: 80%;
             }
         }
     }
