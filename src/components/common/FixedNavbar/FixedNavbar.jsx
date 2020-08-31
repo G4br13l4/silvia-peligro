@@ -68,12 +68,12 @@ class FixedNavbar extends React.Component {
                         </li>
                     </ul>
 
-                    <LanguageSelect/>
-
                     <div className="nav-collapse__icons">
                         <img alt="instagram-icon" src={instagram} />
                         <img alt="mail-icon" src={mail} />
                     </div>
+
+                    <LanguageSelect/>
                 </div>
             </nav>
         );

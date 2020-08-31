@@ -1,15 +1,12 @@
-$hamburger-speed: 1s;
-
-/* Extra small devices (phones, 600px and down), are the default styles ;) */
-$s-devices: 37.5em;  /* Small devices (portrait tablets and large phones, 600px and up) */
-$m-devices: 48em;  /* Medium devices (landscape tablets, 768px and up) */
-$l-devices: 62em;  /* Large devices (laptops/desktops, 992px and up) */
-$xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px and up) */
+@import '../../../constants.scss';
+$hamburger-speed: .5s;
 
 //MOBILE FIRST 
 .main-nav {
   width: 100vw;
   height: 12vh;
+  min-height: 72px;
+  padding-top: .3rem;
   position: fixed;
   z-index: 101;
   top:0;
@@ -23,13 +20,14 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1em;
+    padding: 0 1rem;
     box-sizing: border-box;
   }
 
   //LOGO 
   &__logo {
     height: 10vh;
+    min-height: 58px;
     img {height: 100%;}
   }
 
@@ -66,30 +64,27 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
     height: 100vh;
     transition: right $hamburger-speed;
     z-index: 101;
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(12, 1fr);
     
-    &__list{
+    &__list {
       list-style: none;
       padding: 0;
       margin: 0;
-      color: white;
-      grid-column: 3/8;
-      grid-row: 3/10;
     }
 
-    &__item{
-      margin-bottom: 2.3em;
+    &__item {
+      margin-bottom: 2rem;
+    }
+
+    &__link {
+      color: white;
     }
 
     &__icons {
-      grid-column: 3/6;
-      grid-row: 11/12;
+      margin-bottom: 1.5rem;
       align-self: center;
       img {
-        width: 2.3em;
-        margin-right: 0.8em;
+        width: 2.3rem;
+        margin-right: 0.8rem;
       }
     }
   }
@@ -119,45 +114,62 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
 
   .nav-collapse {
     right: 0;
+    padding-top: 90px;
+    padding-left: 17%;
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: $m-devices) {
+@media only screen and (min-width: $tablet) {
   .main-nav {
     .nav-collapse {
-      width: 75vw;
+      width: 70vw;
+      padding-left: 15%;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .main-nav {
+    .nav-collapse {
+      width: 50vw;
+      padding-left: 11%;
     }
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: $l-devices) {
+@media only screen and (min-width: 62em) {
   .main-nav {
     &__hamburger {
       display: none;
     }
-
+    &__menu_wrapper {
+      padding: 0 2rem;
+    }
     .nav-collapse {
-      max-width: 85vw;
+      display: flex;
+      align-items: center;
+      width: fit-content;
       height: 12vh;
-      right: 2em;
+      min-height: 72px;
+      padding: 0;
+      right: 2rem;
       background: white;
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: 1fr;
-      
 
       &__list{
         color: black;
-        grid-column: 1/13;
-        grid-row: 1/13;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
       }
 
       &__item{
-        margin-bottom: 1em;
+        margin-bottom: 0;
+        margin-right: 2rem;
+      }
+
+      &__link {
+        color: black;
       }
 
       &__icons {
@@ -169,4 +181,15 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
 
 .jumbotron {
   height: 50vh;
+}
+
+
+@media only screen and (min-width: $xl-screen) {
+  .main-nav {
+    .nav-collapse {
+      &__item{
+        margin-right: 3rem;
+      }
+    }
+  }
 }

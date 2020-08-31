@@ -62,8 +62,7 @@ const MainBanner = (props) => {
           onExiting={() => setAnimating(true)}
           onExited={() => setAnimating(false)}
         >
-            <div style={{backgroundImage: `url(${item.cover})` }} className="mainSlideBanner__boxImg"> 
-            </div>
+            <div style={{backgroundImage: `url(${item.cover})` }} className="mainSlideBanner__boxImg"/> 
             <div className="mainSlideBanner__txtBox">
                 <h1 className="title line-clamp">{item.title}</h1>
                 <p className="paragraph line-clamp">{item.summary}</p>
@@ -96,6 +95,7 @@ const MainBanner = (props) => {
 
             .carousel-control-prev,
             .carousel-control-next {
+                min-height: 268px;
                 height: 42vh; //same as boxImg
             }
 
@@ -108,10 +108,12 @@ const MainBanner = (props) => {
             @media only screen and (min-width: 48em) {
               .carousel-wrapper {
                 height: 72vh;
+                min-height: 400px;
               }
 
               .carousel-control-prev,
               .carousel-control-next {
+                min-height: 350px;
                 height: 63vh; //same as boxImg
               }
             }`
