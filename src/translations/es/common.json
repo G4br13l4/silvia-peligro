@@ -1,0 +1,11 @@
+{
+    "FixedNavbar": {
+        "home": "Inicio",
+        "products": "Productos",
+        "classes": "Clases en Línea",
+        "shipping": "Envíos",
+        "club": "Club de Bordado",
+        "events": "Eventos",
+        "contact": "Contacto"
+    }
+}

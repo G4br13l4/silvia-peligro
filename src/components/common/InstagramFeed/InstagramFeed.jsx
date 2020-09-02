@@ -9,7 +9,7 @@ export const InstagramFeed = props => {
 
     useEffect(() => {
         const API_TOKEN = process.env.REACT_APP_API_TOKEN;
-        // axios.get(`https://graph.instagram.com/me/media?fields=id,caption,media_url,permalink,media_type,thumbnail_url&access_token=${API_TOKEN}&limit=8`)
+        // axios.get(`https://graph.instagram.com/me/media?fields=id,caption,media_url,permalink,media_type,thumbnail_url&access_token=${API_TOKEN}&limit=10`)
         // .then(res => {
         //     setPosts(res.data.data);
 

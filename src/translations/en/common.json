@@ -1,0 +1,11 @@
+{
+    "FixedNavbar": {
+        "home": "Home",
+        "products": "Products",
+        "classes": "Online Classes",
+        "shipping": "Shipping",
+        "club": "Embroidery Club",
+        "events": "Events",
+        "contact": "Contact"
+    }
+}

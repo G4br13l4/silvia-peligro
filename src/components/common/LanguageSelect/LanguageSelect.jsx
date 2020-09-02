@@ -5,10 +5,14 @@ export const LanguageSelect = () => {
 
     const options = [{name: "English", id: "en"}, {name: "Español", id: "es"}];
 
+    const changeLanguage = (lang) => {
+        console.error("lang", lang)
+    }
+
     return (
         <select
             className="lang-select"
-            //onChange={e => changeLanguage(e.target.value)}
+            onChange={e => changeLanguage(e.target.value)}
             //value={langState}
             name="lang"
         >

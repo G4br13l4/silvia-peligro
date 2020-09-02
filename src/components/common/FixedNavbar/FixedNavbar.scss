@@ -168,6 +168,10 @@ $hamburger-speed: .5s;
         margin-right: 2rem;
       }
 
+      #home {
+        display: none;
+      }
+
       &__link {
         color: black;
       }
