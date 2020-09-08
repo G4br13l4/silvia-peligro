@@ -5,7 +5,7 @@ import './FixedNavbar.scss';
 import logo from './../../../assets/imgs/logo.jpg';
 import instagram from './../../../assets/icons/instagram_white.png';
 import mail from './../../../assets/icons/mail_white.png';
-import { LanguageSelect } from '../LanguageSelect/LanguageSelect';
+import LanguageSelect from '../LanguageSelect/LanguageSelect';
 
 class FixedNavbar extends React.Component {
     constructor(props) {
@@ -32,13 +32,13 @@ class FixedNavbar extends React.Component {
         const { openHamburger, isMobile } = this.state;
         const { t } = this.props;
         const navItems = [
-            { id: 'home',value: t('FixedNavbar.home')},
-            { id: 'products',value: t('FixedNavbar.products')},
-            { id: 'classes', value: t('FixedNavbar.classes')},
-            { id: 'shipping', value: t('FixedNavbar.shipping')},
-            { id: 'club', value: t('FixedNavbar.club')},
-            { id: 'events', value: t('FixedNavbar.events')},
-            { id: 'contact', value: t('FixedNavbar.contact')}
+            { id: 'home',value: t('Menu.home')},
+            { id: 'products',value: t('Menu.products')},
+            { id: 'classes', value: t('Menu.classes')},
+            { id: 'shipping', value: t('Menu.shipping')},
+            { id: 'club', value: t('Menu.club')},
+            { id: 'events', value: t('Menu.events')},
+            { id: 'contact', value: t('Menu.contact')}
         ];
         return (
             <nav className={`main-nav ${openHamburger ? 'showMenu' : 'hideMenu'}`}>
@@ -56,7 +56,7 @@ class FixedNavbar extends React.Component {
                     <ul className="nav-collapse__list">
                         {navItems.map(item => {
                             return (
-                            <li className="nav-collapse__item" id={item.id}>
+                            <li className="nav-collapse__item" id={item.id} key={item.id}>
                                 <a href="#" onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">{item.value}</a>
                             </li>
                             );

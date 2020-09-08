@@ -63,6 +63,8 @@ $hamburger-speed: .5s;
     width: 80vw;
     height: 100vh;
     transition: right $hamburger-speed;
+    padding-top: 90px;
+    padding-left: 17%;
     z-index: 101;
     
     &__list {
@@ -114,8 +116,6 @@ $hamburger-speed: .5s;
 
   .nav-collapse {
     right: 0;
-    padding-top: 90px;
-    padding-left: 17%;
   }
 }
 

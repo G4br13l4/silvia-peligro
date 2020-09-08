@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { withTranslation } from 'react-i18next';
 import './InstagramFeed.scss';
 import axios from 'axios';
 import { dummyArray } from './dummyArray';
 
-export const InstagramFeed = props => {
+const InstagramFeed = props => {
     const { postsToLoad } = props;
     const [posts, setPosts] = useState([]);
+    const { t } = props;
 
     useEffect(() => {
         const API_TOKEN = process.env.REACT_APP_API_TOKEN;
@@ -19,7 +21,7 @@ export const InstagramFeed = props => {
 
     return (
         <>
-            <h2 className="follow-me">Sígueme en Instagram</h2>
+            <h2 className="follow-me">{t('InstagramFeed.followMe')}</h2>
             <div className="follow-me">@speligro</div>
             <div className="instagram-feed">
                 { posts.map(p => {
@@ -34,3 +36,5 @@ export const InstagramFeed = props => {
         </>
     );
 }
+
+export default withTranslation('common') (InstagramFeed);

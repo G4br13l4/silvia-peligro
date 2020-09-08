@@ -2,8 +2,8 @@ import React from 'react';
 import './App.scss';
 import FixedNavbar from './components/common/FixedNavbar/FixedNavbar';
 import MainBanner from './components/home/MainBanner';
-import { Footer } from './components/common/Footer/Footer';
-import { InstagramFeed } from './components/common/InstagramFeed/InstagramFeed';
+import Footer from './components/common/Footer/Footer';
+import InstagramFeed from './components/common/InstagramFeed/InstagramFeed';
 
 function App() {
   return (
