@@ -1,0 +1,22 @@
+{
+    "Menu": {
+        "home": "Inicio",
+        "products": "Productos",
+        "classes": "Clases en Línea",
+        "shipping": "Envíos",
+        "club": "Club de Bordado",
+        "events": "Eventos",
+        "contact": "Contacto"
+    },
+    "Button": {
+        "seeMore": "Ver más"
+    },
+    "InstagramFeed": {
+        "followMe": "Sígueme en Instagram"
+    },
+    "Mailing": {
+        "title": "Recibe avisos sobre mis próximos talleres/eventos directamente en tu bandeja de entrada",
+        "input": "Escribe tu correo electrónico",
+        "btn": "Suscribirme"
+    }
+}

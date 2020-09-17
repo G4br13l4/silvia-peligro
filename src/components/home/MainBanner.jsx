@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
-import './MainBanner.scss';
-import mainSlideBanner_1 from './../../assets/imgs/mainSlideBanner_1.jpg';
-import mainSlideBanner_2 from './../../assets/imgs/mainSlideBanner_2.jpg';
-import mainSlideBanner_3 from './../../assets/imgs/mainSlideBanner_3.jpg';
-
 import {
   Carousel,
   CarouselItem,
   CarouselControl,
   CarouselIndicators
 } from 'reactstrap';
+import { withTranslation } from 'react-i18next';
+import './MainBanner.scss';
+import mainSlideBanner_1 from './../../assets/imgs/mainSlideBanner_1.jpg';
+import mainSlideBanner_2 from './../../assets/imgs/mainSlideBanner_2.jpg';
+import mainSlideBanner_3 from './../../assets/imgs/mainSlideBanner_3.jpg';
+import { Button } from '../common/Button/Button';
+
 
 const items = [
     {
@@ -32,9 +34,10 @@ const items = [
     }
   ];
   
-const MainBanner = (props) => {
+const MainBanner = props => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
+    const { t } = props;
   
     const next = () => {
       if (animating) return;
@@ -62,12 +65,11 @@ const MainBanner = (props) => {
           onExiting={() => setAnimating(true)}
           onExited={() => setAnimating(false)}
         >
-            <div style={{backgroundImage: `url(${item.cover})` }} className="mainSlideBanner__boxImg"> 
-            </div>
+            <div style={{backgroundImage: `url(${item.cover})` }} className="mainSlideBanner__boxImg"/> 
             <div className="mainSlideBanner__txtBox">
                 <h1 className="title line-clamp">{item.title}</h1>
-                <p className="paragraph line-clamp">{item.summary}</p>
-                <button className="see-more-btn"><span>Ver más</span></button>
+                <p className="paragraph line-clamp">{item.summary}</p> 
+                <Button text={ t('Button.seeMore')}/>
             </div>
         </CarouselItem>
       );
@@ -96,6 +98,7 @@ const MainBanner = (props) => {
 
             .carousel-control-prev,
             .carousel-control-next {
+                min-height: 268px;
                 height: 42vh; //same as boxImg
             }
 
@@ -108,10 +111,12 @@ const MainBanner = (props) => {
             @media only screen and (min-width: 48em) {
               .carousel-wrapper {
                 height: 72vh;
+                min-height: 400px;
               }
 
               .carousel-control-prev,
               .carousel-control-next {
+                min-height: 350px;
                 height: 63vh; //same as boxImg
               }
             }`
@@ -132,4 +137,4 @@ const MainBanner = (props) => {
     );
 }       
 
-export default MainBanner;
+export default withTranslation('common') (MainBanner);

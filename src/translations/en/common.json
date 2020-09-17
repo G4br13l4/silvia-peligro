@@ -1,0 +1,22 @@
+{
+    "Menu": {
+        "home": "Home",
+        "products": "Products",
+        "classes": "Online Classes",
+        "shipping": "Shipping",
+        "club": "Embroidery Club",
+        "events": "Events",
+        "contact": "Contact"
+    },
+    "Button": {
+        "seeMore": "See more"
+    },
+    "InstagramFeed": {
+        "followMe": "Follow me on Instagram"
+    },
+    "Mailing": {
+        "title": "Receive notifications about my upcoming workshops / events directly to your inbox",
+        "input": "Write your email",
+        "btn": "Subscribe"
+    }
+}

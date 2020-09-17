@@ -1,25 +1,23 @@
 import React, { useState, useEffect } from 'react';
+import { withTranslation } from 'react-i18next';
+import { connect } from 'react-redux';
 import './InstagramFeed.scss';
-import axios from 'axios';
 import { dummyArray } from './dummyArray';
+import * as commonActions from '../../../redux/actions/commonActions';
+import { bindActionCreators } from 'redux';
 
-export const InstagramFeed = props => {
-    const { postsToLoad } = props;
-    const [posts, setPosts] = useState([]);
+const InstagramFeed = props => {
+    const { t, posts } = props;
 
     useEffect(() => {
-        const API_TOKEN = process.env.REACT_APP_API_TOKEN;
-        // axios.get(`https://graph.instagram.com/me/media?fields=id,caption,media_url,permalink,media_type,thumbnail_url&access_token=${API_TOKEN}&limit=8`)
-        // .then(res => {
-        //     setPosts(res.data.data);
-
-        // })
-        setPosts(dummyArray);
-    }, [postsToLoad]);
+        if(!posts.length) {
+            //props.actions.loadPosts();
+        } 
+    },[]);
 
     return (
         <>
-            <h2 className="follow-me">Sígueme en Instagram</h2>
+            <h2 className="follow-me">{t('InstagramFeed.followMe')}</h2>
             <div className="follow-me">@speligro</div>
             <div className="instagram-feed">
                 { posts.map(p => {
@@ -34,3 +32,19 @@ export const InstagramFeed = props => {
         </>
     );
 }
+
+function mapStateToProps(state) {
+    const posts = state.common.instagram.sp
+    return {
+        posts
+    }
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        actions: bindActionCreators(commonActions, dispatch)
+    }
+}
+
+const connectedStateAndProps = connect(mapStateToProps, mapDispatchToProps);
+export default withTranslation('common') (connectedStateAndProps(InstagramFeed));
