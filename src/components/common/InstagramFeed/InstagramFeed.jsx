@@ -10,7 +10,9 @@ const InstagramFeed = props => {
     const { t, posts } = props;
 
     useEffect(() => {
-        //props.actions.loadPosts();
+        if(!posts.length) {
+            //props.actions.loadPosts();
+        } 
     },[]);
 
     return (
