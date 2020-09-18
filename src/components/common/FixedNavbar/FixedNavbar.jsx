@@ -1,5 +1,12 @@
 import React from 'react';
 import { withTranslation } from 'react-i18next';
+import { 
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem
+} from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 import './FixedNavbar.scss';
 
 import logo from './../../../assets/imgs/logo.jpg';
@@ -56,9 +63,25 @@ class FixedNavbar extends React.Component {
                     <ul className="nav-collapse__list">
                         {navItems.map(item => {
                             return (
-                            <li className="nav-collapse__item" id={item.id} key={item.id}>
-                                <a href="#" onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">{item.value}</a>
-                            </li>
+                                item.id === 'products' ? 
+                                <UncontrolledDropdown nav inNavbar className="nav-collapse__item">
+                                    <DropdownToggle nav caret className="nav-collapse__link">
+                                        {item.value}
+                                    </DropdownToggle>
+                                    <DropdownMenu right>
+                                        <DropdownItem>
+                                            <NavLink to={"/products/kits"} onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">Kits</NavLink>
+                                        </DropdownItem>
+                                        <DropdownItem divider />
+                                        <DropdownItem>
+                                            <NavLink to={"/products/frames"} onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">Frames</NavLink>
+                                        </DropdownItem>
+                                    </DropdownMenu>
+                                </UncontrolledDropdown>
+                                :
+                                <li className="nav-collapse__item" id={item.id} key={item.id}>
+                                    <NavLink to={item.id} onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">{item.value}</NavLink>
+                                </li>
                             );
                         })}
                     </ul>

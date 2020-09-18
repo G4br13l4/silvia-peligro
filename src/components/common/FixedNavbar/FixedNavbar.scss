@@ -75,6 +75,24 @@ $hamburger-speed: .5s;
 
     &__item {
       margin-bottom: 2rem;
+
+      .dropdown-toggle {
+        padding: 0;
+      }
+
+      .dropdown-menu {
+        background: #161616;
+        position: relative;
+        width: 100%;
+      }
+
+      .dropdown-item:hover {
+        background: transparent;
+      }
+
+      .dropdown-divider {
+        opacity: .5;
+      }
     }
 
     &__link {

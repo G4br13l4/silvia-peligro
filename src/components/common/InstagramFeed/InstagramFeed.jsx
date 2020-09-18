@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { withTranslation } from 'react-i18next';
 import { connect } from 'react-redux';
 import './InstagramFeed.scss';
-import { dummyArray } from './dummyArray';
 import * as commonActions from '../../../redux/actions/commonActions';
 import { bindActionCreators } from 'redux';
 

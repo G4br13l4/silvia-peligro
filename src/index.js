@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from "react-router-dom";
 import { Provider as ReduxProvider } from 'react-redux';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,7 +16,9 @@ const store = configureStore();
 ReactDOM.render(
   <Suspense fallback="loading">
     <ReduxProvider store={store}>
+      <BrowserRouter>
           <App />
+      </BrowserRouter>
     </ReduxProvider>
   </Suspense>,
   document.getElementById('root')

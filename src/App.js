@@ -1,26 +1,18 @@
 import React from 'react';
+import { Route, Switch, Redirect } from "react-router-dom";
 import './App.scss';
-import FixedNavbar from './components/common/FixedNavbar/FixedNavbar';
-import MainBanner from './components/home/MainBanner';
-import Footer from './components/common/Footer/Footer';
-import InstagramFeed from './components/common/InstagramFeed/InstagramFeed';
+import HomePage from './components/home/HomePage';
+import KitsPage from './components/products/kits/KitsPage';
 
 function App() {
   return (
     <div className="content-wrap">
-      <FixedNavbar/>
-      <MainBanner/>
-      <InstagramFeed postsToLoad={8}/>
-      {/* <div>
-        <h3>Talleres</h3>
-        <div className="workshops-cards">
-          
-        </div>
-        <div>
-          <button>Ver todo</button>
-        </div>
-      </div> */}
-      <Footer/>
+      <Switch>
+        <Route path="/" exact component={HomePage} />
+        <Route path="/products/kits" component={KitsPage} />
+        {/* <Route path='/default' render={() => <Redirect to= "/" />} /> */}
+        {/* <Route component={NoMatch} /> */}
+      </Switch>
     </div>
       
   );
