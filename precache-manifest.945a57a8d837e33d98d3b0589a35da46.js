@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "143da7512a32b04b855f863ba4cfe0a8",
+    "revision": "2be80b38d179e58f073c88c30fc7108f",
     "url": "/silvia-peligro/index.html"
   },
   {
-    "revision": "4b566bc1345590497ef2",
+    "revision": "0fe06c13a7603ade355b",
     "url": "/silvia-peligro/static/css/2.9ff99f11.chunk.css"
   },
   {
-    "revision": "548d3e30d8d782ef340d",
-    "url": "/silvia-peligro/static/css/main.c7b0fc5e.chunk.css"
+    "revision": "955ae6de69dc7248d796",
+    "url": "/silvia-peligro/static/css/main.0207f287.chunk.css"
   },
   {
-    "revision": "4b566bc1345590497ef2",
-    "url": "/silvia-peligro/static/js/2.fb59d5a2.chunk.js"
+    "revision": "0fe06c13a7603ade355b",
+    "url": "/silvia-peligro/static/js/2.ae1b0614.chunk.js"
   },
   {
-    "revision": "f8b290919eda078b5527262aaa5d9467",
-    "url": "/silvia-peligro/static/js/2.fb59d5a2.chunk.js.LICENSE"
+    "revision": "0e479e34c7853cf26f3584614b8f1e58",
+    "url": "/silvia-peligro/static/js/2.ae1b0614.chunk.js.LICENSE"
   },
   {
-    "revision": "548d3e30d8d782ef340d",
-    "url": "/silvia-peligro/static/js/main.292c86a0.chunk.js"
+    "revision": "955ae6de69dc7248d796",
+    "url": "/silvia-peligro/static/js/main.71244077.chunk.js"
   },
   {
     "revision": "a0688ba340e2d5c2bd7f",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "68a4c29709f285ff4b10ff244804d148",
     "url": "/silvia-peligro/static/media/Spot-Matrix.68a4c297.ttf"
+  },
+  {
+    "revision": "013f0b90a4cae7b8bbf13e3fd9e7dc4a",
+    "url": "/silvia-peligro/static/media/getFetch.013f0b90.cjs"
   },
   {
     "revision": "d88e1ac5f582aa399c48281ea8405664",
@@ -50,5 +54,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f2d3509e7e48457affccf7f861ee0390",
     "url": "/silvia-peligro/static/media/mainSlideBanner_3.f2d3509e.jpg"
+  },
+  {
+    "revision": "cfa47dc9f62460c47a10a4f67b439e54",
+    "url": "/silvia-peligro/static/media/pikacho.cfa47dc9.jpg"
   }
 ]);
