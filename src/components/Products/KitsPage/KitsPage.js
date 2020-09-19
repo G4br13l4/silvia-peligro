@@ -1,6 +1,6 @@
 import React from 'react';
-import FixedNavbar from '../../common/FixedNavbar/FixedNavbar';
-import Footer from '../../common/Footer/Footer';
+import FixedNavbar from '../../Common/FixedNavbar/FixedNavbar';
+import Footer from '../../Common/Footer/Footer';
   
 const KitsPage = props => {
     return (

@@ -51,7 +51,9 @@ class FixedNavbar extends React.Component {
             <nav className={`main-nav ${openHamburger ? 'showMenu' : 'hideMenu'}`}>
                 <div className="main-nav__menu_wrapper">
                     <div className="main-nav__logo">
-                        <img alt="silvia-peligro-icon" src={logo} />
+                        <NavLink to="/">
+                            <img alt="silvia-peligro-icon" src={logo} />
+                        </NavLink>
                     </div>
                     <span className="main-nav__hamburger" onClick={this.toggleHamburger}>
                         <i></i>
@@ -69,13 +71,13 @@ class FixedNavbar extends React.Component {
                                         {item.value}
                                     </DropdownToggle>
                                     <DropdownMenu right>
-                                        <DropdownItem>
-                                            <NavLink to={"/products/kits"} onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">Kits</NavLink>
-                                        </DropdownItem>
+                                        <NavLink to={"/products/kits"} className="nav-collapse__link">
+                                            <DropdownItem>{t('Menu.kits')}</DropdownItem>
+                                        </NavLink>
                                         <DropdownItem divider />
-                                        <DropdownItem>
-                                            <NavLink to={"/products/frames"} onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">Frames</NavLink>
-                                        </DropdownItem>
+                                        <NavLink to={"/products/frames"} onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">
+                                            <DropdownItem>{t('Menu.frames')}</DropdownItem>
+                                        </NavLink>
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
                                 :

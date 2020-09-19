@@ -1,8 +1,9 @@
 import React from 'react';
 import { Route, Switch, Redirect } from "react-router-dom";
 import './App.scss';
-import HomePage from './components/home/HomePage';
-import KitsPage from './components/products/kits/KitsPage';
+import HomePage from './components/HomePage/HomePage';
+import KitsPage from './components/Products/KitsPage/KitsPage';
+import NotFound from './components/ErrorPages/NotFoundPage';
 
 function App() {
   return (
@@ -10,8 +11,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={HomePage} />
         <Route path="/products/kits" component={KitsPage} />
-        {/* <Route path='/default' render={() => <Redirect to= "/" />} /> */}
-        {/* <Route component={NoMatch} /> */}
+        <Route component={NotFound} />
       </Switch>
     </div>
       

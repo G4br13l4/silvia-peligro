@@ -1,0 +1,30 @@
+@import '../../constants.scss';
+
+.img-wrapper {
+    margin-top: 14vh;
+    height: 50vh;
+    width: 100vw;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .message {
+        color: white;
+        text-shadow: 1px 1px 2px black;
+        font-size: 2rem;
+        font-weight: 700;
+        position: absolute;
+        left: 1rem;
+    }
+}
+
+
+@media (min-width: $laptop) {
+    .img-wrapper {
+        height: 80vh;
+        .message {
+            bottom: 40%;
+        }
+    }
+}
+
