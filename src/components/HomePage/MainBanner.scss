@@ -1,11 +1,4 @@
-$fontSize_title: 1.5rem;
-$light-purple: #AC90F1;
-
-/* Extra small devices (phones, 600px and down), are the default styles ;) */
-$s-devices: 37.5em;  /* Small devices (portrait tablets and large phones, 600px and up) */
-$m-devices: 48em;  /* Medium devices (landscape tablets, 768px and up) */
-$l-devices: 62em;  /* Large devices (laptops/desktops, 992px and up) */
-$xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px and up) */
+@import '../../constants.scss';
 
 .mainSlideBanner {
     width:100%;
@@ -25,7 +18,7 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
         
         .title {
             margin: 0;
-            font-size: $fontSize_title;
+            @include font-title;
             line-height: 1.5rem;
         }
 
@@ -37,7 +30,7 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
     }
 }
 
-@media only screen and (min-width: $m-devices) {
+@media (min-width: $laptop) {
     .mainSlideBanner {
         &__boxImg {
             height: 63vh;

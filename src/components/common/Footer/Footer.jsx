@@ -5,13 +5,27 @@ import {
     Input,
     Button
 } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 import './Footer.scss';
 import instagram from './../../../assets/icons/instagram_purple.png';
 import mail from './../../../assets/icons/mail_purple.png';
+import { ROUTES } from '../../../routes';
 
 const Footer = props => {
     const { t } = props;
+
+    const navItems = [
+        { name: ROUTES.HOME.name, value: t('Menu.home')},
+        // { name: ROUTES.PRODUCTS.name, value: t('Menu.products')},
+        { name: ROUTES.KITS.name, value: t('Menu.kits')},
+        { name: ROUTES.FRAMES.name, value: t('Menu.frames')},
+        { name: ROUTES.CLASSES.name, value: t('Menu.classes')},
+        { name: ROUTES.SHIPPING.name, value: t('Menu.shipping')},
+        { name: ROUTES.CLUB.name, value: t('Menu.club')},
+        { name: ROUTES.EVENTS.name, value: t('Menu.events')},
+        { name: ROUTES.CONTACT.name, value: t('Menu.contact')}
+    ];
 
     return (
         <footer className="footer">
@@ -26,13 +40,11 @@ const Footer = props => {
             <div className="footer__border middle-border"><span>***************************************************************************************************************************************************************************************************************************************</span></div>
             <div className="footer__menu">
                 <ul>
-                    <li>{t('Menu.home')}</li>
-                    <li>{t('Menu.products')}</li>
-                    <li>{t('Menu.classes')}</li>
-                    <li>{t('Menu.shipping')}</li>
-                    <li>{t('Menu.club')}</li>
-                    <li>{t('Menu.events')}</li>
-                    <li>{t('Menu.contact')}</li>
+                    {navItems.map(item => 
+                        <li key={item.name}>
+                            <NavLink to={ROUTES[item.name.toUpperCase()].path}>{item.value}</NavLink>
+                        </li>)
+                    }
                 </ul>
                 <div>
                     <img alt="instagram-icon" src={instagram} />

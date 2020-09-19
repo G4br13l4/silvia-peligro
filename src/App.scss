@@ -5,7 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1em;
 }
 
 code {
@@ -20,7 +19,7 @@ body::-webkit-scrollbar {
   
 /* Hide scrollbar for IE and Edge */
 body {
--ms-overflow-style: none;
+  -ms-overflow-style: none;
 }
 
 .content-wrap {

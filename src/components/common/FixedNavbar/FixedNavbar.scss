@@ -1,4 +1,5 @@
 @import '../../../constants.scss';
+
 $hamburger-speed: .5s;
 
 //MOBILE FIRST 
@@ -45,7 +46,7 @@ $hamburger-speed: .5s;
       position: absolute;
       width: 26px;
       height: 2px;
-      background-color: #161616;
+      background-color: $light-black;
       border-radius: 5px;
     }
 
@@ -56,7 +57,7 @@ $hamburger-speed: .5s;
   }
 
   .nav-collapse {
-    background: #161616;
+    background: $light-black;
     position: fixed;
     top: 0;
     right: -80vw;
@@ -91,7 +92,7 @@ $hamburger-speed: .5s;
       }
 
       .dropdown-menu {
-        background: #161616;
+        background: $light-black;
         position: relative;
         width: 100%;
       }

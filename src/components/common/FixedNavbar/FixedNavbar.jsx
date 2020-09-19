@@ -8,6 +8,7 @@ import {
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import './FixedNavbar.scss';
+import { ROUTES } from '../../../routes';
 
 import logo from './../../../assets/imgs/logo.jpg';
 import instagram from './../../../assets/icons/instagram_white.png';
@@ -39,13 +40,13 @@ class FixedNavbar extends React.Component {
         const { openHamburger, isMobile } = this.state;
         const { t } = this.props;
         const navItems = [
-            { id: 'home',value: t('Menu.home')},
-            { id: 'products',value: t('Menu.products')},
-            { id: 'classes', value: t('Menu.classes')},
-            { id: 'shipping', value: t('Menu.shipping')},
-            { id: 'club', value: t('Menu.club')},
-            { id: 'events', value: t('Menu.events')},
-            { id: 'contact', value: t('Menu.contact')}
+            { name: ROUTES.HOME.name, value: t('Menu.home')},
+            { name: ROUTES.PRODUCTS.name, value: t('Menu.products')},
+            { name: ROUTES.CLASSES.name, value: t('Menu.classes')},
+            { name: ROUTES.SHIPPING.name, value: t('Menu.shipping')},
+            { name: ROUTES.CLUB.name, value: t('Menu.club')},
+            { name: ROUTES.EVENTS.name, value: t('Menu.events')},
+            { name: ROUTES.CONTACT.name, value: t('Menu.contact')}
         ];
         return (
             <nav className={`main-nav ${openHamburger ? 'showMenu' : 'hideMenu'}`}>
@@ -65,24 +66,24 @@ class FixedNavbar extends React.Component {
                     <ul className="nav-collapse__list">
                         {navItems.map(item => {
                             return (
-                                item.id === 'products' ? 
-                                <UncontrolledDropdown nav inNavbar className="nav-collapse__item">
+                                item.name === 'products' ? 
+                                <UncontrolledDropdown nav inNavbar className="nav-collapse__item" key={item.name}>
                                     <DropdownToggle nav caret className="nav-collapse__link">
                                         {item.value}
                                     </DropdownToggle>
                                     <DropdownMenu right>
-                                        <NavLink to={"/products/kits"} className="nav-collapse__link">
+                                        <NavLink to={ROUTES.KITS.path} className="nav-collapse__link">
                                             <DropdownItem>{t('Menu.kits')}</DropdownItem>
                                         </NavLink>
                                         <DropdownItem divider />
-                                        <NavLink to={"/products/frames"} onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">
+                                        <NavLink to={ROUTES.FRAMES.path} onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">
                                             <DropdownItem>{t('Menu.frames')}</DropdownItem>
                                         </NavLink>
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
                                 :
-                                <li className="nav-collapse__item" id={item.id} key={item.id}>
-                                    <NavLink to={item.id} onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">{item.value}</NavLink>
+                                <li className="nav-collapse__item" id={item.name} key={item.name}>
+                                    <NavLink to={ROUTES[item.name.toUpperCase()].path} onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">{item.value}</NavLink>
                                 </li>
                             );
                         })}

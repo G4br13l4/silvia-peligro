@@ -78,9 +78,10 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
             list-style: none;
             li {
                 margin-bottom: 0.3em;
-                color: $purple;
                 cursor: pointer;
             }
+
+            a{ color: $purple }
         }
         img {
             width: 2.3em;
