@@ -40,7 +40,7 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
         margin: 0 auto 1rem;
         p {
             text-align: center;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
         }
         
         .custom-input {
@@ -53,7 +53,7 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
             border-radius: 35px 0 0 35px;
             border-color: $light-purple;
             border-right: none;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
         }
 
         .btn {
@@ -63,7 +63,7 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
             border-color: $light-purple;
             border-left: none;
             border-radius: 0 35px 35px 0 !important;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             font-weight: 600;
         }
     }
@@ -98,7 +98,7 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
         align-items: center;
         .date {
             color: white;
-            font-size: 0.7rem
+            font-size: 0.8rem
         }
     }
 }
