@@ -1,7 +1,11 @@
 @import '../../../constants.scss';
 
 .btn-p {
-    @include btn;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
     background: $light-purple;
     color: white;
+    padding: .3rem 2.5rem;
 } 

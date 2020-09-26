@@ -1,4 +1,3 @@
-
 //Media Query Breakpoints (Mobile First)
 $tablet: 30em; //480px
 $laptop: 48em; //768px
@@ -16,15 +15,9 @@ $light-grey: #495057;
     font-size: 1.5rem;
     font-weight: 700;
 }
-
 @mixin font-subTitle {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.3;
 }
 
-//Common styles
-@mixin btn {
-    padding: .3rem 2.5rem;
-    font-size: 0.9rem;
-    border: none;
-    border-radius: 3px;
-}

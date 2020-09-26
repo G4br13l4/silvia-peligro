@@ -10,7 +10,7 @@ import './MainBanner.scss';
 import mainSlideBanner_1 from './../../assets/imgs/mainSlideBanner_1.jpg';
 import mainSlideBanner_2 from './../../assets/imgs/mainSlideBanner_2.jpg';
 import mainSlideBanner_3 from './../../assets/imgs/mainSlideBanner_3.jpg';
-import { Button } from '../Common/Button/Button';
+import { Button } from '../Common/Button/Button.tsx';
 
 
 const items = [
@@ -67,7 +67,7 @@ const MainBanner = props => {
         >
             <div style={{backgroundImage: `url(${item.cover})` }} className="mainSlideBanner__boxImg"/> 
             <div className="mainSlideBanner__txtBox">
-                <h1 className="title line-clamp">{item.title}</h1>
+                <h2 className="title line-clamp">{item.title}</h2>
                 <p className="paragraph line-clamp">{item.summary}</p> 
                 <Button text={ t('Button.seeMore')}/>
             </div>
@@ -123,8 +123,8 @@ const MainBanner = props => {
           }
         </style>
         <Carousel
-          //activeIndex={activeIndex}
-          activeIndex={0}
+          activeIndex={activeIndex}
+          //activeIndex={0}
           next={next}
           previous={previous}
         >
