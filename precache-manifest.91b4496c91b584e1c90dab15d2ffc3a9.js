@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2be80b38d179e58f073c88c30fc7108f",
+    "revision": "c20b0d4280742b590e304251d0b76c10",
     "url": "/silvia-peligro/index.html"
   },
   {
-    "revision": "0fe06c13a7603ade355b",
+    "revision": "49c239ecabc3620f6c39",
     "url": "/silvia-peligro/static/css/2.9ff99f11.chunk.css"
   },
   {
-    "revision": "955ae6de69dc7248d796",
-    "url": "/silvia-peligro/static/css/main.0207f287.chunk.css"
+    "revision": "0a05698043022f10a36d",
+    "url": "/silvia-peligro/static/css/main.bdebefb2.chunk.css"
   },
   {
-    "revision": "0fe06c13a7603ade355b",
-    "url": "/silvia-peligro/static/js/2.ae1b0614.chunk.js"
+    "revision": "49c239ecabc3620f6c39",
+    "url": "/silvia-peligro/static/js/2.92670f71.chunk.js"
   },
   {
     "revision": "0e479e34c7853cf26f3584614b8f1e58",
-    "url": "/silvia-peligro/static/js/2.ae1b0614.chunk.js.LICENSE"
+    "url": "/silvia-peligro/static/js/2.92670f71.chunk.js.LICENSE"
   },
   {
-    "revision": "955ae6de69dc7248d796",
-    "url": "/silvia-peligro/static/js/main.71244077.chunk.js"
+    "revision": "0a05698043022f10a36d",
+    "url": "/silvia-peligro/static/js/main.b2b3999f.chunk.js"
   },
   {
     "revision": "a0688ba340e2d5c2bd7f",
@@ -36,8 +36,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/silvia-peligro/static/media/Spot-Matrix.68a4c297.ttf"
   },
   {
+    "revision": "be61aa794ebef2763cbe3cdca2027d0d",
+    "url": "/silvia-peligro/static/media/background.be61aa79.jpg"
+  },
+  {
     "revision": "013f0b90a4cae7b8bbf13e3fd9e7dc4a",
     "url": "/silvia-peligro/static/media/getFetch.013f0b90.cjs"
+  },
+  {
+    "revision": "24930086320ae58f897c9611f2480b5e",
+    "url": "/silvia-peligro/static/media/kit1.24930086.jpg"
+  },
+  {
+    "revision": "9a142eb8dc53ffd933cb640eedbd4a9c",
+    "url": "/silvia-peligro/static/media/kit2.9a142eb8.jpg"
+  },
+  {
+    "revision": "68c1b5b2cf9bf8195603b731d0e6cb4d",
+    "url": "/silvia-peligro/static/media/kit3.68c1b5b2.jpg"
   },
   {
     "revision": "d88e1ac5f582aa399c48281ea8405664",
