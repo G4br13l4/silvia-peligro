@@ -11,7 +11,8 @@
         "contact": "Contacto"
     },
     "Button": {
-        "seeMore": "Ver más"
+        "seeMore": "Ver más",
+        "seeCatalog": "Ver catálogo"
     },
     "InstagramFeed": {
         "followMe": "Sígueme en Instagram"
@@ -20,5 +21,15 @@
         "title": "Recibe avisos sobre mis próximos talleres/eventos directamente en tu bandeja de entrada",
         "input": "Escribe tu correo electrónico",
         "btn": "Suscribirme"
+    },
+    "KitsPage": {
+        "headerTitle": "Kits de Bordado",
+        "headerSubtitle": "Descubre todos los diseños para que te diviertas bordando.",
+        "description": "Estos kits son ideales para bordadores experimentados, por lo que si es tu primera vez bordando,  te recomendamos adquirir uno de nuestros cursos en línea sobre bordado básico ó asistir a uno de nuestros talleres.",
+        "tableTitle": "Tipos de Kits",
+        "whatIncludes": "¿Qué incluye?",
+        "small": "Chico",
+        "large": "Grande",
+        "carouselDescription": "Éstos son algunos de los kits que podrás encontrar en nuestro catálogo"
     }
 }

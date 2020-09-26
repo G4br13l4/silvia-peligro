@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { withTranslation } from 'react-i18next';
 import {
   Carousel,
   CarouselItem,
@@ -34,6 +35,7 @@ const items = [
 const KitsPage = props => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
+  const { t } = props;
 
   const slides = items.map((item) => {
     return (
@@ -70,25 +72,25 @@ const KitsPage = props => {
       <section className="kits-section">
         <FixedNavbar />
           <header style={{backgroundImage: `url(${background})`}}>
-            <h1>Kits de Bordado</h1>
-            <span>Descubre todos los diseños para que te diviertas bordando.</span>
+            <h1>{t('KitsPage.headerTitle')}</h1>
+            <span>{t('KitsPage.headerSubtitle')}</span>
           </header>
           <div className="kits-section__content">
             <p>
-              Estos kits son ideales para bordadores experimentados, por lo que si es tu primera vez bordando,  te recomendamos adquirir uno de nuestros cursos en línea sobre bordado básico ó asistir a uno de nuestros talleres.
+              {t('KitsPage.description')}
             </p>
             <div className="kitsSize-table">
-              <h2>Tipos de Kits</h2>
+              <h2>{t('KitsPage.tableTitle')}</h2>
               <table>
                 <thead>
                   <tr>
                     <th></th>
-                    <th>¿Qué incluye?</th> 
+                    <th>{t('KitsPage.whatIncludes')}</th> 
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="table-row">
-                    <td className="title small"><span>Chico</span></td>
+                    <td className="title small"><span>{t('KitsPage.small')}</span></td>
                     <td className="content">Lorem ipsum dolor sit amet, consectetur.
                     Pellentesque interdum massa in dui aliquam.
                     Sed tincidunt velit in massa fermentum.
@@ -98,7 +100,7 @@ const KitsPage = props => {
                     </td>
                   </tr>
                   <tr className="table-row">
-                    <td className="title large"><span>Grande</span></td>
+                    <td className="title large"><span>{t('KitsPage.large')}</span></td>
                     <td className="content">Lorem ipsum dolor sit amet, consectetur.
                     Pellentesque interdum massa in dui aliquam.
                     Sed tincidunt velit in massa fermentum.
@@ -122,9 +124,9 @@ const KitsPage = props => {
                 <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
               </Carousel>
 
-              <p>Éstos son algunos de los kits que podrás encontrar en mi catálogo:</p>
+              <p>{t('KitsPage.carouselDescription')}</p>
               <a href="https://drive.google.com/file/d/15_q6SEJSQbVKaGlnrofZfXX8sc12vxgS/view?fbclid=IwAR06QzUy9h7GydvKNUaDrlxHeyTHT4jUK8peolZwRYSV-OqB_fQr98dtOG8">
-                <Button text="Ver catálogo" customClass="btn-purple"/>
+                <Button text={t('Button.seeCatalog')} customClass="btn-purple"/>
               </a>
             </div>
           </div>
@@ -133,4 +135,4 @@ const KitsPage = props => {
     );
 }       
 
-export default KitsPage;
+export default  withTranslation('common') (KitsPage);

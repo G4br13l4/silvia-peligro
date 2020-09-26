@@ -11,7 +11,8 @@
         "contact": "Contact"
     },
     "Button": {
-        "seeMore": "See more"
+        "seeMore": "See more",
+        "seeCatalog": "See catalog"
     },
     "InstagramFeed": {
         "followMe": "Follow me on Instagram"
@@ -20,5 +21,15 @@
         "title": "Receive notifications about my upcoming workshops / events directly to your inbox",
         "input": "Write your email",
         "btn": "Subscribe"
+    },
+    "KitsPage": {
+        "headerTitle": "Embroidery Kits",
+        "headerSubtitle": "Discover all the designs so you can have fun embroidering.",
+        "description": "These kits are ideal for experienced embroiderers, so if this is your first time embroidering, we recommend purchasing one of our online courses on basic embroidery or attending one of our workshops.",
+        "tableTitle": "Types of Kits",
+        "whatIncludes": "What includes?",
+        "small": "Small",
+        "large": "Large",
+        "carouselDescription": "These are some of the kits that you can find in our catalog"
     }
 }

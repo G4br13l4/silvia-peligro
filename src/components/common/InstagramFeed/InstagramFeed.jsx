@@ -10,14 +10,14 @@ const InstagramFeed = props => {
 
     useEffect(() => {
         if(!posts.length) {
-            //props.actions.loadPosts();
+            props.actions.loadPosts();
         } 
     },[]);
 
     return (
         <>
             <h2 className="follow-me">{t('InstagramFeed.followMe')}</h2>
-            <div className="follow-me">@speligro</div>
+            <div className="follow-me"><a href="https://www.instagram.com/speligro/">@speligro</a></div>
             <div className="instagram-feed">
                 { posts.map(p => {
                     return(
