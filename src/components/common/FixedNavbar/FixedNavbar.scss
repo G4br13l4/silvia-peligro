@@ -1,6 +1,6 @@
 @import '../../../constants.scss';
 
-$hamburger-speed: .5s;
+$hamburger-speed: 1s;
 
 //MOBILE FIRST 
 .main-nav {
@@ -82,8 +82,12 @@ $hamburger-speed: .5s;
         padding: 0;
       }
 
+      .dropdown-toggle::after {
+        margin-left: .8rem;
+      }
+
+
       .dropdown-item {
-        color: white;
         outline: none;
       }
 
@@ -104,7 +108,13 @@ $hamburger-speed: .5s;
 
     &__link {
       color: white;
+      text-decoration: none;
     }
+
+    &__link.active {
+      color: $light-purple;
+    }
+    
 
     &__icons {
       margin-bottom: 1.5rem;
@@ -192,10 +202,6 @@ $hamburger-speed: .5s;
       &__item{
         margin-bottom: 0;
         margin-right: 2rem;
-  
-        .dropdown-item {
-          color: black;
-        }
         
         .dropdown-menu {
           position: absolute;
@@ -213,6 +219,13 @@ $hamburger-speed: .5s;
 
       &__link {
         color: black;
+      }
+
+      &__link.active {
+        color: $purple;
+        border-bottom: 6px solid transparent;
+        border-image: url('../../../assets/imgs/background.jpg') 103 stretch;
+        border-bottom: 6px solid transparent;
       }
 
       &__icons {

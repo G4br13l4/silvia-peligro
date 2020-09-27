@@ -69,21 +69,27 @@ class FixedNavbar extends React.Component {
                                 item.name === 'products' ? 
                                 <UncontrolledDropdown nav inNavbar className="nav-collapse__item" key={item.name}>
                                     <DropdownToggle nav caret className="nav-collapse__link">
-                                        {item.value}
+                                        <NavLink to={ROUTES.PRODUCTS.path} className="nav-collapse__link">
+                                            {item.value}
+                                        </NavLink>
                                     </DropdownToggle>
                                     <DropdownMenu right>
-                                        <NavLink to={ROUTES.KITS.path} className="nav-collapse__link">
-                                            <DropdownItem>{t('Menu.kits')}</DropdownItem>
-                                        </NavLink>
+                                        <DropdownItem>
+                                            <NavLink to={ROUTES.KITS.path} className="nav-collapse__link">
+                                                {t('Menu.kits')}
+                                            </NavLink>
+                                        </DropdownItem>
                                         <DropdownItem divider />
-                                        <NavLink to={ROUTES.FRAMES.path} onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">
-                                            <DropdownItem>{t('Menu.frames')}</DropdownItem>
-                                        </NavLink>
+                                        <DropdownItem>
+                                            <NavLink to={ROUTES.FRAMES.path} onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">
+                                                {t('Menu.frames')}
+                                            </NavLink>
+                                        </DropdownItem>
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
                                 :
                                 <li className="nav-collapse__item" id={item.name} key={item.name}>
-                                    <NavLink to={ROUTES[item.name.toUpperCase()].path} onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">{item.value}</NavLink>
+                                    <NavLink exact to={ROUTES[item.name.toUpperCase()].path} onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">{item.value}</NavLink>
                                 </li>
                             );
                         })}
