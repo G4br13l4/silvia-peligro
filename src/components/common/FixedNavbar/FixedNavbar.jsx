@@ -96,8 +96,12 @@ class FixedNavbar extends React.Component {
                     </ul>
 
                     <div className="nav-collapse__icons">
-                        <img alt="instagram-icon" src={instagram} />
-                        <img alt="mail-icon" src={mail} />
+                        <a href="https://www.instagram.com/speligro/" target="_blank">
+                            <img alt="instagram-icon" src={instagram} />
+                        </a>
+                        <a href="mailto:hola@silviapeligro.com">
+                            <img alt="mail-icon" src={mail} />
+                        </a>
                     </div>
 
                     <LanguageSelect/>

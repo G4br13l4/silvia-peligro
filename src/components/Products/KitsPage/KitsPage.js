@@ -125,7 +125,7 @@ const KitsPage = props => {
               </Carousel>
 
               <p>{t('KitsPage.carouselDescription')}</p>
-              <a href="https://drive.google.com/file/d/15_q6SEJSQbVKaGlnrofZfXX8sc12vxgS/view?fbclid=IwAR06QzUy9h7GydvKNUaDrlxHeyTHT4jUK8peolZwRYSV-OqB_fQr98dtOG8">
+              <a href="https://drive.google.com/file/d/15_q6SEJSQbVKaGlnrofZfXX8sc12vxgS/view?fbclid=IwAR06QzUy9h7GydvKNUaDrlxHeyTHT4jUK8peolZwRYSV-OqB_fQr98dtOG8" target="_blank">
                 <Button text={t('Button.seeCatalog')} customClass="btn-purple"/>
               </a>
             </div>
