@@ -8,8 +8,8 @@ import {
 import FixedNavbar from '../../Common/FixedNavbar/FixedNavbar';
 import Footer from '../../Common/Footer/Footer';
 import { Button } from '../../Common/Button/Button.tsx';
+import { Header } from '../../Common/Header/Header.tsx';
 import './KitsPage.scss';
-import background from './../../../assets/imgs/background.jpg';
 import kit1 from './../../../assets/imgs/kit1.jpg';
 import kit2 from './../../../assets/imgs/kit2.jpg';
 import kit3 from './../../../assets/imgs/kit3.jpg';
@@ -71,10 +71,10 @@ const KitsPage = props => {
     return (
       <section className="kits-section">
         <FixedNavbar />
-          <header style={{backgroundImage: `url(${background})`}}>
-            <h1>{t('KitsPage.headerTitle')}</h1>
-            <span>{t('KitsPage.headerSubtitle')}</span>
-          </header>
+          <Header 
+            title={t('KitsPage.headerTitle')}
+            subtitle={t('KitsPage.headerSubtitle')}
+          />
           <div className="kits-section__content">
             <p>
               {t('KitsPage.description')}

@@ -76,52 +76,7 @@ const MainBanner = props => {
     });
   
     return (
-      <div className="carousel-wrapper">
-        <style>
-          {
-            `
-            .carousel-wrapper {
-              width: 100vw;
-              height: fit-content;
-              margin-top: 14vh;
-            }
-
-            .carousel {
-              width: 100%;
-              height: 100%;
-            }
-
-            .carousel-inner {
-                width: inherit;
-                height: inherit;
-            }
-
-            .carousel-control-prev,
-            .carousel-control-next {
-                min-height: 268px;
-                height: 42vh; //same as boxImg
-            }
-
-            .carousel-indicators li {
-                background-color: #161616;
-                opacity: .4;
-            }
-
-            /* MEDIUM DEVICES (landscape tablets, 768px and up) */
-            @media only screen and (min-width: 48em) {
-              .carousel-wrapper {
-                height: 72vh;
-                min-height: 400px;
-              }
-
-              .carousel-control-prev,
-              .carousel-control-next {
-                min-height: 350px;
-                height: 63vh; //same as boxImg
-              }
-            }`
-          }
-        </style>
+      <div className="mainBanner">
         <Carousel
           activeIndex={activeIndex}
           //activeIndex={0}

@@ -1,0 +1,38 @@
+@import '../../../constants.scss';
+
+.header {
+    background-size: contain;
+    background-position: center center;
+    height: 25vh;
+    min-height: 162px;
+    max-height: 185px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+
+    h1 { 
+        @include font-title;
+        text-align: center;
+        text-shadow: 2px 2px 2px #161616;
+    }
+
+    span {
+        display: inline-block;
+        padding: 0 2rem;
+        text-align: center;
+        font-size: 1.1rem;
+        line-height: 1;
+        text-shadow: 2px 2px 2px $light-black;
+    }
+}
+
+@media (min-width: $laptop) {
+    .header {
+        align-items: flex-start;
+        padding: 0 3rem;
+
+        span { padding: 0 }
+    }
+}
