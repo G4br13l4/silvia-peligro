@@ -9,7 +9,11 @@ const HomePage = props => {
       <>
         <FixedNavbar />
         <MainBanner />
-        <InstagramFeed />
+        <InstagramFeed 
+          accountName="@speligro"
+          accountLink="https://www.instagram.com/speligro/"
+          token={process.env.REACT_APP_INSTA_TOKEN_SP}
+        />
         <Footer />
       </>
     );
