@@ -1,3 +1,28 @@
-.classes-section {
-    
+@import '../../constants.scss';
+
+.classCards-container {
+    width: 100vw;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .class-card {
+        h3 {
+            font-size: 1rem;
+            padding-right: .5rem;
+        }
+
+        button {
+            padding: .3rem .5rem;
+        }
+    }
 }
+
+@media (min-width: $laptop) {
+    .classCards-container {
+        padding: 1rem 1rem 1rem 3rem;
+        justify-content: flex-start;
+    }
+}
+

@@ -5,15 +5,15 @@
     padding: 5px;
     box-sizing: border-box;
     line-height: 1.5;
-    color: $light-grey;
+    color: $grey;
     background: white;
     border-radius: 0.25rem;
-    border: 1px solid #ced4da;
+    border: 1px solid $light-grey;
     transition: border-color 3s ease-in-out, box-shadow 3s ease-in-out;
 
     &:focus:not(.no-border),
     &:hover:not(.no-border) {
-        color: $light-grey;
+        color: $grey;
         background: white;
         outline: 0;
         border-color: #80bdff;

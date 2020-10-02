@@ -10,6 +10,6 @@ export const Button = (props: Props) => {
     const { text, customClass } = props;
 
     return (
-        <button className={`btn-p ${customClass ? customClass : ''}`}><span>{props.text}</span></button>
+        <button className={`sp-btn ${customClass ? customClass : ''}`}><span>{props.text}</span></button>
     );
 }
