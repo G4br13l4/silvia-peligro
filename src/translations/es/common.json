@@ -37,5 +37,16 @@
         "subtitle": "¿Te gustaría aprender a bordar o aprender nuevas técnicas para tus bordados?",
         "basicClassTitle": "Clase de Bordado Básico",
         "miniatureClassTitle": "Técnicas de bordado en miniatura"
+    },
+    "ProductsPage": {
+        "title": "Productos",
+        "subtitle": "",
+        "kitsTitle": "Kits de Bordado",
+        "framesTitle": "Marcos"
+    },
+    "EventsPage": {
+        "title": "Eventos",
+        "subtitle": "Cursos presenciales, exposiciones, reuniones del Club de Bordado y más...",
+        "noEventsMessage": "Por el momento no hay próximos eventos"
     }
 }

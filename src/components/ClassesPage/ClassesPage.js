@@ -4,6 +4,7 @@ import FixedNavbar from '../Common/FixedNavbar/FixedNavbar';
 import Footer from '../Common/Footer/Footer';
 import { Header } from '../Common/Header/Header.tsx';
 import { Button } from '../Common/Button//Button.tsx';
+import { CardsContainer } from '../Common/CardsContainer/CardsContainer';
 import { Card } from '../Common/Card/Card.tsx';
 import basicClass from './../../assets/imgs/bordado_basico.jpg';
 import embroideryMin from './../../assets/imgs/bordado_min.jpg';
@@ -19,7 +20,7 @@ const ClassesPage = props => {
             title={t('ClassesPage.title')}
             subtitle={t('ClassesPage.subtitle')}
         />
-        <div className="classCards-container">
+        <CardsContainer>
           <Card background={basicClass} customClass="class-card">
             <h3>{t('ClassesPage.basicClassTitle')}</h3>
             <a href="https://bazarama.com.mx/products/clase-de-bordado-basico" target="_blank">
@@ -32,7 +33,7 @@ const ClassesPage = props => {
               <Button text={ t('Button.seeMore')}/>
             </a>
           </Card>
-        </div>
+        </CardsContainer>
         <Footer />
       </section>
     );

@@ -1,11 +1,4 @@
-$light-purple: #AC90F1;
-$purple: #43026A;
-
-/* Extra small devices (phones, 600px and down), are the default styles ;) */
-$s-devices: 37.5em;  /* Small devices (portrait tablets and large phones, 600px and up) */
-$m-devices: 48em;  /* Medium devices (landscape tablets, 768px and up) */
-$l-devices: 62em;  /* Large devices (laptops/desktops, 992px and up) */
-$xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px and up) */
+@import '../../../constants.scss';
 
 .footer {
     grid-row: 15 / auto;
@@ -103,8 +96,7 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: $s-devices) {
+@media (min-width: 38em) {
     .footer {
         &__input-wrapper {
             .custom-input { 
@@ -114,8 +106,7 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
     }
 }
 
-/* MEDIUM DEVICES (landscape tablets, 768px and up) */
-@media only screen and (min-width: $m-devices) {
+@media (min-width: $laptop) {
     .footer {
         &__input-wrapper {
             .custom-input {
@@ -152,8 +143,7 @@ $xl-devices: 75em;  /* Extra large devices (large laptops and desktops, 1200px a
     }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: $l-devices) {
+@media (min-width: 62em) {
     .footer {
         &__input-wrapper {
             .custom-input {

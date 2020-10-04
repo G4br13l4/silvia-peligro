@@ -37,5 +37,16 @@
         "subtitle": "Would you like to learn to embroider or learn new techniques for your embroidery?",
         "basicClassTitle": "Basic Embroidery Class",
         "miniatureClassTitle": "Miniature embroidery techniques"
+    },
+    "ProductsPage": {
+        "title": "Products",
+        "subtitle": "",
+        "kitsTitle": "Embroidery Kits",
+        "framesTitle": "Frames"
+    },
+    "EventsPage": {
+        "title": "Events",
+        "subtitle": "On-site courses, exhibitions, Embroidery Club meetings and more...",
+        "noEventsMessage": "At the moment there are no upcoming events"
     }
 }

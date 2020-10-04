@@ -30,14 +30,14 @@
 
 
 @media (min-width: $tablet) {
-    .class-card {
+    .sp-card {
         max-width: 355px;
         margin: 0 1rem 1.2rem 0;
     }
 }
 
 @media (min-width: $laptop) {
-    .class-card {
+    .sp-card {
         width: 45%;
     }
 }
