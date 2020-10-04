@@ -22,7 +22,7 @@ const InstagramFeed = props => {
     //Triggers only in the first render and do something if there isn't an array in Redux State
     useEffect(() => {
         if(!allPosts[key].length) {
-            //props.loadPosts(token)
+            props.loadPosts(token)
         } 
     },[]);
 
