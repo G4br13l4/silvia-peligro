@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c20b0d4280742b590e304251d0b76c10",
+    "revision": "016cd22c7c1cd52e22ee1a1f17225668",
     "url": "/silvia-peligro/index.html"
   },
   {
-    "revision": "49c239ecabc3620f6c39",
+    "revision": "229530bfcc602747c57e",
     "url": "/silvia-peligro/static/css/2.9ff99f11.chunk.css"
   },
   {
-    "revision": "0a05698043022f10a36d",
-    "url": "/silvia-peligro/static/css/main.bdebefb2.chunk.css"
+    "revision": "d0a32fc03d04fecb7cc3",
+    "url": "/silvia-peligro/static/css/main.d940fdf3.chunk.css"
   },
   {
-    "revision": "49c239ecabc3620f6c39",
-    "url": "/silvia-peligro/static/js/2.92670f71.chunk.js"
+    "revision": "229530bfcc602747c57e",
+    "url": "/silvia-peligro/static/js/2.213823c9.chunk.js"
   },
   {
     "revision": "0e479e34c7853cf26f3584614b8f1e58",
-    "url": "/silvia-peligro/static/js/2.92670f71.chunk.js.LICENSE"
+    "url": "/silvia-peligro/static/js/2.213823c9.chunk.js.LICENSE"
   },
   {
-    "revision": "0a05698043022f10a36d",
-    "url": "/silvia-peligro/static/js/main.b2b3999f.chunk.js"
+    "revision": "d0a32fc03d04fecb7cc3",
+    "url": "/silvia-peligro/static/js/main.2430b42f.chunk.js"
   },
   {
     "revision": "a0688ba340e2d5c2bd7f",
@@ -38,6 +38,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "be61aa794ebef2763cbe3cdca2027d0d",
     "url": "/silvia-peligro/static/media/background.be61aa79.jpg"
+  },
+  {
+    "revision": "1dfdd5c931257393b10b552663bc62de",
+    "url": "/silvia-peligro/static/media/bordado_basico.1dfdd5c9.jpg"
+  },
+  {
+    "revision": "ca8a4a53f1b2ecc0c98d17c684bc050f",
+    "url": "/silvia-peligro/static/media/bordado_min.ca8a4a53.jpg"
+  },
+  {
+    "revision": "c35899db2d63d91334487bbb2484b9ba",
+    "url": "/silvia-peligro/static/media/frames.c35899db.jpg"
   },
   {
     "revision": "013f0b90a4cae7b8bbf13e3fd9e7dc4a",

@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/silvia-peligro/static/css/main.bdebefb2.chunk.css",
-    "main.js": "/silvia-peligro/static/js/main.b2b3999f.chunk.js",
-    "main.js.map": "/silvia-peligro/static/js/main.b2b3999f.chunk.js.map",
+    "main.css": "/silvia-peligro/static/css/main.d940fdf3.chunk.css",
+    "main.js": "/silvia-peligro/static/js/main.2430b42f.chunk.js",
+    "main.js.map": "/silvia-peligro/static/js/main.2430b42f.chunk.js.map",
     "runtime-main.js": "/silvia-peligro/static/js/runtime-main.1ff5d4e9.js",
     "runtime-main.js.map": "/silvia-peligro/static/js/runtime-main.1ff5d4e9.js.map",
     "static/css/2.9ff99f11.chunk.css": "/silvia-peligro/static/css/2.9ff99f11.chunk.css",
-    "static/js/2.92670f71.chunk.js": "/silvia-peligro/static/js/2.92670f71.chunk.js",
-    "static/js/2.92670f71.chunk.js.map": "/silvia-peligro/static/js/2.92670f71.chunk.js.map",
+    "static/js/2.213823c9.chunk.js": "/silvia-peligro/static/js/2.213823c9.chunk.js",
+    "static/js/2.213823c9.chunk.js.map": "/silvia-peligro/static/js/2.213823c9.chunk.js.map",
     "index.html": "/silvia-peligro/index.html",
-    "precache-manifest.91b4496c91b584e1c90dab15d2ffc3a9.js": "/silvia-peligro/precache-manifest.91b4496c91b584e1c90dab15d2ffc3a9.js",
+    "precache-manifest.c82e0514d87f6e3d0701b3b24f6a1cac.js": "/silvia-peligro/precache-manifest.c82e0514d87f6e3d0701b3b24f6a1cac.js",
     "service-worker.js": "/silvia-peligro/service-worker.js",
     "static/css/2.9ff99f11.chunk.css.map": "/silvia-peligro/static/css/2.9ff99f11.chunk.css.map",
-    "static/css/main.bdebefb2.chunk.css.map": "/silvia-peligro/static/css/main.bdebefb2.chunk.css.map",
-    "static/js/2.92670f71.chunk.js.LICENSE": "/silvia-peligro/static/js/2.92670f71.chunk.js.LICENSE",
+    "static/css/main.d940fdf3.chunk.css.map": "/silvia-peligro/static/css/main.d940fdf3.chunk.css.map",
+    "static/js/2.213823c9.chunk.js.LICENSE": "/silvia-peligro/static/js/2.213823c9.chunk.js.LICENSE",
     "static/media/Embroidery.ttf": "/silvia-peligro/static/media/Embroidery.16dc9400.ttf",
     "static/media/Spot-Matrix.ttf": "/silvia-peligro/static/media/Spot-Matrix.68a4c297.ttf",
-    "static/media/background.jpg": "/silvia-peligro/static/media/background.be61aa79.jpg",
+    "static/media/FixedNavbar.scss": "/silvia-peligro/static/media/background.be61aa79.jpg",
+    "static/media/bordado_basico.jpg": "/silvia-peligro/static/media/bordado_basico.1dfdd5c9.jpg",
+    "static/media/bordado_min.jpg": "/silvia-peligro/static/media/bordado_min.ca8a4a53.jpg",
+    "static/media/frames.jpg": "/silvia-peligro/static/media/frames.c35899db.jpg",
     "static/media/getFetch.cjs": "/silvia-peligro/static/media/getFetch.013f0b90.cjs",
     "static/media/kit1.jpg": "/silvia-peligro/static/media/kit1.24930086.jpg",
     "static/media/kit2.jpg": "/silvia-peligro/static/media/kit2.9a142eb8.jpg",
@@ -30,8 +33,8 @@
   "entrypoints": [
     "static/js/runtime-main.1ff5d4e9.js",
     "static/css/2.9ff99f11.chunk.css",
-    "static/js/2.92670f71.chunk.js",
-    "static/css/main.bdebefb2.chunk.css",
-    "static/js/main.b2b3999f.chunk.js"
+    "static/js/2.213823c9.chunk.js",
+    "static/css/main.d940fdf3.chunk.css",
+    "static/js/main.2430b42f.chunk.js"
   ]
 }
