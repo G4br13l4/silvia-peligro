@@ -31,5 +31,11 @@
         "small": "Chico",
         "large": "Grande",
         "carouselDescription": "Éstos son algunos de los kits que podrás encontrar en nuestro catálogo"
+    },
+    "ClassesPage": {
+        "title": "Clases en línea",
+        "subtitle": "¿Te gustaría aprender a bordar o aprender nuevas técnicas para tus bordados?",
+        "basicClassTitle": "Clase de Bordado Básico",
+        "miniatureClassTitle": "Técnicas de bordado en miniatura"
     }
 }

@@ -2,7 +2,7 @@
 
 .classCards-container {
     width: 100vw;
-    padding: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -21,7 +21,7 @@
 
 @media (min-width: $laptop) {
     .classCards-container {
-        padding: 1rem 1rem 1rem 3rem;
+        padding: 1rem 1rem 3rem 3rem;
         justify-content: flex-start;
     }
 }

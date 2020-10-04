@@ -31,5 +31,11 @@
         "small": "Small",
         "large": "Large",
         "carouselDescription": "These are some of the kits that you can find in our catalog"
+    },
+    "ClassesPage": {
+        "title": "Online classes",
+        "subtitle": "Would you like to learn to embroider or learn new techniques for your embroidery?",
+        "basicClassTitle": "Basic Embroidery Class",
+        "miniatureClassTitle": "Miniature embroidery techniques"
     }
 }

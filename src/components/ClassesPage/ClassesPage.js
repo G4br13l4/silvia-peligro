@@ -16,18 +16,18 @@ const ClassesPage = props => {
       <section className="classes-section">
         <FixedNavbar />
         <Header
-            title="Clases en línea"
-            subtitle="¿Te gustaría aprender a bordar o aprender nuevas técnicas para tus bordados?"
+            title={t('ClassesPage.title')}
+            subtitle={t('ClassesPage.subtitle')}
         />
         <div className="classCards-container">
           <Card background={basicClass} customClass="class-card">
-            <h3>Clase de Bordado Básico</h3>
+            <h3>{t('ClassesPage.basicClassTitle')}</h3>
             <a href="https://bazarama.com.mx/products/clase-de-bordado-basico" target="_blank">
               <Button text={ t('Button.seeMore')}/>
             </a>
           </Card>
           <Card background={embroideryMin} customClass="class-card">
-            <h3>Técnicas de bordado en miniatura</h3>
+            <h3>{t('ClassesPage.miniatureClassTitle')}</h3>
             <a href="https://www.domestika.org/es/courses/496-tecnicas-de-bordado-en-miniatura/silviapeligro" target="_blank">
               <Button text={ t('Button.seeMore')}/>
             </a>
