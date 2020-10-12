@@ -17,7 +17,7 @@ import LanguageSelect from '../LanguageSelect/LanguageSelect';
 
 class FixedNavbar extends React.Component {
     constructor(props) {
-        super(props);
+        super();
         this.state = {
             openHamburger: false,
             isMobile: true
@@ -45,8 +45,8 @@ class FixedNavbar extends React.Component {
             { name: ROUTES.CLASSES.name, value: t('Menu.classes')},
             { name: ROUTES.SHIPPING.name, value: t('Menu.shipping')},
             { name: ROUTES.CLUB.name, value: t('Menu.club')},
-            { name: ROUTES.EVENTS.name, value: t('Menu.events')},
-            { name: ROUTES.CONTACT.name, value: t('Menu.contact')}
+            { name: ROUTES.EVENTS.name, value: t('Menu.events')}
+            // { name: ROUTES.CONTACT.name, value: t('Menu.contact')}
         ];
         return (
             <nav className={`main-nav ${openHamburger ? 'showMenu' : 'hideMenu'}`}>

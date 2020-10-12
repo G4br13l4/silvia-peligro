@@ -23,7 +23,8 @@ const App = props => {
   return (
     <div className="content-wrap">
       <Switch>
-        <Redirect from="/silvia-peligro" to="/" />
+        {/* <Redirect from="/silvia-peligro" to="/" /> */}
+        <Route path="/silvia-peligro" component={HomePage} />
         <Route path="/" exact component={HomePage} />
         <Route path="/products/kits" component={KitsPage} />
         <Route path="/products" component={ProductsPage} />
