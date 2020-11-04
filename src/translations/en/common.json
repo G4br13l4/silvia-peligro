@@ -8,7 +8,9 @@
         "shipping": "Shipping",
         "club": "Embroidery Club",
         "events": "Events",
-        "contact": "Contact"
+        "contact": "Contact",
+        "local": "Mexico City",
+        "national": "National"
     },
     "Button": {
         "seeMore": "See more",
@@ -48,5 +50,8 @@
         "title": "Events",
         "subtitle": "On-site courses, exhibitions, Embroidery Club meetings and more...",
         "noEventsMessage": "At the moment there are no upcoming events"
+    },
+    "LocalShipping": {
+        "headerTitle": "How to place your order with shipping within Mexico City?"
     }
 }

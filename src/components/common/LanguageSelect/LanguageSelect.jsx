@@ -21,7 +21,7 @@ const LanguageSelect = (props) => {
             {options.map((option, i) => {
                 return (
                     <option key={i} value={option.id}>
-                        {option.name}
+                        {option.name} 
                     </option>
                 );
             })}

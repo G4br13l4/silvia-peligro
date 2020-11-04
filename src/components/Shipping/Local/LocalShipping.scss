@@ -1,0 +1,77 @@
+@import '../../../constants.scss';
+
+.local-shipping-section {
+    .club-promotion {
+        display: flex;
+        padding: 0.3rem 0.7rem;
+        align-items: center;
+        background: #EF4874;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 12vh;
+        z-index: 1;
+        box-shadow: 0px 3px 6px #b6b5b5;
+
+        img { width: 100px;}
+
+        span {
+            font-size: .9rem;
+            line-height: 1.5;
+            padding-left: .5rem;
+            color: white;
+            font-weight: 300;
+        }
+    }
+
+    &__steps {
+        padding: 1rem 1.5rem 2rem;
+
+        h3 {
+            font-size: 1.2rem;
+            margin: 1.5rem 0 .8rem;
+        }
+
+        p { margin-bottom: .6rem;}
+
+        ul { list-style-type: disc;}
+
+        .steps-list { 
+            list-style: none;
+            padding-left: 0;
+            
+            .step {
+                position: relative;
+                padding-left: 40px;
+                margin-bottom: 1rem;
+            }
+
+            .step::before {
+                content: "";
+                height: 33px;
+                width: 33px;
+                background-image: url(../../../assets/icons/embroidery.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 0;
+            }
+
+            .step::after {
+                height: 16px;
+                width: 16px;
+                margin: 0 auto;
+                text-align: center;
+                font-weight: 700;
+                position: absolute;
+                left: 8px;
+                top: 5px;
+            }
+
+            li:nth-child(1):after {content: "1";}
+            li:nth-child(2):after {content: "2";}
+            li:nth-child(3):after {content: "3";}
+            li:nth-child(4):after {content: "4";}
+        }
+    }
+}
+ 

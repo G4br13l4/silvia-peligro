@@ -8,7 +8,9 @@
         "shipping": "Envíos",
         "club": "Club de Bordado",
         "events": "Eventos",
-        "contact": "Contacto"
+        "contact": "Contacto",
+        "local": "Cd. de México",
+        "national": "Nacional"
     },
     "Button": {
         "seeMore": "Ver más",
@@ -48,5 +50,8 @@
         "title": "Eventos",
         "subtitle": "Cursos presenciales, exposiciones, reuniones del Club de Bordado y más...",
         "noEventsMessage": "Por el momento no hay próximos eventos"
+    },
+    "LocalShipping": {
+        "headerTitle": "¿Cómo hacer tu pedido con envío dentro de la CDMX?"
     }
 }

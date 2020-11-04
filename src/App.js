@@ -4,6 +4,7 @@ import { withRouter } from "react-router";
 import './App.scss';
 import HomePage from './components/HomePage/HomePage';
 import ProductsPage from './components/ProductsPage/ProductsPage';
+import LocalShipping from './components/Shipping/Local/LocalShipping';
 import KitsPage from './components/ProductsPage/Kits/KitsPage';
 import ClassesPage from './components/ClassesPage/ClassesPage';
 import EventsPage from './components/EventsPage/EventsPage';
@@ -28,6 +29,8 @@ const App = props => {
         <Route path="/" exact component={HomePage} />
         <Route path="/products/kits" component={KitsPage} />
         <Route path="/products" component={ProductsPage} />
+        <Route path="/shipping/cdmx" component={LocalShipping}/>
+        {/* <Route path="/shipping/national" component={}/> */}
         <Route path="/classes" component={ClassesPage} />
         <Route path="/events" component={EventsPage} />
         <Route component={NotFound} />

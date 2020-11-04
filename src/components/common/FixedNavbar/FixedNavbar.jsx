@@ -39,6 +39,7 @@ class FixedNavbar extends React.Component {
     render() {
         const { openHamburger, isMobile } = this.state;
         const { t } = this.props;
+
         const navItems = [
             { name: ROUTES.HOME.name, value: t('Menu.home')},
             { name: ROUTES.PRODUCTS.name, value: t('Menu.products')},
@@ -83,6 +84,27 @@ class FixedNavbar extends React.Component {
                                         <DropdownItem>
                                             <NavLink to={ROUTES.FRAMES.path} onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">
                                                 {t('Menu.frames')}
+                                            </NavLink>
+                                        </DropdownItem>
+                                    </DropdownMenu>
+                                </UncontrolledDropdown>
+                                : item.name === 'shipping' ?
+                                <UncontrolledDropdown nav inNavbar className="nav-collapse__item" key={item.name}>
+                                    <DropdownToggle nav caret className="nav-collapse__link">
+                                        <a href="#" className="nav-collapse__link">
+                                            {item.value}
+                                        </a>
+                                    </DropdownToggle>
+                                    <DropdownMenu right>
+                                        <DropdownItem>
+                                            <NavLink to={ROUTES.LOCAL_SHIPPING.path} className="nav-collapse__link">
+                                                {t('Menu.local')}
+                                            </NavLink>
+                                        </DropdownItem>
+                                        <DropdownItem divider />
+                                        <DropdownItem>
+                                            <NavLink to={ROUTES.NATIONAL_SHIPPING.path} onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">
+                                                {t('Menu.national')}
                                             </NavLink>
                                         </DropdownItem>
                                     </DropdownMenu>
