@@ -1,0 +1,1 @@
+export { IGTV } from './IGTV';

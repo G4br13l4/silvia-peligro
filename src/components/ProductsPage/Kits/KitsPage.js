@@ -5,8 +5,6 @@ import {
   CarouselItem,
   CarouselControl
 } from 'reactstrap';
-import FixedNavbar from '../../Common/FixedNavbar/FixedNavbar';
-import Footer from '../../Common/Footer/Footer';
 import { Button } from '../../Common/Button/Button.tsx';
 import { Header } from '../../Common/Header/Header.tsx';
 import './KitsPage.scss';
@@ -70,7 +68,6 @@ const KitsPage = props => {
   }
     return (
       <section className="kits-section">
-        <FixedNavbar />
           <Header 
             title={t('KitsPage.headerTitle')}
             subtitle={t('KitsPage.headerSubtitle')}
@@ -130,7 +127,6 @@ const KitsPage = props => {
               </a>
             </div>
           </div>
-        <Footer />
       </section>
     );
 }       

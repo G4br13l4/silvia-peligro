@@ -2,6 +2,7 @@
     "Menu": {
         "home": "Inicio",
         "products": "Productos",
+        "allProducts": "Todos",
         "kits": "Kits de Bordado",
         "frames": "Marcos",
         "classes": "Clases en Línea",
@@ -14,7 +15,8 @@
     },
     "Button": {
         "seeMore": "Ver más",
-        "seeCatalog": "Ver catálogo"
+        "seeCatalog": "Ver catálogo",
+        "seeVideolist": "¡Ver más vídeos!"
     },
     "InstagramFeed": {
         "followMe": "Sígueme en Instagram"
@@ -23,6 +25,13 @@
         "title": "Recibe avisos sobre mis próximos talleres/eventos directamente en tu bandeja de entrada",
         "input": "Escribe tu correo electrónico",
         "btn": "Suscribirme"
+    },
+    "HomePage": {
+        "igtvTitle": "Checa mis vídeos en Instagram TV",
+        "igtvDescription": "Aquí encontrarás contenido como tips y respuestas a dudas frecuentes."
+    },
+    "IGTV_Page": {
+        "subtitle": "Aquí encontrarás un listado de todas mis sesiones en IGTV"
     },
     "KitsPage": {
         "headerTitle": "Kits de Bordado",

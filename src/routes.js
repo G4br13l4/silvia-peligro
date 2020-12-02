@@ -9,5 +9,6 @@ export const ROUTES = {
     NATIONAL_SHIPPING: { name: 'national', path: '/shipping/national'},
     CLUB: { name: 'club', path: '/club'},
     EVENTS: { name: 'events', path: '/events'},
-    CONTACT: { name: 'contact', path: '/contact'}
+    CONTACT: { name: 'contact', path: '/contact'},
+    IGTV: { name: 'igtv', path: '/igtv'}
 }

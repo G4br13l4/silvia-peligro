@@ -70,11 +70,15 @@ class FixedNavbar extends React.Component {
                                 item.name === 'products' ? 
                                 <UncontrolledDropdown nav inNavbar className="nav-collapse__item" key={item.name}>
                                     <DropdownToggle nav caret className="nav-collapse__link">
-                                        <NavLink to={ROUTES.PRODUCTS.path} className="nav-collapse__link">
-                                            {item.value}
-                                        </NavLink>
+                                        {item.value}
                                     </DropdownToggle>
                                     <DropdownMenu right>
+                                        <DropdownItem>
+                                            <NavLink to={ROUTES.PRODUCTS.path} className="nav-collapse__link">
+                                                {t('Menu.allProducts')}
+                                            </NavLink>
+                                        </DropdownItem>
+                                        <DropdownItem divider />
                                         <DropdownItem>
                                             <NavLink to={ROUTES.KITS.path} className="nav-collapse__link">
                                                 {t('Menu.kits')}
@@ -91,9 +95,7 @@ class FixedNavbar extends React.Component {
                                 : item.name === 'shipping' ?
                                 <UncontrolledDropdown nav inNavbar className="nav-collapse__item" key={item.name}>
                                     <DropdownToggle nav caret className="nav-collapse__link">
-                                        <a href="#" className="nav-collapse__link">
-                                            {item.value}
-                                        </a>
+                                        {item.value}
                                     </DropdownToggle>
                                     <DropdownMenu right>
                                         <DropdownItem>

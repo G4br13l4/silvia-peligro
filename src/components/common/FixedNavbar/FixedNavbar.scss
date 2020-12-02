@@ -13,6 +13,7 @@ $hamburger-speed: .7s;
   top:0;
   left: 0;
   background: white;
+  box-shadow: 0px -3px 10px $shadow;
 
 
   &__menu_wrapper {
@@ -154,7 +155,7 @@ $hamburger-speed: .7s;
   }
 }
 
-@media only screen and (min-width: $tablet) {
+@media (min-width: $tablet) {
   .main-nav {
     .nav-collapse {
       width: 70vw;
@@ -163,7 +164,7 @@ $hamburger-speed: .7s;
   }
 }
 
-@media only screen and (min-width: $laptop) {
+@media (min-width: $laptop) {
   .main-nav {
     .nav-collapse {
       width: 50vw;
@@ -173,7 +174,7 @@ $hamburger-speed: .7s;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 62em) {
+@media (min-width: 62em) {
   .main-nav {
     &__hamburger {
       display: none;

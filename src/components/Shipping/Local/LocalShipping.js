@@ -1,7 +1,5 @@
 import React from 'react';
 import { withTranslation } from 'react-i18next';
-import FixedNavbar from '../../Common/FixedNavbar/FixedNavbar';
-import Footer from '../../Common/Footer/Footer';
 import { Header } from '../../Common/Header/Header.tsx';
 import './LocalShipping.scss';
 import clubLogo from '../../../assets/imgs/club-logo.png'
@@ -11,7 +9,6 @@ const LocalShipping = props => {
   
   return (
     <section className="local-shipping-section">
-      <FixedNavbar />
       <Header 
         title={t('LocalShipping.headerTitle')}
       />
@@ -59,7 +56,6 @@ const LocalShipping = props => {
           </li>
         </ul>
       </div>
-      <Footer />
     </section>
   );
 }       

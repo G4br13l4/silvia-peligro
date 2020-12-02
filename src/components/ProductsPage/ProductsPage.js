@@ -1,8 +1,6 @@
 import React from 'react';
 import { withTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import FixedNavbar from '../Common/FixedNavbar/FixedNavbar';
-import Footer from '../Common/Footer/Footer';
 import { Header } from '../Common/Header/Header.tsx';
 import { Button } from '../Common/Button//Button.tsx';
 import { CardsContainer } from '../Common/CardsContainer/CardsContainer';
@@ -16,7 +14,6 @@ const ProductsPage = props => {
   
     return (
       <section className="products-section">
-        <FixedNavbar />
         <Header
             title={t('ProductsPage.title')}
             subtitle={t('ProductsPage.subtitle')}
@@ -34,8 +31,7 @@ const ProductsPage = props => {
               <Button text={ t('Button.seeMore')}/>
             </a>
           </Card>
-          </CardsContainer>
-        <Footer />
+        </CardsContainer>
       </section>
     );
 }       

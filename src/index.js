@@ -1,25 +1,36 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter,Switch, Router, Route } from "react-router-dom";
+import { history } from './utils/history';
 import { Provider as ReduxProvider } from 'react-redux';
-import './index.css';
+
+
+import * as serviceWorker from './serviceWorker';
+import configureStore from './redux/configureStore';
+import './i18n';
+
+import MainContainer from './components/MainContainer';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './fonts/Embroidery.ttf';
 import './fonts/Spot-Matrix.ttf';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-import './i18n';
-import configureStore from './redux/configureStore';
+import './index.css';
+
+
 
 const store = configureStore();
 
 ReactDOM.render(
   <Suspense fallback="loading">
-    <ReduxProvider store={store}>
       <BrowserRouter>
-          <App />
+        <ReduxProvider store={store}>
+          <Router history={history}>
+            <Switch>
+              <Route path="/" component={MainContainer}/>
+            </Switch>
+          </Router>
+        </ReduxProvider>
       </BrowserRouter>
-    </ReduxProvider>
   </Suspense>,
   document.getElementById('root')
 );

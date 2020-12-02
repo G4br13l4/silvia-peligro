@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
-import common from './commonReducer';
+import { instagramReducer } from './instagramReducer';
+import { modalReducer } from './modalReducer';
 
 const rootReducer = combineReducers({
-    common
+    modalState: modalReducer,
+    instagramFeed: instagramReducer
 });
 
 export default rootReducer;

@@ -7,10 +7,10 @@ import {
 } from 'reactstrap';
 import { withTranslation } from 'react-i18next';
 import './MainBanner.scss';
-import mainSlideBanner_1 from './../../assets/imgs/mainSlideBanner_1.jpg';
-import mainSlideBanner_2 from './../../assets/imgs/mainSlideBanner_2.jpg';
-import mainSlideBanner_3 from './../../assets/imgs/mainSlideBanner_3.jpg';
-import { Button } from '../Common/Button/Button.tsx';
+import mainSlideBanner_1 from './../../../assets/imgs/mainSlideBanner_1.jpg';
+import mainSlideBanner_2 from './../../../assets/imgs/mainSlideBanner_2.jpg';
+import mainSlideBanner_3 from './../../../assets/imgs/mainSlideBanner_3.jpg';
+import { Button } from '../../Common/Button/Button.tsx';
 
 
 const items = [

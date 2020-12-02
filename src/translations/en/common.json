@@ -2,6 +2,7 @@
     "Menu": {
         "home": "Home",
         "products": "Products",
+        "allProducts": "All",
         "kits": "Embroidery Kits",
         "frames": "Frames",
         "classes": "Online Classes",
@@ -14,7 +15,8 @@
     },
     "Button": {
         "seeMore": "See more",
-        "seeCatalog": "See catalog"
+        "seeCatalog": "See catalog",
+        "seeVideolist": "Check out more videos!"
     },
     "InstagramFeed": {
         "followMe": "Follow me on Instagram"
@@ -23,6 +25,13 @@
         "title": "Receive notifications about my upcoming workshops / events directly to your inbox",
         "input": "Write your email",
         "btn": "Subscribe"
+    },
+    "HomePage": {
+        "igtvTitle": "Check out my videos on Instagram TV",
+        "igtvDescription": "Here you will find content such as tips and answers to frequently asked questions."
+    },
+    "IGTV_Page": {
+        "subtitle": "Here you will find a list of all my sessions on IGTV"
     },
     "KitsPage": {
         "headerTitle": "Embroidery Kits",
