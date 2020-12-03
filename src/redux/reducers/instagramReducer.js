@@ -4,12 +4,10 @@ import { defaultState } from '../defaultState';
 export const instagramReducer = (state = defaultState, action) => {
     switch(action.type) {
         case LOAD_INSTAGRAM_POSTS:
+            const { account, posts } = action.payload;
             return {
                 ...state,
-                instagramFeed: {
-                    ...state.instagramFeed,
-                    silviaPeligro: action.payload
-                }
+                [account]: posts
             }
         default: 
             return state;

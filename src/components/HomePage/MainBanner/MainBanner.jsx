@@ -78,8 +78,7 @@ const MainBanner = props => {
     return (
       <div className="mainBanner">
         <Carousel
-          //activeIndex={activeIndex}
-          activeIndex={0}
+          activeIndex={activeIndex}
           next={next}
           previous={previous}
         >

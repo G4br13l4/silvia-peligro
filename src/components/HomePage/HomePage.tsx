@@ -31,11 +31,11 @@ export const HomePage = (props: HomeProps) => {
   return (
     <div className="homePage">
       <MainBanner />
-      {/* <InstagramFeed 
+      <InstagramFeed 
         accountName="@speligro"
         accountLink="https://www.instagram.com/speligro/"
         token={process.env.REACT_APP_INSTA_TOKEN_SP}
-      /> */}
+      />
       <div className="igtv-wrapper">
         <div className="description">
           <h2>{t('HomePage.igtvTitle')}</h2>

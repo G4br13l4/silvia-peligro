@@ -20,15 +20,16 @@ export const RadioButton = (props: Props) => {
     } = props;
 
     return(
-        <>
-            <input
+        <div style={{display: 'flex', alignItems: 'baseline'}}>
+            <input 
                 type="radio"
                 name={name}
                 value={value}
                 onChange={e => onChange!(e.target)}
+                style={{marginRight: '.2rem'}}
                 // ref={currentForm}
             />
             <label>{label}</label><br/> 
-        </>
+        </div>
     );
 };
