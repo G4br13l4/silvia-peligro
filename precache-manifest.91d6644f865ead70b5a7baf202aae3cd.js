@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "82b6d2c4da0c32d872ddf11aa60177a1",
+    "revision": "3c947fa67106932cf53ec606c867a5f3",
     "url": "/silvia-peligro/index.html"
   },
   {
-    "revision": "8990928c123fe0d2e64c",
+    "revision": "312222e17472fb8f6d5e",
     "url": "/silvia-peligro/static/css/2.9ff99f11.chunk.css"
   },
   {
-    "revision": "fff844b7a42c40385672",
-    "url": "/silvia-peligro/static/css/main.bc2f7602.chunk.css"
+    "revision": "9560a9ad71726c6a1b66",
+    "url": "/silvia-peligro/static/css/main.938b893c.chunk.css"
   },
   {
-    "revision": "8990928c123fe0d2e64c",
-    "url": "/silvia-peligro/static/js/2.debe9347.chunk.js"
+    "revision": "312222e17472fb8f6d5e",
+    "url": "/silvia-peligro/static/js/2.5d01d4ba.chunk.js"
   },
   {
     "revision": "0e479e34c7853cf26f3584614b8f1e58",
-    "url": "/silvia-peligro/static/js/2.debe9347.chunk.js.LICENSE"
+    "url": "/silvia-peligro/static/js/2.5d01d4ba.chunk.js.LICENSE"
   },
   {
-    "revision": "fff844b7a42c40385672",
-    "url": "/silvia-peligro/static/js/main.084190ea.chunk.js"
+    "revision": "9560a9ad71726c6a1b66",
+    "url": "/silvia-peligro/static/js/main.4c670ce9.chunk.js"
   },
   {
     "revision": "a0688ba340e2d5c2bd7f",
@@ -62,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "013f0b90a4cae7b8bbf13e3fd9e7dc4a",
     "url": "/silvia-peligro/static/media/getFetch.013f0b90.cjs"
+  },
+  {
+    "revision": "4e0f028d234b4c780638de08cdda5263",
+    "url": "/silvia-peligro/static/media/instagram.4e0f028d.png"
   },
   {
     "revision": "24930086320ae58f897c9611f2480b5e",
