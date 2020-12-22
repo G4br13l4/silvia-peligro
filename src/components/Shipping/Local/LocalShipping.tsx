@@ -66,7 +66,17 @@ const LocalShipping = props => {
             <UncontrolledCollapse toggler="request-template">
                 <Card>
                     <CardBody>
-                      <img className="requestTemplate" src={requestTemplate}/>
+                      <div className="indications">
+                        <p>Envíame tu pedido redactado en el cuerpo de tu mensaje, <b>no envies fotos o 
+                        capturas de pantalla</b>.</p>
+                        <p>Escribe tu <b>pedido en forma de lista</b>, evita enviar texto corrido.</p>
+                        <p>Indicame el número de unidades de la siguiente forma <b>(número de piezas) producto </b>
+                        si solo es una pieza no es necesario indicarlo.</p>
+                      </div>
+                      <div className="requestTemplate-wrapper">
+                        <h3>Ejemplo:</h3>
+                        <img className="requestTemplate" src={requestTemplate}/>
+                      </div>
                     </CardBody>
                 </Card>
             </UncontrolledCollapse>
@@ -100,8 +110,8 @@ const LocalShipping = props => {
       </div>
       
       <div className="calendar-wrapper">
-        <h3>Fechas para realizar pedidos</h3>
-        <p>(solo aplica si el pedido es por medio de mensaje directo en Instagram)</p>
+        <h3>Calendario de pedidos/entregas CDMX</h3>
+        <p>(Estos calendarios aplican únicamente para pedidos hechos por mensaje en Instagram)</p>
         <Calendar
           customClass="decemberCalendar"
           month="12"
