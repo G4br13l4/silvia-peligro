@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ddb96d120729d6e8964fdd6cba4a81c3",
+    "revision": "811fb2ac0600aea66049b97142ac22ef",
     "url": "/silvia-peligro/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/silvia-peligro/static/css/2.9ff99f11.chunk.css"
   },
   {
-    "revision": "a9a000d5dd12d0c2c462",
-    "url": "/silvia-peligro/static/css/main.d478b4e4.chunk.css"
+    "revision": "e7c1e65d28dee7be8fde",
+    "url": "/silvia-peligro/static/css/main.88afa16a.chunk.css"
   },
   {
     "revision": "dae6dec8d6e64d876a5a",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/silvia-peligro/static/js/2.74e7cf4a.chunk.js.LICENSE"
   },
   {
-    "revision": "a9a000d5dd12d0c2c462",
-    "url": "/silvia-peligro/static/js/main.c76f03e5.chunk.js"
+    "revision": "e7c1e65d28dee7be8fde",
+    "url": "/silvia-peligro/static/js/main.9386c392.chunk.js"
   },
   {
     "revision": "a0688ba340e2d5c2bd7f",
