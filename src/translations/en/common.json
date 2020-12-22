@@ -2,7 +2,7 @@
     "Menu": {
         "home": "Home",
         "products": "Products",
-        "allProducts": "All",
+        "all": "All",
         "kits": "Embroidery Kits",
         "frames": "Frames",
         "classes": "Online Classes",
@@ -12,6 +12,33 @@
         "contact": "Contact",
         "local": "Mexico City",
         "national": "National"
+    },
+    "daysOfWeek": {
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday"
+    },
+    "months": {
+        "jan": "January",
+        "feb": "February",
+        "mar": "March",
+        "apr": "April",
+        "may": "May",
+        "jun": "June",
+        "jul": "July",
+        "aug": "August",
+        "sep": "September",
+        "oct": "October",
+        "nov": "November",
+        "dec": "December"
+    },
+    "Calendar": {
+        "receptionDay": "Order Reception",
+        "deliveryDay": "Order Delivery"
     },
     "Button": {
         "seeMore": "See more",

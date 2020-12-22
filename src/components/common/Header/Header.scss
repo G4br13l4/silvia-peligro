@@ -3,6 +3,7 @@
 .header {
     background-size: contain;
     background-position: center center;
+    box-shadow: 0 0 0 200px rgba($color: black, $alpha: 0.2) inset;
     height: 25vh;
     min-height: 162px;
     max-height: 185px;

@@ -23,8 +23,14 @@
         }
     }
 
+    .shipping-announcement {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+
     &__steps {
-        padding: 1rem 1.5rem 2rem;
+        padding: 1rem 1.5rem;
 
         h3 {
             font-size: 1.2rem;
@@ -33,7 +39,10 @@
 
         p { margin-bottom: .6rem;}
 
-        ul { list-style-type: disc;}
+        ul { 
+            margin-top: .5rem;
+            list-style-type: disc;
+        }
 
         .steps-list { 
             list-style: none;
@@ -71,7 +80,134 @@
             li:nth-child(2):after {content: "2";}
             li:nth-child(3):after {content: "3";}
             li:nth-child(4):after {content: "4";}
+
+            .card-body {
+                padding: 0;
+            }
+
+            .card {width: fit-content;}
+
+            .requestTemplate {
+                max-width: 400px;
+            }
+        }
+    }
+
+    .calendar-wrapper {
+        padding: 1rem 1.5rem 2rem;
+        width: 100vw;
+
+        h3 {
+            @include font-subTitle;
+        }
+
+        .decemberCalendar {
+            tr:nth-child(1) .receptionDay,
+            tr:nth-child(1) .deliveryDay {
+                background:rgb(9, 129, 9);
+                color: white;
+            }
+        
+            tr:nth-child(2) .receptionDay,
+            tr:nth-child(2) .deliveryDay {
+                background: rgb(223, 10, 10);
+                color: white;
+            }
+        
+            tr:nth-child(3) .receptionDay,
+            tr:nth-child(3) .deliveryDay {
+                background: rgb(18, 80, 12);
+                color: white;
+            }
+        
+        }
+
+        .januaryCalendar {
+            tr:nth-child(1) .receptionDay,
+            tr:nth-child(1) .deliveryDay,
+            tr:nth-child(4) .receptionDay,
+            tr:nth-child(4) .deliveryDay {
+                background:rgb(226, 2, 2);
+                color: white;
+            }
+        
+            tr:nth-child(2) .receptionDay,
+            tr:nth-child(2) .deliveryDay,
+            tr:nth-child(5) .receptionDay,
+            tr:nth-child(5) .deliveryDay {
+                background: rgb(226, 100, 2);
+                color: white;
+            }
+        
+            tr:nth-child(3) .receptionDay,
+            tr:nth-child(3) .deliveryDay {
+                background:  rgb(226, 180, 2);
+                color: white;
+            }
+        
         }
     }
 }
- 
+
+.local-shipping-announcement {
+    height: 100%;
+    width: 100%;
+    padding: 1.5rem;
+    background-image: url('../../../assets/imgs/background.jpg');
+    background-size: contain;
+
+    .content {
+        background: black;
+        padding: 2rem 1rem;
+        text-align: center;
+
+        h2 {
+            color: $pink;
+            @include font-title;
+        }
+
+        p, ul {
+            color: $shadow;
+            font-weight: 300;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        span {
+            color: white;
+            font-weight: 400;
+        }
+
+    }
+}
+
+@media (min-width: $laptop) {
+    .local-shipping-section {
+        .club-promotion {
+            justify-content: center;
+            img {width: 85px;}
+        }
+
+        .shipping-announcement {
+            justify-content: flex-start;
+        }
+
+        &__steps {
+            width: 85%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .local-shipping-section {
+        .calendar-wrapper {
+            width: 85vw;
+            margin: 0 auto;
+            
+        }
+    }
+}

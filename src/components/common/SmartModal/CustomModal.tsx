@@ -77,7 +77,7 @@ export const CustomModal = React.memo((props: Props) => {
                 </ModalBody>
                 <ModalFooter>
                     <Button color="secondary" onClick={closeModal}>{cancel}</Button>
-                    <Button color="secondary" onClick={handleConfirm} disabled={blockButton}>{confirm}</Button>
+                    {confirm && <Button color="secondary" onClick={handleConfirm} disabled={blockButton}>{confirm}</Button>}
                 </ModalFooter>
             </Modal>
         </div>

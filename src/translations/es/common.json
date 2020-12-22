@@ -2,7 +2,7 @@
     "Menu": {
         "home": "Inicio",
         "products": "Productos",
-        "allProducts": "Todos",
+        "all": "Todos",
         "kits": "Kits de Bordado",
         "frames": "Marcos",
         "classes": "Clases en Línea",
@@ -12,6 +12,33 @@
         "contact": "Contacto",
         "local": "Cd. de México",
         "national": "Nacional"
+    },
+    "daysOfWeek": {
+        "monday": "Lunes",
+        "tuesday": "Martes",
+        "wednesday": "Miércoles",
+        "thursday": "Jueves",
+        "friday": "Viernes",
+        "saturday": "Sábado",
+        "sunday": "Domingo"
+    },
+    "months": {
+        "jan": "Enero",
+        "feb": "Febrero",
+        "mar": "Marzo",
+        "apr": "Abril",
+        "may": "Mayo",
+        "jun": "Junio",
+        "jul": "Julio",
+        "aug": "Agosto",
+        "sep": "Septiembre",
+        "oct": "Octubre",
+        "nov": "Noviembre",
+        "dec": "Diciembre"
+    },
+    "Calendar": {
+        "receptionDay": "Recepción de Pedidos",
+        "deliveryDay": "Entrega de Pedidos"
     },
     "Button": {
         "seeMore": "Ver más",

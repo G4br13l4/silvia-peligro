@@ -1,0 +1,23 @@
+@import '../../../constants.scss';
+.calendar {
+    width: 100%;
+    max-width: 980px;
+    margin: 1.5rem 0 2rem;
+
+    h3 {
+        @include font-subTitle;
+        text-transform: uppercase;
+    }
+
+    thead, th {
+        border: solid 2px $light-grey !important;
+    }
+
+    td { border: solid 2px $light-grey;}
+
+    .content {
+        width: 100px;
+    }
+}
+
+

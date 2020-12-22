@@ -1,1 +1,2 @@
-export type ModalTypes = 'selectInstagramVideo';
+export type ModalTypes = 'selectInstagramVideo' | 
+                        'localShippingAnnouncement';

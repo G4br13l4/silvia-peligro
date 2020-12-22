@@ -12,3 +12,13 @@ export const ROUTES = {
     CONTACT: { name: 'contact', path: '/contact'},
     IGTV: { name: 'igtv', path: '/igtv'}
 }
+
+export const NAV_ITEMS = [
+    { id: ROUTES.HOME.name },
+    { id: ROUTES.PRODUCTS.name },
+    { id: ROUTES.CLASSES.name },
+    { id: ROUTES.SHIPPING.name },
+    { id: ROUTES.CLUB.name },
+    { id: ROUTES.EVENTS.name },
+    { id: ROUTES.CONTACT.name },
+];
