@@ -1,0 +1,61 @@
+@import '../../../constants.scss';
+
+.nationalShipping-section {
+    .shipping-announcement {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+
+    &__content {
+        padding: 0 0 2.5rem;
+    }
+
+    &__info {
+        padding: 1rem 1.5rem;
+
+        .store-links {
+            a {
+                display: block;
+                @include font-subTitle;
+                margin-bottom: .5rem;
+            }   
+        }
+    }
+
+    &__viewWrapper {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+
+        picture { text-align: center;}
+        img { 
+            width: 94%;
+            max-width: 330px;
+        }
+    }
+}
+
+@media (min-width: $tablet) {
+    .nationalShipping-section {
+        &__viewWrapper {
+            img { 
+                max-width: 700px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+             
+            }
+        }
+    }
+}
+
+@media (min-width: $laptop) {
+    .nationalShipping-section {
+        &__info {
+            width: 85%;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+

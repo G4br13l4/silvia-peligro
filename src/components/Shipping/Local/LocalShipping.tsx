@@ -17,7 +17,7 @@ import { ModalTypes } from '../../../interfaces';
 
 const LocalShipping = props => {
   const { t } = props;
-  const hasAnnouncement = false;
+  const hasAnnouncement = true;
 
   const dispatch = useDispatch();
   const openModal = (...payload: Parameters<openModalAction>) => 

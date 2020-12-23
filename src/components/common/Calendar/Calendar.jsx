@@ -53,7 +53,7 @@ const Calendar = props => {
         while(i <= numberOfWeeks) {
             if (currentDay <= lastDay) {
                 weeks.push(
-                    <tr>
+                    <tr key={`week-${i}`}>
                         {getWeeks(i)}
                     </tr>
                 );
@@ -138,7 +138,7 @@ const Calendar = props => {
             <Table responsive>
                 <thead>
                     <tr>
-                    {daysOfWeek.map(day => <th>{day}</th>)}
+                    {daysOfWeek.map((day,i) => <th key={day}>{day}</th>)}
                     </tr>
                 </thead>
                 <tbody>

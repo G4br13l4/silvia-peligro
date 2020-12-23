@@ -79,7 +79,7 @@ export const modalInfo: ModalInfo = {
                         <li>Nezahualcóyotl</li>
                         <li>Los Reyes la Paz</li>
                     </ul>
-                    <p>Recuerda acompañar tu pedido de tu <span>código postal</span> 
+                    <p>Recuerda acompañar tu pedido de tu <span>código postal </span> 
                     para confirmar que tu dirección se encuentra <span>dentro de la zona de entregas</span>.</p>
                 </div>
             </div>

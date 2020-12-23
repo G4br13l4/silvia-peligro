@@ -8,6 +8,7 @@ import ProductsPage from '../ProductsPage/ProductsPage';
 import KitsPage from '../ProductsPage/Kits/KitsPage';
 import ShippingPage from '../Shipping/ShippingPage';
 import LocalShipping from '../Shipping/Local/LocalShipping';
+import NationalShipping from '../Shipping/National/NationalShipping';
 import ClassesPage from '../ClassesPage/ClassesPage';
 import EventsPage from '../EventsPage/EventsPage';
 import IGTV_Page from '../IGTV_Page/IGTV_Page';
@@ -57,7 +58,7 @@ export const MainContainer = (props: MainContainerProps) => {
         <Route path="/products/kits" component={KitsPage} />
         <Route path="/products" exact component={ProductsPage} />
         <Route path="/shipping/cdmx" component={LocalShipping}/>
-        {/* <Route path="/shipping/national" component={}/> */}
+        <Route path="/shipping/national" component={NationalShipping}/>
         <Route path="/shipping" component={ShippingPage}/>
         <Route path="/classes" component={ClassesPage} />
         <Route path="/events" component={EventsPage} />
