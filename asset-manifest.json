@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/silvia-peligro/static/css/main.ca29abd6.chunk.css",
-    "main.js": "/silvia-peligro/static/js/main.80114573.chunk.js",
-    "main.js.map": "/silvia-peligro/static/js/main.80114573.chunk.js.map",
+    "main.css": "/silvia-peligro/static/css/main.668730a0.chunk.css",
+    "main.js": "/silvia-peligro/static/js/main.8b4cb80f.chunk.js",
+    "main.js.map": "/silvia-peligro/static/js/main.8b4cb80f.chunk.js.map",
     "runtime-main.js": "/silvia-peligro/static/js/runtime-main.1ff5d4e9.js",
     "runtime-main.js.map": "/silvia-peligro/static/js/runtime-main.1ff5d4e9.js.map",
     "static/css/2.9ff99f11.chunk.css": "/silvia-peligro/static/css/2.9ff99f11.chunk.css",
-    "static/js/2.f3bf66d9.chunk.js": "/silvia-peligro/static/js/2.f3bf66d9.chunk.js",
-    "static/js/2.f3bf66d9.chunk.js.map": "/silvia-peligro/static/js/2.f3bf66d9.chunk.js.map",
+    "static/js/2.02e6faa7.chunk.js": "/silvia-peligro/static/js/2.02e6faa7.chunk.js",
+    "static/js/2.02e6faa7.chunk.js.map": "/silvia-peligro/static/js/2.02e6faa7.chunk.js.map",
     "index.html": "/silvia-peligro/index.html",
-    "precache-manifest.754f9c1ebd95adffd9a081d19ca815a0.js": "/silvia-peligro/precache-manifest.754f9c1ebd95adffd9a081d19ca815a0.js",
+    "precache-manifest.e3b5789e33a6f0b7a8f94567e34e0a20.js": "/silvia-peligro/precache-manifest.e3b5789e33a6f0b7a8f94567e34e0a20.js",
     "service-worker.js": "/silvia-peligro/service-worker.js",
     "static/css/2.9ff99f11.chunk.css.map": "/silvia-peligro/static/css/2.9ff99f11.chunk.css.map",
-    "static/css/main.ca29abd6.chunk.css.map": "/silvia-peligro/static/css/main.ca29abd6.chunk.css.map",
-    "static/js/2.f3bf66d9.chunk.js.LICENSE": "/silvia-peligro/static/js/2.f3bf66d9.chunk.js.LICENSE",
+    "static/css/main.668730a0.chunk.css.map": "/silvia-peligro/static/css/main.668730a0.chunk.css.map",
+    "static/js/2.02e6faa7.chunk.js.LICENSE": "/silvia-peligro/static/js/2.02e6faa7.chunk.js.LICENSE",
     "static/media/index.css": "/silvia-peligro/static/media/Spot-Matrix.68a4c297.ttf",
     "static/media/LocalShipping.scss": "/silvia-peligro/static/media/embroidery.4f631e43.png",
     "static/media/bordado_basico.jpg": "/silvia-peligro/static/media/bordado_basico.1dfdd5c9.jpg",
     "static/media/bordado_min.jpg": "/silvia-peligro/static/media/bordado_min.ca8a4a53.jpg",
-    "static/media/club-logo.png": "/silvia-peligro/static/media/club-logo.99dc0c3f.png",
+    "static/media/club-logo.png": "/silvia-peligro/static/media/club-logo.52962272.png",
     "static/media/frames.jpg": "/silvia-peligro/static/media/frames.c35899db.jpg",
     "static/media/getFetch.cjs": "/silvia-peligro/static/media/getFetch.013f0b90.cjs",
     "static/media/instagram.png": "/silvia-peligro/static/media/instagram.4e0f028d.png",
@@ -32,13 +32,14 @@
     "static/media/mainSlideBanner_3.jpg": "/silvia-peligro/static/media/mainSlideBanner_3.f2d3509e.jpg",
     "static/media/mobile-view.png": "/silvia-peligro/static/media/mobile-view.14b28f12.png",
     "static/media/pikacho.jpg": "/silvia-peligro/static/media/pikacho.cfa47dc9.jpg",
+    "static/media/pin-club.png": "/silvia-peligro/static/media/pin-club.397da9a7.png",
     "static/media/request-template.jpg": "/silvia-peligro/static/media/request-template.c88ff015.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.1ff5d4e9.js",
     "static/css/2.9ff99f11.chunk.css",
-    "static/js/2.f3bf66d9.chunk.js",
-    "static/css/main.ca29abd6.chunk.css",
-    "static/js/main.80114573.chunk.js"
+    "static/js/2.02e6faa7.chunk.js",
+    "static/css/main.668730a0.chunk.css",
+    "static/js/main.8b4cb80f.chunk.js"
   ]
 }

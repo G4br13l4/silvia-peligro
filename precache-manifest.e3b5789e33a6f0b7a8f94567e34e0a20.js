@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1bb18b979a6bd9b426892bd9b76e6260",
+    "revision": "d3baa0f25e59e419b0c529a5fd61df07",
     "url": "/silvia-peligro/index.html"
   },
   {
-    "revision": "f71bc0893592aa51e726",
+    "revision": "d7fa8301f388e6e59e6f",
     "url": "/silvia-peligro/static/css/2.9ff99f11.chunk.css"
   },
   {
-    "revision": "4b670683180fa1df9e61",
-    "url": "/silvia-peligro/static/css/main.ca29abd6.chunk.css"
+    "revision": "e2a3ef2e41f78c280a14",
+    "url": "/silvia-peligro/static/css/main.668730a0.chunk.css"
   },
   {
-    "revision": "f71bc0893592aa51e726",
-    "url": "/silvia-peligro/static/js/2.f3bf66d9.chunk.js"
+    "revision": "d7fa8301f388e6e59e6f",
+    "url": "/silvia-peligro/static/js/2.02e6faa7.chunk.js"
   },
   {
     "revision": "0e479e34c7853cf26f3584614b8f1e58",
-    "url": "/silvia-peligro/static/js/2.f3bf66d9.chunk.js.LICENSE"
+    "url": "/silvia-peligro/static/js/2.02e6faa7.chunk.js.LICENSE"
   },
   {
-    "revision": "4b670683180fa1df9e61",
-    "url": "/silvia-peligro/static/js/main.80114573.chunk.js"
+    "revision": "e2a3ef2e41f78c280a14",
+    "url": "/silvia-peligro/static/js/main.8b4cb80f.chunk.js"
   },
   {
     "revision": "a0688ba340e2d5c2bd7f",
@@ -48,8 +48,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/silvia-peligro/static/media/bordado_min.ca8a4a53.jpg"
   },
   {
-    "revision": "99dc0c3f8c3fdbef935f40a13ade50ab",
-    "url": "/silvia-peligro/static/media/club-logo.99dc0c3f.png"
+    "revision": "52962272e409fe5b0b4c7b63001fea52",
+    "url": "/silvia-peligro/static/media/club-logo.52962272.png"
   },
   {
     "revision": "4f631e437ae1987eef70c7a93e77932a",
@@ -106,6 +106,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "cfa47dc9f62460c47a10a4f67b439e54",
     "url": "/silvia-peligro/static/media/pikacho.cfa47dc9.jpg"
+  },
+  {
+    "revision": "397da9a7a6ee061a16acd074ffa9c6f4",
+    "url": "/silvia-peligro/static/media/pin-club.397da9a7.png"
   },
   {
     "revision": "c88ff015ba4fa90ac21a0f078b445d4c",
