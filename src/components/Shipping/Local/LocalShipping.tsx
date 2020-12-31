@@ -57,7 +57,7 @@ const LocalShipping = props => {
         <ul className="steps-list">
           <li className="step">
             <p>Enviame una lista de lo que te gustaría comprar
-            por mensaje privado a instagram @speligro
+            por mensaje privado a instagram <a href="https://www.instagram.com/speligro/" target="_blank">@speligro </a>
             acompañado de tu código postal para cotizar tu envío. <br/>
             Mínimo de compra 150 pesos mexicanos.</p>
             <Button id="request-template">

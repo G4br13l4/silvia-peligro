@@ -3,8 +3,9 @@ import './Header.scss';
 import background from './../../../assets/imgs/background.jpg';
 
 interface Props {
-    title: string;
+    title?: string;
     subtitle?: string;
+    img?: any;
     customClass?: string;
     customBackground?: Node;
 }
@@ -13,6 +14,7 @@ export const Header = (props: Props) => {
     const { 
         title, 
         subtitle, 
+        img,
         customClass, 
         customBackground 
     } = props;
@@ -21,8 +23,9 @@ export const Header = (props: Props) => {
         <header 
             style={{backgroundImage: `url(${customBackground ? customBackground : background})`}}
             className={`header ${customClass ? customClass : ''}`}>
-            <h1>{title}</h1>
+            { title && <h1>{title}</h1> }
             { subtitle && <span>{subtitle}</span> }
+            { img && <img src={img}/>}
         </header>
     );
 }

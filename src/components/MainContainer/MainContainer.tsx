@@ -11,6 +11,7 @@ import LocalShipping from '../Shipping/Local/LocalShipping';
 import NationalShipping from '../Shipping/National/NationalShipping';
 import ClassesPage from '../ClassesPage/ClassesPage';
 import EventsPage from '../EventsPage/EventsPage';
+import ClubPage from '../ClubPage/ClubPage';
 import IGTV_Page from '../IGTV_Page/IGTV_Page';
 import NotFound from '../ErrorPages/NotFoundPage';
 import { ModalInterface } from '../../interfaces';
@@ -62,6 +63,7 @@ export const MainContainer = (props: MainContainerProps) => {
         <Route path="/shipping" component={ShippingPage}/>
         <Route path="/classes" component={ClassesPage} />
         <Route path="/events" component={EventsPage} />
+        <Route path="/club" component={ClubPage} />
         <Route path="/igtv" component={IGTV_Page} />
         <Route component={NotFound} />
       </Switch>

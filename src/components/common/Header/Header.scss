@@ -28,6 +28,12 @@
         line-height: 1;
         text-shadow: 2px 2px 2px $light-black;
     }
+
+    img {
+        height: 100%;
+        padding: .8rem;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: $laptop) {

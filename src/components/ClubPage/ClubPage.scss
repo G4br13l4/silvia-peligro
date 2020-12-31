@@ -1,0 +1,82 @@
+@import '../../constants.scss';
+
+.club-section {
+
+    h3 {
+        @include font-subTitle;
+    }
+
+    ul {padding-left: 1.5rem;}
+
+    .content-wrapper {
+        width: 100vw;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    .pin-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        &__content {text-align: center;}
+        img {  
+            display: block;
+            max-width: 310px;
+            transition: transform 0.1s;
+            &:hover {
+                cursor: pointer;
+            }    
+        }
+        h3 { margin-top: .5rem;}
+        ul { 
+            padding: 0; 
+            list-style: none;
+
+            li {margin-bottom: .5rem;}
+        }
+    }
+
+    .store-link {
+        display: block;
+        margin-bottom: .3rem;
+        @include font-subTitle;
+    }
+
+    .price {
+        display: block;
+        font-size: 1.15rem;
+        font-weight: 300;
+        padding-left: .2rem;
+    }
+
+    .intro-instagramFeed {
+        padding: .5rem 1rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: $laptop) {
+    .club-section {
+        .content-wrapper {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        .pin-info {
+            flex-wrap: nowrap;
+            align-items: center;
+            &__content {text-align: initial;}
+
+            img { margin: 0 1rem 0 2rem;}
+            
+            ul { 
+                padding-left: 1rem;
+                list-style: outside;
+            }
+        }
+
+        .price {display: inline-block;}
+    }
+}
+
+
