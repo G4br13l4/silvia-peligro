@@ -47,7 +47,8 @@
         "subscribe": "Suscribir"
     },
     "Input": {
-        "optional": "Opcional"
+        "optional": "Opcional",
+        "required": "indica que es requerido"
     },
     "InstagramFeed": {
         "followMe": "Sígueme en"

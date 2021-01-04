@@ -30,7 +30,7 @@ const Footer = props => {
                 <div id="mc_embed_signup">
                     <form action="https://kichink.us8.list-manage.com/subscribe/post?u=b9cb0284d7852b9c555efb828&amp;id=434325209d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
                         <div id="mc_embed_signup_scroll">
-                            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                            <div class="indicates-required"><span class="asterisk">*</span> {t('Input.required')}</div>
                             <div className="mc-field-group">
                                 <label for="mce-EMAIL">{t('Mailing.email')}<span class="asterisk">*</span>:</label>
                                 <input type="email" name="EMAIL" className="required email" id="mce-EMAIL" required/>

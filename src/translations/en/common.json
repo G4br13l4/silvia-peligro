@@ -47,7 +47,8 @@
         "subscribe": "Subscribe"
     },
     "Input": {
-        "optional": "Optional"
+        "optional": "Optional",
+        "required": "indicates required"
     },
     "InstagramFeed": {
         "followMe": "Follow me on"
