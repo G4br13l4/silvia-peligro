@@ -28,37 +28,53 @@
     }
 
     &__input-wrapper {
-        height: fit-content;
-        width: 87%;
-        margin: 0 auto 2rem;
-        p {
+        padding: 0 1rem 2rem;
+
+        .intro {
             text-align: center;
+        }
+
+        .mc-field-group {
+            display: flex;
+            flex-direction: column;
+            margin: .5rem 0;
+        }
+
+        .email, 
+        .name {
+            border-radius: 3px;
+            border: solid 1.5px $light-purple;
+            padding: .3rem .5rem;
+        }
+
+        .indicates-required {
+            text-align: end;
+            color: $pink;
             font-size: 0.9rem;
+        }
+        .asterisk { color: $pink;}
+
+        .clear { 
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .button {
+            font-size: 0.9rem;
+            border: none;
+            border-radius: 3px;
+            box-shadow: 0px 3px 6px $shadow;
+            background: $light-purple;
+            color: white;
+            padding: .3rem 2.5rem;
+            transition: all 0.2s;
+            white-space: nowrap;
+
+            &:hover {
+                transform: scale(0.99);
+                box-shadow: $shadow 0 0 3px;
+            }
         }
         
-        .custom-input {
-            width: 100%;
-            border-radius: 5%;
-            margin: 0 auto;
-        }
-
-        .form-control {
-            border-radius: 35px 0 0 35px;
-            border-color: $light-purple;
-            border-right: none;
-            font-size: 0.9rem;
-        }
-
-        .btn {
-            color: black;
-            line-height: 1;
-            background: transparent;
-            border-color: $light-purple;
-            border-left: none;
-            border-radius: 0 35px 35px 0 !important;
-            font-size: 0.9rem;
-            font-weight: 600;
-        }
     }
 
     &__menu {
@@ -96,24 +112,31 @@
     }
 }
 
-@media (min-width: 38em) {
+@media (min-width: $tablet) {
     .footer {
         &__input-wrapper {
-            .custom-input { 
-                width: 85%;
+            #mc_embed_signup {
+                width: fit-content;
+                margin: 0 auto;
             }
+
+            .email,
+            .name {
+                min-width: 230px;
+                margin-left: .5rem;
+            }
+
+            .mc-field-group {
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+           
         }
     }
 }
 
 @media (min-width: $laptop) {
     .footer {
-        &__input-wrapper {
-            .custom-input {
-                width: 55%;
-            }
-        }
-
         &__menu {
             justify-content: center;
             margin: 1.2em auto;
@@ -138,16 +161,6 @@
             }
             img {
                 margin: 0 0.3em;
-            }
-        }
-    }
-}
-
-@media (min-width: 62em) {
-    .footer {
-        &__input-wrapper {
-            .custom-input {
-                width: 41%;
             }
         }
     }

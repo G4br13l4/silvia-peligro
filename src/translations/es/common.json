@@ -43,15 +43,19 @@
     "Button": {
         "seeMore": "Ver más",
         "seeCatalog": "Ver catálogo",
-        "seeVideolist": "¡Ver más vídeos!"
+        "seeVideolist": "¡Ver más vídeos!",
+        "subscribe": "Suscribir"
+    },
+    "Input": {
+        "optional": "Opcional"
     },
     "InstagramFeed": {
         "followMe": "Sígueme en"
     },
     "Mailing": {
-        "title": "Recibe avisos sobre mis próximos talleres/eventos directamente en tu bandeja de entrada",
-        "input": "Escribe tu correo electrónico",
-        "btn": "Suscribirme"
+        "title": "Recibe noticias sobre mis próximos talleres, promociones especiales y más, directamente en tu bandeja de entrada",
+        "email": "Correo electrónico",
+        "firstName": "Primer nombre"
     },
     "HomePage": {
         "igtvTitle": "Checa mis vídeos en Instagram TV",
