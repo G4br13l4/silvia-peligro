@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/silvia-peligro/precache-manifest.105d8f0f04c5d587d95edbaef4f43eed.js"
+  "/silvia-peligro/precache-manifest.657dec32347b6b9c84ccb1a3e71e1788.js"
 );
 
 self.addEventListener('message', (event) => {
