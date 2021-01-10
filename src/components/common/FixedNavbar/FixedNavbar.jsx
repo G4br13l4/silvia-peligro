@@ -64,19 +64,19 @@ class FixedNavbar extends React.Component {
                                         {t(`Menu.${item.id}`)} 
                                     </DropdownToggle>
                                     <DropdownMenu right>
-                                        <DropdownItem>
-                                            <NavLink to={ROUTES.PRODUCTS.path} className="nav-collapse__link">
+                                        <DropdownItem className="nav-dropdown">
+                                            <NavLink exact to={ROUTES.PRODUCTS.path} onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">
                                                 {t('Menu.all')}
                                             </NavLink>
                                         </DropdownItem>
                                         <DropdownItem divider />
-                                        <DropdownItem>
-                                            <NavLink to={ROUTES.KITS.path} className="nav-collapse__link">
+                                        <DropdownItem className="nav-dropdown">
+                                            <NavLink to={ROUTES.KITS.path} onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">
                                                 {t('Menu.kits')}
                                             </NavLink>
                                         </DropdownItem>
                                         <DropdownItem divider />
-                                        <DropdownItem>
+                                        <DropdownItem className="nav-dropdown">
                                             <NavLink to={ROUTES.FRAMES.path} onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">
                                                 {t('Menu.frames')}
                                             </NavLink>
@@ -89,19 +89,19 @@ class FixedNavbar extends React.Component {
                                         {t(`Menu.${item.id}`)} 
                                     </DropdownToggle>
                                     <DropdownMenu right>
-                                        <DropdownItem>
-                                            <NavLink to={ROUTES.SHIPPING.path} className="nav-collapse__link">
+                                        <DropdownItem className="nav-dropdown">
+                                            <NavLink exact to={ROUTES.SHIPPING.path} onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">
                                                 {t('Menu.all')}
                                             </NavLink>
                                         </DropdownItem>
                                         <DropdownItem divider />
-                                        <DropdownItem>
-                                            <NavLink to={ROUTES.LOCAL_SHIPPING.path} className="nav-collapse__link">
+                                        <DropdownItem className="nav-dropdown">
+                                            <NavLink to={ROUTES.LOCAL_SHIPPING.path} onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">
                                                 {t('Menu.local')}
                                             </NavLink>
                                         </DropdownItem>
                                         <DropdownItem divider />
-                                        <DropdownItem>
+                                        <DropdownItem className="nav-dropdown">
                                             <NavLink to={ROUTES.NATIONAL_SHIPPING.path} onClick={isMobile ? this.toggleHamburger : null} className="nav-collapse__link">
                                                 {t('Menu.national')}
                                             </NavLink>
@@ -117,7 +117,7 @@ class FixedNavbar extends React.Component {
                     </ul>
 
                     <div className="nav-collapse__icons">
-                        <a href="https://www.instagram.com/speligro/" target="_blank">
+                        <a href={process.env.REACT_APP_INSTA_LINK_SP} target="_blank">
                             <img alt="instagram-icon" src={instagram} />
                         </a>
                         <a href="mailto:hola@silviapeligro.com">

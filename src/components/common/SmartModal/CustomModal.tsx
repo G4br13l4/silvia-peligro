@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useTranslation, Trans } from 'react-i18next';
 import {
     Button, 
     Modal, 
@@ -22,6 +22,8 @@ export interface Props {
 }
 
 export const CustomModal = React.memo((props: Props) => {
+    const { t, i18n } = useTranslation('common');
+    
     const {
         //State
         modalState,
@@ -47,6 +49,7 @@ export const CustomModal = React.memo((props: Props) => {
         buttons: { cancel, confirm }
     } = modalInfo[modalType!]({
         setIgVideo,
+        t
     });
 
     const handleConfirm = () => {

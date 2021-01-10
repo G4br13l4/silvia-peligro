@@ -48,8 +48,8 @@ const NationalShipping = props => {
             tu pago sin necesidad de enviarme mensaje.</p>
           <p className="store-links">
             <b>Mi tienda en línea es:</b>
-            <a className="" href="https://bazarama.com/t/silvia-peligro" target="_blank">bazarama.com/t/silvia-peligro</a>
-            <a href="https://bazarama.com/t/silvia-peligro" target="_blank">
+            <a className="" href={process.env.REACT_APP_STORE_LINK} target="_blank">bazarama.com/t/silvia-peligro</a>
+            <a href={process.env.REACT_APP_STORE_LINK} target="_blank">
                 <CustomButton text="Ir a tienda"/>
             </a>
           </p>

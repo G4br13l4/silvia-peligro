@@ -2,14 +2,40 @@
 
 .kits-section {
     &__content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
         width: 100vw;
         padding: 1.5rem 1.5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
 
         h2 {
            @include font-subTitle; 
+        }
+
+        .kits-selector {
+            display: flex;
+            flex-direction: column;
+
+            a:first-child button { border-radius: 5px 5px 0 0;}
+            a:last-child button { border-radius: 0 0 5px 5px;}
+
+            button {
+                font-size: 1.1rem;
+                width: 100%;
+                font-weight: 700;
+                text-shadow: 2px 2px 2px #161616;
+                color: white;
+                background-image: url('../.././../assets/imgs/background.jpg');
+                background-size: contain;
+                box-shadow: 0 0 0 200px rgba($color: black, $alpha: 0.7) inset;
+                white-space: nowrap;
+                padding: 1rem;
+
+                &:hover {
+                    box-shadow: 0 0 0 200px rgba($color: black, $alpha: 0.1) inset;
+                }
+            }
         }
 
         .kitsSize-table{
@@ -61,24 +87,26 @@
 
         .kits-carousel {
             width: 100%;
-            max-width: 600px;
+            max-width: 400px;
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             margin-top: 3rem;
 
             h2 {
-                margin-top: .5rem;
+                margin: .2rem 0 0;
+            }
+
+            p { 
+                width: 85%;
+                margin: .75rem auto;
             }
 
             .carousel {
-                width: 73%;
+                width: 85%;
                 margin: 0 auto;  
             }
 
             .carousel-control-prev {
-                left: -20%;
+                left: -15%;
             }
 
             @mixin icon-size {
@@ -90,7 +118,7 @@
                 background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='$purple' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e");
             }
             .carousel-control-next {
-                right: -20%;
+                right: -15%;
             }
 
             .carousel-control-next-icon {
@@ -104,11 +132,11 @@
                 border-radius: 50%;
                 padding: 50%;
             }
+        }
 
-            .btn-purple {
-                background: #43026A;
-            }
-
+        .btn-purple {
+            background: #43026A;
+            margin-top: .5rem;
         }
 
     }
@@ -116,24 +144,32 @@
 
 @media (min-width: $laptop) {
     .kits-section {
-        .kits-section {
-            &__content {
-                padding: 1.5rem 3rem 2rem;
-                justify-content: space-evenly;
-    
-                .kitsSize-table{
-                    max-width: 48%;
-                }
-    
-                .kits-carousel {
-                    max-width: 440px;
-                    width: 50%;
-                    align-self: center;
+        &__content {
+            padding: 1.5rem 3rem 2rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
 
-                    p {
-                        width: 70%;
-                    }
-                }
+            .kitsSize-table{
+                max-width: 48%;
+            }
+
+            .description { margin-bottom: 2rem;}
+
+            .kits-carousel {
+                margin: 0 0 0 2rem;
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .kits-section {
+        &__content {
+            .kits-carousel {
+                margin: 0 0 0 3rem;
             }
         }
     }

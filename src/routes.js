@@ -1,6 +1,6 @@
 export const ROUTES = {
     HOME: { name: 'home', path: '/'},
-    CLASSES: { name: 'classes', path: '/classes'},
+    COURSES: { name: 'courses', path: '/courses'},
     PRODUCTS: { name: 'products', path: '/products'},
     KITS: { name: 'kits', path: '/products/kits'},
     FRAMES: { name: 'frames', path: '/products/frames'},
@@ -16,9 +16,10 @@ export const ROUTES = {
 export const NAV_ITEMS = [
     { id: ROUTES.HOME.name },
     { id: ROUTES.PRODUCTS.name },
-    { id: ROUTES.CLASSES.name },
+    { id: ROUTES.COURSES.name },
     { id: ROUTES.SHIPPING.name },
     { id: ROUTES.CLUB.name },
     { id: ROUTES.EVENTS.name },
+    { id: ROUTES.IGTV.name },
     { id: ROUTES.CONTACT.name },
 ];

@@ -5,10 +5,11 @@
         "all": "Todos",
         "kits": "Kits de Bordado",
         "frames": "Marcos",
-        "classes": "Clases en Línea",
+        "courses": "Cursos en Línea",
         "shipping": "Envíos",
         "club": "Club de Bordado",
         "events": "Eventos",
+        "igtv": "Instagram TV",
         "contact": "Contacto",
         "local": "Cd. de México",
         "national": "Nacional"
@@ -42,9 +43,16 @@
     },
     "Button": {
         "seeMore": "Ver más",
-        "seeCatalog": "Ver catálogo",
+        "seeCatalog": "Ver catálogo completo",
         "seeVideolist": "¡Ver más vídeos!",
-        "subscribe": "Suscribir"
+        "subscribe": "Suscribir",
+        "goToStore": "Ir a tienda",
+        "mexicoCity": "Ciudad de México",
+        "national": "Fuera de Ciudad de México",
+        "cancel": "Cancel",
+        "playVideo": "Reproducir vídeo",
+        "close": "Cerrar",
+        "important": "¡Ver Anuncio Importante!"
     },
     "Input": {
         "optional": "Opcional",
@@ -68,18 +76,18 @@
     "KitsPage": {
         "headerTitle": "Kits de Bordado",
         "headerSubtitle": "Descubre todos los diseños para que te diviertas bordando.",
-        "description": "Estos kits son ideales para bordadores experimentados, por lo que si es tu primera vez bordando,  te recomendamos adquirir uno de nuestros cursos en línea sobre bordado básico ó asistir a uno de nuestros talleres.",
+        "description": "Estos kits son ideales para bordadores experimentados, por lo que si es tu primera vez bordando, te recomendamos adquirir uno de nuestros <txtLink to='/courses'>cursos en línea</txtLink> sobre bordado básico ó asistir a uno de nuestros talleres.",
         "tableTitle": "Tipos de Kits",
         "whatIncludes": "¿Qué incluye?",
         "small": "Chico",
         "large": "Grande",
         "carouselDescription": "Éstos son algunos de los kits que podrás encontrar en nuestro catálogo"
     },
-    "ClassesPage": {
-        "title": "Clases en línea",
+    "CoursesPage": {
+        "title": "Cursos online",
         "subtitle": "¿Te gustaría aprender a bordar o aprender nuevas técnicas para tus bordados?",
-        "basicClassTitle": "Clase de Bordado Básico",
-        "miniatureClassTitle": "Técnicas de bordado en miniatura"
+        "basicClassTitle": "Curso de Bordado Básico",
+        "miniatureClassTitle": "Curso de Bordado en Miniatura"
     },
     "ProductsPage": {
         "title": "Productos",
@@ -92,7 +100,42 @@
         "subtitle": "Cursos presenciales, exposiciones, reuniones del Club de Bordado y más...",
         "noEventsMessage": "Por el momento no hay próximos eventos"
     },
+    "ClubPage": {
+        "intro": "<h>¿Qué es?</h>\n<par>Club de Bordado es una comunidad de bordadorxs con base en CDMX (pero con miembros en todo México y el mundo).</par>\n<h>¿En qué consiste?</h>\n<par>Además de estar en comunicación constante a través de nuestro grupo en Facebook, organizamos convivencias mensuales en distintos puntos de la ciudad con el fin de conocer y crear lazos con personas que disfrutan del bordado, NO son clases.</par>\n<par>**A consecuencia de la situación actual (únicamente tendremos sesiones virtuales).**</par>\n<par>No importa tu nivel o experiencia pero es necesario que ya sepas algunas puntadas para que puedas compartir tus proyectos con el grupo.</par>",
+        "benefits": "<h>Otros beneficios...</h><list><bullet>Tendrás un 10% de descuento en compras directas de materiales y kits de bordado de Silvia Peligro (<txtLink href='{{url}}' target='_blank'>@speligro</txtLink>).</bullet><bullet>Tendrás acceso a patrones para bordar exclusivos.</bullet></list>",
+        "howParticipate": "<h>¿Cómo puedo participar?</h>\n<par>Para formar parte de Club de Bordado debes tener tu pin metálico edición limitada (este es nuestro modelo vigente).</par>",
+        "generalPrice": "Precio Público General",
+        "membersPrice": "Precio Miembrxs de Club de Bordado",
+        "howGetPin": "¿Dónde adquiero mi pin?",
+        "getPinCDMX": "Si vives en CDMX, mandame mensaje directo a mi instagram",
+        "getPinNational": "Si vives en otro estado de la República Mexicana, visita mi tienda en línea en",
+        "instagramIntro": "Aquí podrás ver novedades, bordados de miembrxs del club, así como recuerdos de las últimas reuniones...",
+        "greetings": "¡Esperamos conocerte pronto!"
+    },
+    "ShippingPage": {
+        "title": "¿Cómo hago mi pedido?",
+        "subtitle": "Envíos a toda la República Mexicana",
+        "intro": "<par>Recibe tu pedido a la puerta de tu casa. Hacemos envíos a toda la República Mexicana.</par><par>¿Dónde te gustaría que envíemos tu pedido?, elige una opción y checa los pasos a seguir para realizar tu pedido :)</par>"
+    },
     "LocalShipping": {
-        "headerTitle": "¿Cómo hacer tu pedido con envío dentro de la CDMX?"
+        "headerTitle": "¿Cómo hacer tu pedido con envío dentro de la CDMX?",
+        "clubPromo": "Con tu número de miembro recibe un 10% de descuento en tu pedido",
+        "intro": "<par>Este envío esta disponible si la dirección de entrega se encuentra dentro de las 16 alcaldías de la CDMX.</par>\n<par>Cada semana estaré recibiendo pedidos los días jueves y viernes de 11 am a 6 pm (las entregas son los dias martes).</par>",
+        "step1": "<par>Enviame una lista de lo que te gustaría comprar por mensaje privado a instagram<txtLink href='{{url}}' target='_blank'> @speligro </txtLink>acompañado de tu código postal para cotizar tu envío. <br/>Mínimo de compra 150 pesos mexicanos.</par>",
+        "howToOrder": "¿Cómo redactar mi pedido? Da clic aquí.",
+        "orderIndications": "<par>Envíame tu pedido redactado en el cuerpo de tu mensaje, <bold>no envies fotos o capturas de pantalla</bold>.</par>\n<par>Escribe tu <bold>pedido en forma de lista</bold>, evita enviar texto corrido.</par>\n<par>Indicame el número de unidades de la siguiente forma <bold>(número de piezas) producto </bold>si solo es una pieza no es necesario indicarlo.</par>",
+        "example": "Ejemplo",
+        "step2": "En respuesta a tu mensaje te confirmaré si tengo todos los productos de tu lista, también te dire el costo de tu envío y te compartiré los datos bancarios para que puedas hacer la transferencia o depósito.",
+        "step3": "Una vez hecho el pago necesito una foto o captura de pantalla de tu comprobante de pago y los siguientes datos:\n<list><bullet>Nombre de quien recibirá el paquete</bullet><bullet>Número celular</bullet><bullet>Dirección de entrega</bullet></list>",
+        "step4": "<par>Si envías tu comprobante antes de las 6 pm del lunes, tu pedido será enviado el martes de esa misma semana.</par>\n<par>El martes recibirás un mensaje a tu celular de Dostavista con la información de tu entrega, el horario de las entregas es de 12 a 7 pm.</par>",
+        "calendarsIntro": "<h>Calendario de pedidos/entregas CDMX</h>\n<par>(Estos calendarios aplican únicamente para pedidos hechos por mensaje directo en Instagram)</par>"
+    },
+    "modalInfo": {
+        "selectInstagramVideo": {
+            "title": "IGTV Vídeos"
+        },
+        "localShippingAnnouncement": {
+            "content": "<h>AVISO IMPORTANTE</h>\n<par>Esta semana ampliaré el rango del área de entregas, además de abarcar las 16 alcaldías de la CDMX haré entregas en <spn>algunas zonas de los siguientes municipios:</spn></par>\n<list><bullet>Tlalnepantla de Baz</bullet><bullet>Naucalpan de Juarez</bullet><bullet>Atizapán de Zaragoza</bullet><bullet>Huixquilucan de Degollado</bullet><bullet>Nezahualcóyotl</bullet><bullet>Los Reyes la Paz</bullet></list>\n<par>Recuerda acompañar tu pedido de tu <spn>código postal</spn> para confirmar que tu dirección se encuentra <spn>dentro de la zona de entregas</spn>.</par>"
+        }
     }
 }

@@ -5,6 +5,7 @@ import {
     CardBody, 
     Card
 } from 'reactstrap';
+import { Trans } from 'react-i18next';
 
 import { ModalInfo } from '../../../interfaces';
 import { RadioButton } from '../RadioButton';
@@ -19,8 +20,8 @@ const styleBtn = {
 };
 
 export const modalInfo: ModalInfo = {
-    selectInstagramVideo: ({ setIgVideo }) => ({
-        header: 'IGTV Vídeos',
+    selectInstagramVideo: ({ setIgVideo, t }) => ({
+        header: t('modalInfo.selectInstagramVideo.title'),
         content: 
         (
             <>
@@ -56,37 +57,28 @@ export const modalInfo: ModalInfo = {
         ),
         img: null,
         buttons: {
-            cancel: 'Cancel',
-            confirm: 'Reproducir vídeo'
+            cancel: t('Button.cancel'),
+            confirm: t('Button.playVideo')
         }
 
     }),
-    localShippingAnnouncement: () => ({
+    localShippingAnnouncement: ({ t }) => ({
         header: '',
         content: 
         (
             <div className="local-shipping-announcement">
                 <div className="content">
-                    <h2>AVISO IMPORTANTE</h2>
-                    <p>Esta semana ampliaré el rango del área de entregas, 
-                    además de abarcar las 16 alcaldías de la CDMX 
-                    haré entregas en <span>algunas zonas de los siguientes municipios:</span></p>
-                    <ul>
-                        <li>Tlalnepantla de Baz</li>
-                        <li>Naucalpan de Juarez</li>
-                        <li>Atizapán de Zaragoza</li>
-                        <li>Huixquilucan de Degollado</li>
-                        <li>Nezahualcóyotl</li>
-                        <li>Los Reyes la Paz</li>
-                    </ul>
-                    <p>Recuerda acompañar tu pedido de tu <span>código postal </span> 
-                    para confirmar que tu dirección se encuentra <span>dentro de la zona de entregas</span>.</p>
+                    <Trans
+                        t={t}
+                        i18nKey={t('modalInfo.localShippingAnnouncement.content')}
+                        components={{ h: <h2/>, par: <p/>, spn: <span/>, list: <ul/>, bullet: <li/> }}
+                    />
                 </div>
             </div>
         ),
         img: null,
         buttons: {
-            cancel: 'Cerrar',
+            cancel: t('Button.close'),
             confirm: ''
         }
 

@@ -14,6 +14,8 @@
         box-sizing: border-box;
     }
 
+    .how-participate { margin-bottom: 2rem;}
+
     .pin-info {
         display: flex;
         flex-wrap: wrap;
@@ -52,6 +54,41 @@
     .intro-instagramFeed {
         padding: .5rem 1rem;
         text-align: center;
+    }
+
+    .greetings {
+        background-image: url('../../assets/imgs/background.jpg');
+        background-size: contain;
+        box-shadow: 0 0 0 200px rgba($color: black, $alpha: 0.3) inset;
+        color: white;
+        padding: 2rem 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p, span {
+            text-shadow: 2px 2px 2px #161616;
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: .5rem;
+            line-height: 1;
+        }
+
+        span { font-weight: 500;}
+    }
+}
+
+@media (min-width: $tablet) {
+    .club-section {
+        .greetings {
+            p { font-size: 1.75rem;}
+            span { font-size: 1.35rem;}
+        }
     }
 }
 

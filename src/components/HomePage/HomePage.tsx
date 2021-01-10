@@ -33,8 +33,8 @@ export const HomePage = (props: HomeProps) => {
       <MainBanner />
       <InstagramFeed 
         accountName="@speligro"
-        accountLink="https://www.instagram.com/speligro/"
-        token={process.env.REACT_APP_INSTA_TOKEN_SP}
+        accountLink={process.env.REACT_APP_INSTA_LINK_SP}
+        token={process.env.REACT_APP_INSTAGRAM_TOKEN_SP}
       />
       <div className="igtv-wrapper">
         <div className="description">

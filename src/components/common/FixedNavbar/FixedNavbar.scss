@@ -125,6 +125,12 @@ $hamburger-speed: .7s;
         margin-right: 0.8rem;
       }
     }
+
+    .lang-select {
+      position: absolute;
+      top: 0;
+      margin-top: 1.9rem;
+    }
   }
 }
 
@@ -180,7 +186,7 @@ $hamburger-speed: .7s;
       display: none;
     }
     &__menu_wrapper {
-      padding: 0 2rem;
+      padding: 0 1.5rem;
     }
     .nav-collapse {
       display: flex;
@@ -190,7 +196,7 @@ $hamburger-speed: .7s;
       overflow: unset;
       min-height: 72px;
       padding: 0;
-      right: 2rem;
+      right: 1.5rem;
       background: white;
 
       &__list{
@@ -202,7 +208,7 @@ $hamburger-speed: .7s;
 
       &__item{
         margin-bottom: 0;
-        margin-right: 2rem;
+        margin-right: 1.5rem;
         
         .dropdown-menu {
           position: absolute;
@@ -211,6 +217,10 @@ $hamburger-speed: .7s;
   
         .dropdown-divider {
           opacity: 1;
+        }
+        .nav-dropdown a {
+          display: inline-block;
+          width: 100%;
         }
       }
 
@@ -231,6 +241,11 @@ $hamburger-speed: .7s;
 
       &__icons {
         display: none;
+      }
+
+      .lang-select {
+        position: relative;
+        margin: 0;
       }
     }
   }

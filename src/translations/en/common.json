@@ -5,10 +5,11 @@
         "all": "All",
         "kits": "Embroidery Kits",
         "frames": "Frames",
-        "classes": "Online Classes",
+        "courses": "Online Courses",
         "shipping": "Shipping",
         "club": "Embroidery Club",
         "events": "Events",
+        "igtv": "Instagram TV",
         "contact": "Contact",
         "local": "Mexico City",
         "national": "National"
@@ -42,9 +43,16 @@
     },
     "Button": {
         "seeMore": "See more",
-        "seeCatalog": "See catalog",
+        "seeCatalog": "See full catalog",
         "seeVideolist": "Check out more videos!",
-        "subscribe": "Subscribe"
+        "subscribe": "Subscribe",
+        "goToStore": "Go to store",
+        "mexicoCity": "Mexico City",
+        "national": "Outside of Mexico City",
+        "cancel": "Cancel",
+        "playVideo": "Play video",
+        "close": "Close",
+        "important": "See Important Announcement!"
     },
     "Input": {
         "optional": "Optional",
@@ -68,18 +76,18 @@
     "KitsPage": {
         "headerTitle": "Embroidery Kits",
         "headerSubtitle": "Discover all the designs so you can have fun embroidering.",
-        "description": "These kits are ideal for experienced embroiderers, so if this is your first time embroidering, we recommend purchasing one of our online courses on basic embroidery or attending one of our workshops.",
+        "description": "These kits are ideal for experienced embroiderers, so if this is your first time embroidering, we recommend you purchase one of our <txtLink to = '/courses'>online courses</txtLink> on basic embroidery or attend one of our workshops.",
         "tableTitle": "Types of Kits",
         "whatIncludes": "What includes?",
         "small": "Small",
         "large": "Large",
         "carouselDescription": "These are some of the kits that you can find in our catalog"
     },
-    "ClassesPage": {
-        "title": "Online classes",
+    "CoursesPage": {
+        "title": "Online courses",
         "subtitle": "Would you like to learn to embroider or learn new techniques for your embroidery?",
-        "basicClassTitle": "Basic Embroidery Class",
-        "miniatureClassTitle": "Miniature embroidery techniques"
+        "basicClassTitle": "Basic Embroidery Course",
+        "miniatureClassTitle": "Miniature Embroidery Course"
     },
     "ProductsPage": {
         "title": "Products",
@@ -92,7 +100,42 @@
         "subtitle": "On-site courses, exhibitions, Embroidery Club meetings and more...",
         "noEventsMessage": "At the moment there are no upcoming events"
     },
+    "ClubPage": {
+        "intro": "<h>What is it?</h>\n<par>Club de Bordado is a community of embroiderers based in CDMX (but with members throughout Mexico and the world).</par>\n<h>What is it about?</h>\n<par>In addition to being in constant communication through our Facebook group, we organize monthly gatherings in different parts of the city in order to meet and create ties with people who enjoy embroidery, these are NOT classes. </par>\n<par> ** As a result of the current situation (we will only have virtual sessions). **</par>\n<par>It does not matter your level or experience but it is necessary that you already know some stitches so that you can share your projects with the group.</par>",
+        "benefits": "<h>Other benefits ...</h><list><bullet>You will have a 10% discount on direct purchases of materials and embroidery kits from Silvia Peligro (<txtLink href='{{url}}' target='_blank'>@speligro</txtLink>).</bullet><bullet>You will have access to exclusive embroidery patterns.</bullet></list>",
+        "howParticipate": "<h>How can I participate?</h>\n<par>To be part of the Embroidery Club you must have your limited edition metallic pin (this is our current model).</par>",
+        "generalPrice": "General Public Price",
+        "membersPrice": "Embroidery Club Members Price",
+        "howGetPin": "Where do I get my pin?",
+        "getPinCDMX": "If you live in CDMX, send me a direct message to my instagram",
+        "getPinNational": "If you live in another state of the Mexican Republic, visit my online store at",
+        "instagramIntro": "Here you can see news, club member embroidery, as well as memories of the last gatherings ...",
+        "greetings": "We hope to meet you soon!"
+    },
+    "ShippingPage": {
+        "title": "How do I place my order?",
+        "subtitle": "Shipping throughout the Mexican Republic",
+        "intro": "<par>Receive your order at your door. We deliver to the entire Mexican Republic.</par><par>Where would you like us to send your order?, choose an option and check the steps to follow for placing your order :)</par>"
+    },
     "LocalShipping": {
-        "headerTitle": "How to place your order with shipping within Mexico City?"
+        "headerTitle": "How to place your order with shipping within Mexico City?",
+        "clubPromo": "With your member number receive a 10% discount on your order",
+        "intro": "<par>This shipping is available if the delivery address is within the 16 municipalities of the CDMX.</par>\n<par>Every week I will be receiving orders on Thursdays and Fridays from 11 am to 6 pm (deliveries are on Tuesdays).</par>",
+        "step1": "<par>Send me a list of what you would like to buy by private message on instagram<txtLink href='{{url}}' target='_blank'> @speligro </txtLink>, include your zip code to quote your shipping.<br/>Minimum purchase 150 Mexican pesos.</par>",
+        "howToOrder": "How to write my order? Click here.",
+        "orderIndications": "<par>Send me your order written in the body of your message, <bold> do not send photos or screenshots </bold>. </par>\n<par>Write your <bold> request as a list </bold>, avoid sending in linear form.</par>\n<par>Tell me the number of units as follows <bold> (number of pieces) product </bold>if it is only a piece it is not necessary to indicate it.</par>",
+        "example": "Example",
+        "step2": "In response to your message I will confirm if I have all the products on your list, I will also tell you the cost of your shipping and I will share the bank details with you so you can make the transfer or deposit.",
+        "step3": "Once the payment is done I need a photo or screenshot of your payment receipt and the following data:\n<list><bullet> Name of who will receive the package </bullet><bullet> Cell number </bullet><bullet> Delivery address </bullet></list>",
+        "step4": "<par> If you send your receipt voucher before 6pm on Monday, your order will be shipped on Tuesday of the same week.</par>\n<par>On Tuesday you will receive a message on your cell phone from Dostavista with the information of your delivery, the delivery schedule is from 12 to 7 pm.</par>",
+        "calendarsIntro": "<h>Calendar of orders/deliveries Mexico City</h>\n<par>(These calendars apply only to orders made by direct message on Instagram)</par>"
+    },
+    "modalInfo": {
+        "selectInstagramVideo": {
+            "title": "IGTV Videos"
+        },        
+        "localShippingAnnouncement": {
+            "content": "<h>IMPORTANT ANNOUNCEMENT</h>\n<par>This week I will expand the range of the delivery area, in addition to covering the 16 municipalities of the CDMX I will make deliveries in <spn>some areas of the following municipalities</spn>:</par>\n<list><bullet>Tlalnepantla de Baz</bullet><bullet>Naucalpan de Juarez</bullet><bullet>Atizapán de Zaragoza</bullet><bullet>Huixquilucan de Degollado</bullet><bullet>Nezahualcóyotl</bullet><bullet>Los Reyes la Paz</bullet></list>\n<par>Remember to include your order with your <spn> zip code </spn>to confirm that your address is <spn> within the delivery area</spn>.</par>"
+        }
     }
 }

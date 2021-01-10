@@ -3,6 +3,7 @@ import { ModalTypes } from './modalTypes.Type';
 export type ModalInfoArgs = {
     email?: string;
     setIgVideo: Function;
+    t: any;
 };
 
 export type ModalReturn = {

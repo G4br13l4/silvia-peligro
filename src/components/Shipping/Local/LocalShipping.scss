@@ -76,10 +76,10 @@
                 top: 5px;
             }
 
-            li:nth-child(1):after {content: "1";}
-            li:nth-child(2):after {content: "2";}
-            li:nth-child(3):after {content: "3";}
-            li:nth-child(4):after {content: "4";}
+            .step:nth-child(1):after {content: "1";}
+            .step:nth-child(2):after {content: "2";}
+            .step:nth-child(3):after {content: "3";}
+            .step:nth-child(4):after {content: "4";}
 
             .card-body {
                 display: flex;
@@ -136,7 +136,7 @@
             tr:nth-child(1) .deliveryDay,
             tr:nth-child(4) .receptionDay,
             tr:nth-child(4) .deliveryDay {
-                background:rgb(226, 2, 2);
+                background:  rgb(226, 180, 2);
                 color: white;
             }
         
@@ -147,13 +147,6 @@
                 background: rgb(226, 100, 2);
                 color: white;
             }
-        
-            tr:nth-child(3) .receptionDay,
-            tr:nth-child(3) .deliveryDay {
-                background:  rgb(226, 180, 2);
-                color: white;
-            }
-        
         }
     }
 }

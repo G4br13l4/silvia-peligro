@@ -1,39 +1,41 @@
 import React, { useState } from 'react';
-import { withTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import {
   Carousel,
   CarouselItem,
   CarouselControl
 } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import { Button } from '../../Common/Button/Button.tsx';
 import { Header } from '../../Common/Header/Header.tsx';
 import './KitsPage.scss';
-import kit1 from './../../../assets/imgs/kit1.jpg';
-import kit2 from './../../../assets/imgs/kit2.jpg';
+import kit2 from './../../../assets/imgs/kit1.jpg';
+import kit1 from './../../../assets/imgs/kit2.jpg';
 import kit3 from './../../../assets/imgs/kit3.jpg';
 
 const items = [
   {
     id: 1,
     cover: kit1,
-    title: 'Kit 1',
+    title: 'Pajarito'
   },
   {
     id: 2,
     cover: kit2,
-    title: 'Kit 2'
+    title: 'Taza Gatito',
   },
   {
     id: 3,
     cover: kit3,
-    title: 'Kit 3'
+    title: 'Casita de Dulce'
   }
 ];
 
 const KitsPage = props => {
+  const { t, i18n } = useTranslation('common');
+
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
-  const { t } = props;
 
   const slides = items.map((item) => {
     return (
@@ -73,10 +75,33 @@ const KitsPage = props => {
             subtitle={t('KitsPage.headerSubtitle')}
           />
           <div className="kits-section__content">
-            <p>
-              {t('KitsPage.description')}
+            <p className="description">
+              <Trans
+                t={t}
+                i18nKey="KitsPage.description"
+                components={{ txtLink: <Link/> }}
+              />
             </p>
-            <div className="kitsSize-table">
+
+
+            <div className="kits-selector">
+              <Link to="/products/kits/essentials"><button>Esenciales</button></Link>
+              <Link to="/products/kits/essentials"><button>Navideños</button></Link>
+              <Link to="/products/kits/essentials"><button>Halloween</button></Link>
+              <Link to="/products/kits/essentials"><button>Domestika - Bordado Miniatura</button></Link>
+              <Link to="/products/kits/essentials"><button>Bordado Básico</button></Link>
+              <Link to="/products/kits/essentials"><button>Kits de Bordado + Clase</button></Link>
+            </div>
+
+            {/* <ul>
+              <li>Esenciales</li>
+              <li>Navideños</li>
+              <li>Halloween</li>
+              <li>Domestika - Bordado Miniatura</li>
+              <li>Bordado Básico</li>
+              <li>Kits de Bordado + Clase</li>
+            </ul> */}
+            {/* <div className="kitsSize-table">
               <h2>{t('KitsPage.tableTitle')}</h2>
               <table>
                 <thead>
@@ -108,11 +133,16 @@ const KitsPage = props => {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </div> */}
             <div className="kits-carousel">
+              <p>
+                <Trans
+                  t={t}
+                  i18nKey="KitsPage.carouselDescription"
+                />
+              </p>
               <Carousel
                 activeIndex={activeIndex}
-                //activeIndex={0}
                 next={next}
                 previous={previous}
               >
@@ -120,9 +150,7 @@ const KitsPage = props => {
                 <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
                 <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
               </Carousel>
-
-              <p>{t('KitsPage.carouselDescription')}</p>
-              <a href="https://drive.google.com/file/d/15_q6SEJSQbVKaGlnrofZfXX8sc12vxgS/view?fbclid=IwAR06QzUy9h7GydvKNUaDrlxHeyTHT4jUK8peolZwRYSV-OqB_fQr98dtOG8" target="_blank">
+              <a href="" target="_blank">
                 <Button text={t('Button.seeCatalog')} customClass="btn-purple"/>
               </a>
             </div>
@@ -131,4 +159,4 @@ const KitsPage = props => {
     );
 }       
 
-export default  withTranslation('common') (KitsPage);
+export default  KitsPage;

@@ -28,7 +28,7 @@ const Footer = props => {
                 <p className="intro">{t('Mailing.title')}</p>
                 {/* Begin Mailchimp Signup Form */}
                 <div id="mc_embed_signup">
-                    <form action="https://kichink.us8.list-manage.com/subscribe/post?u=b9cb0284d7852b9c555efb828&amp;id=434325209d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                    <form action="https://kichink.us8.list-manage.com/subscribe/post?u=b9cb0284d7852b9c555efb828&amp;id=434325209d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                         <div id="mc_embed_signup_scroll">
                             <div class="indicates-required"><span class="asterisk">*</span> {t('Input.required')}</div>
                             <div className="mc-field-group">
@@ -65,7 +65,7 @@ const Footer = props => {
                     }
                 </ul>
                 <div>
-                    <a href="https://www.instagram.com/speligro/" target="_blank">
+                    <a href={process.env.REACT_APP_INSTA_LINK_SP} target="_blank">
                         <img alt="instagram-icon" src={instagram} />
                     </a>
                     <a href="mailto:hola@silviapeligro.com">

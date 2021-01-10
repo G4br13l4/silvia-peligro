@@ -9,7 +9,7 @@ import KitsPage from '../ProductsPage/Kits/KitsPage';
 import ShippingPage from '../Shipping/ShippingPage';
 import LocalShipping from '../Shipping/Local/LocalShipping';
 import NationalShipping from '../Shipping/National/NationalShipping';
-import ClassesPage from '../ClassesPage/ClassesPage';
+import CoursesPage from '../CoursesPage/CoursesPage';
 import EventsPage from '../EventsPage/EventsPage';
 import ClubPage from '../ClubPage/ClubPage';
 import IGTV_Page from '../IGTV_Page/IGTV_Page';
@@ -54,14 +54,14 @@ export const MainContainer = (props: MainContainerProps) => {
       {modalVisible ? <SmartModal/> : null}
       <div className="content-wrap">
       <Switch>
-        <Route path="/silvia-peligro" component={HomePage} />
-        <Route path="/" exact component={HomePage} />
+        <Route exact path="/silvia-peligro" component={HomePage} />
+        <Route exact path="/"  component={HomePage} />
         <Route path="/products/kits" component={KitsPage} />
-        <Route path="/products" exact component={ProductsPage} />
+        <Route path="/products" component={ProductsPage}/>
         <Route path="/shipping/cdmx" component={LocalShipping}/>
         <Route path="/shipping/national" component={NationalShipping}/>
         <Route path="/shipping" component={ShippingPage}/>
-        <Route path="/classes" component={ClassesPage} />
+        <Route path="/courses" component={CoursesPage} />
         <Route path="/events" component={EventsPage} />
         <Route path="/club" component={ClubPage} />
         <Route path="/igtv" component={IGTV_Page} />

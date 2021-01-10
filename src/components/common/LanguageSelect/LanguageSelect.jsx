@@ -1,13 +1,13 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './LanguageSelect.scss';
-import { withTranslation } from 'react-i18next';
 
-const LanguageSelect = (props) => {
+const LanguageSelect = props => {
+    const { t, i18n } = useTranslation('common');
     const lang = localStorage.getItem('i18nextLng');
-    const options = [{name: "English", id: "en"}, {name: "Español", id: "es"}];
+    const options = [{name: "EN", id: "en"}, {name: "ES", id: "es"}];
 
-    const changeLanguage = (lang) => {
-        const { i18n } = props;
+    const changeLanguage = lang => {
         i18n.changeLanguage(lang);
     }
 
@@ -29,4 +29,4 @@ const LanguageSelect = (props) => {
     );
 }
 
-export default  withTranslation('common') (LanguageSelect);
+export default  LanguageSelect;

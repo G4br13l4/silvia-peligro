@@ -27,7 +27,7 @@ const ProductsPage = props => {
           </Card>
           <Card background={frames} customClass="product-card">
             <h3>{t('ProductsPage.framesTitle')}</h3>
-            <a href="https://bazarama.com.mx/pages/seller-profile?silvia_peligro" target="_blank">
+            <a href="" target="_blank">
               <Button text={ t('Button.seeMore')}/>
             </a>
           </Card>

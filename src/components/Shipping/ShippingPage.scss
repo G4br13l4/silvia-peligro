@@ -1,5 +1,22 @@
-.shipping-btn {
-    margin: 1rem 1rem .3rem 0;
+@import '../../constants.scss';
+
+.shipping-section {
+    &__content {
+        padding: 1rem 1rem 2rem 1rem;
+        text-align: center;
+    }
+    .shipping-btn {
+        margin: 1rem 1rem .3rem 0;
+    }
+}
+
+@media (min-width: $laptop) {
+    .shipping-section {
+        &__content { 
+            padding: 1rem 1rem 3rem 3rem;
+            text-align: initial;
+        }
+    }
 }
 
 
