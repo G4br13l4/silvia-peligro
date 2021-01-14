@@ -5,7 +5,7 @@ import { Header } from '../Common/Header/Header.tsx';
 import { Button } from '../Common/Button//Button.tsx';
 import { CardsContainer } from '../Common/CardsContainer/CardsContainer';
 import { Card } from '../Common/Card/Card.tsx';
-import kit from './../../assets/imgs/kit1.jpg';
+import kit from './../../assets/imgs/kit-pajarito.png';
 import frames from './../../assets/imgs/frames.jpg';
 import './ProductsPage.scss';
   

@@ -6,6 +6,7 @@ import Footer from '../Common/Footer/Footer';
 import HomePage from '../HomePage';
 import ProductsPage from '../ProductsPage/ProductsPage';
 import KitsPage from '../ProductsPage/Kits/KitsPage';
+import KitsDetail from '../ProductsPage/Kits/KitsDetail';
 import ShippingPage from '../Shipping/ShippingPage';
 import LocalShipping from '../Shipping/Local/LocalShipping';
 import NationalShipping from '../Shipping/National/NationalShipping';
@@ -56,6 +57,7 @@ export const MainContainer = (props: MainContainerProps) => {
       <Switch>
         <Route exact path="/silvia-peligro" component={HomePage} />
         <Route exact path="/"  component={HomePage} />
+        <Route path="/products/kits/:type" component={KitsDetail} />
         <Route path="/products/kits" component={KitsPage} />
         <Route path="/products" component={ProductsPage}/>
         <Route path="/shipping/cdmx" component={LocalShipping}/>

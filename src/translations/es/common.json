@@ -137,5 +137,13 @@
         "localShippingAnnouncement": {
             "content": "<h>AVISO IMPORTANTE</h>\n<par>Esta semana ampliaré el rango del área de entregas, además de abarcar las 16 alcaldías de la CDMX haré entregas en <spn>algunas zonas de los siguientes municipios:</spn></par>\n<list><bullet>Tlalnepantla de Baz</bullet><bullet>Naucalpan de Juarez</bullet><bullet>Atizapán de Zaragoza</bullet><bullet>Huixquilucan de Degollado</bullet><bullet>Nezahualcóyotl</bullet><bullet>Los Reyes la Paz</bullet></list>\n<par>Recuerda acompañar tu pedido de tu <spn>código postal</spn> para confirmar que tu dirección se encuentra <spn>dentro de la zona de entregas</spn>.</par>"
         }
+    },
+    "KitsType": {
+        "essentials": "Esenciales",
+        "christmas": "Navideños",
+        "halloween": "Halloween",
+        "domestika": "Domestika - Bordado Miniatura",
+        "basic": "Bordado Básico",
+        "has-class": "Kits de Bordado + Clase"
     }
 }
